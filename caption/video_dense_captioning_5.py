@@ -67,7 +67,7 @@ def process_video_timeline(file_path):
         contents=[video_file, PROMPT_TEXT],
         config=types.GenerateContentConfig(
             response_mime_type="application/json",
-            max_output_tokens=8192,
+            max_output_tokens=66536,
             temperature=0.1 # Low temperature forces adherence to the list
         )
     )
