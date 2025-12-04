@@ -24,7 +24,7 @@ def download_video(url, idx):
     try:
         yt = YouTube(url, on_progress_callback=on_progress)
         stream = yt.streams.get_highest_resolution()
-        stream.download(output_path="downloads_v1")
+        stream.download(output_path="downloads_v3")
 
         with lock:
             progress_bars[idx].n = 100
@@ -37,13 +37,10 @@ def download_video(url, idx):
 
 def main():
     # 讀取 JSON
-    with open("crawl_v1.json", "r", encoding="utf-8") as f:
+    with open("crawl_v3.json", "r", encoding="utf-8") as f:
         data = json.load(f)
 
     urls = [item["videoId"] for item in data if "videoId" in item]
-
-    for idx in range(len(urls)):
-        urls[idx] = "https://www.youtube.com/watch?v=" + urls[idx]
 
     # 使用多執行緒下載
     max_workers = 4  # 可自行調整（別設太高 YouTube 會限速）

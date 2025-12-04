@@ -3,27 +3,27 @@ import json
 
 
 TOP_K = 5
-ytr_list = ["@TheDoDoMen", 
-            "@happyariel", 
-            "@SpiceTravel", 
-            "@bensadventure", 
-            "@elephantgogo",
-            "@LenaPatrickTaiwan",
-            "@chinatravel5971",
-            "@kuanglu91",
-            "@KaraandNate",
-            "@drewbinsky",
-            "@baldandbankrupt",
-            "@YesTheory",
-            "@HaraldBaldr",
-            "@MarkWiens",
-            "@fearlessandfar",
-            "@GabrielTravelerVideos",
-            "@evazubeck",
-            "@IndigoTraveller",
-            "@lostleblanc",
-            "@SimonWilson12",
-            "@KurtCaz"
+ytr_list = ["@TheDoDoMen",            # lot of bgm 
+            "@happyariel",            # without bgm, discard
+            "@SpiceTravel",           # partial without bgm
+            "@bensadventure",         # lot of bgm
+            "@elephantgogo",          # lot of bgm
+            "@LenaPatrickTaiwan",     # lot of bgm
+            "@chinatravel5971",       # no video found, discard
+            "@kuanglu91",             # without bgm, discard
+            "@KaraandNate",           # lot of bgm
+            "@drewbinsky",            # lot of bgm
+            "@baldandbankrupt",       # without bgm, discard
+            "@YesTheory",             # lot of bgm
+            "@HaraldBaldr",           # without bgm, discard
+            "@MarkWiens",             # partial without bgm
+            "@fearlessandfar",        # partial without bgm
+            "@GabrielTravelerVideos", # partial without bgm
+            "@evazubeck",             # partial without bgm
+            "@IndigoTraveller",       # without bgm, discard
+            "@lostleblanc",           # partial without bgm
+            "@SimonWilson12",         # without bgm, discard
+            "@KurtCaz"                # without bgm, discard
             ]
 
 json_list = []
