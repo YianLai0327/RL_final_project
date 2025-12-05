@@ -1,0 +1,242 @@
+[
+  {
+    "start": "00:00",
+    "end": "00:10",
+    "visual_summary": "A woman is excited about a Disney cruise. She is standing outside the cruise terminal. There are shots of the cruise ship, the interior of a room on the ship, the pool deck, and a woman drinking a beverage in the pool.",
+    "ideal_music_description": "Upbeat and happy music with a sense of adventure.",
+    "energy_level": "High",
+    "cut_pace": "Fast",
+    "has_speech": true,
+    "mood_tags": [
+      "Happy",
+      "Upbeat"
+    ]
+  },
+  {
+    "start": "00:10",
+    "end": "00:17",
+    "visual_summary": "A plate of steak is shown, followed by a Mickey Mouse ice cream bar, and a woman being fed a spoonful of dessert.",
+    "ideal_music_description": "Light and cheerful music, possibly with a whimsical feel.",
+    "energy_level": "High",
+    "cut_pace": "Fast",
+    "has_speech": false,
+    "mood_tags": [
+      "Happy",
+      "Funny"
+    ]
+  },
+  {
+    "start": "00:17",
+    "end": "00:24",
+    "visual_summary": "A woman is holding a sign that says 'Road Trip'. She is standing in front of a car in a desert landscape.",
+    "ideal_music_description": "Upbeat and adventurous music with a sense of freedom.",
+    "energy_level": "High",
+    "cut_pace": "Fast",
+    "has_speech": false,
+    "mood_tags": [
+      "Happy",
+      "Upbeat"
+    ]
+  },
+  {
+    "start": "00:24",
+    "end": "00:37",
+    "visual_summary": "A woman is driving a car on a desert road. There are aerial shots of the car driving on a long, straight road.",
+    "ideal_music_description": "Driving music with a sense of adventure and freedom.",
+    "energy_level": "High",
+    "cut_pace": "Fast",
+    "has_speech": false,
+    "mood_tags": [
+      "Upbeat",
+      "Chill"
+    ]
+  },
+  {
+    "start": "00:37",
+    "end": "00:51",
+    "visual_summary": "A woman is talking to the camera about her upcoming Disney cruise. She is standing outside the cruise terminal.",
+    "ideal_music_description": "Happy and excited music with a sense of anticipation.",
+    "energy_level": "Medium",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Happy",
+      "Upbeat"
+    ]
+  },
+  {
+    "start": "00:51",
+    "end": "01:15",
+    "visual_summary": "The woman continues talking to the camera about the COVID testing requirements for the cruise.",
+    "ideal_music_description": "Calm and informative music with a sense of reassurance.",
+    "energy_level": "Medium",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "01:15",
+    "end": "01:34",
+    "visual_summary": "The woman is talking about the price of her cruise and the type of room she booked.",
+    "ideal_music_description": "Light and cheerful music with a sense of excitement.",
+    "energy_level": "Medium",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Happy",
+      "Upbeat"
+    ]
+  },
+  {
+    "start": "01:34",
+    "end": "02:04",
+    "visual_summary": "The woman is talking about how cheap her cruise was and how she got a good deal.",
+    "ideal_music_description": "Light and cheerful music with a sense of excitement.",
+    "energy_level": "Medium",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Happy",
+      "Funny"
+    ]
+  },
+  {
+    "start": "02:04",
+    "end": "02:25",
+    "visual_summary": "The woman is walking towards the COVID testing area. She is talking about how she needs to give them her number because she doesn't have her luggage tag.",
+    "ideal_music_description": "Calm and informative music with a sense of anticipation.",
+    "energy_level": "Medium",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "02:25",
+    "end": "02:36",
+    "visual_summary": "A man is writing on a luggage tag. The woman is thanking him.",
+    "ideal_music_description": "Calm and informative music with a sense of anticipation.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "02:36",
+    "end": "02:48",
+    "visual_summary": "The woman is talking about how her luggage will be taken to her room after she gets tested.",
+    "ideal_music_description": "Calm and informative music with a sense of anticipation.",
+    "energy_level": "Medium",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "02:48",
+    "end": "03:04",
+    "visual_summary": "The woman is walking towards the COVID testing area. She is talking about how everyone needs to get tested before boarding the cruise.",
+    "ideal_music_description": "Calm and informative music with a sense of anticipation.",
+    "energy_level": "Medium",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "03:04",
+    "end": "03:11",
+    "visual_summary": "The woman is holding a specimen bag. She is talking about how she needs to go to number C to wait for her results.",
+    "ideal_music_description": "Calm and informative music with a sense of anticipation.",
+    "energy_level": "Medium",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "03:11",
+    "end": "03:40",
+    "visual_summary": "The woman is sitting down and looking at her phone. She is talking about how she is nervous about her results.",
+    "ideal_music_description": "Tense and anxious music with a sense of anticipation.",
+    "energy_level": "Medium",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Tense"
+    ]
+  },
+  {
+    "start": "03:40",
+    "end": "03:54",
+    "visual_summary": "The woman is talking about how she is clear to sail. She is excited and happy.",
+    "ideal_music_description": "Happy and excited music with a sense of relief.",
+    "energy_level": "High",
+    "cut_pace": "Fast",
+    "has_speech": true,
+    "mood_tags": [
+      "Happy",
+      "Upbeat"
+    ]
+  },
+  {
+    "start": "03:54",
+    "end": "04:16",
+    "visual_summary": "The woman is walking towards the cruise ship. She is greeted by a friendly employee.",
+    "ideal_music_description": "Happy and excited music with a sense of adventure.",
+    "energy_level": "High",
+    "cut_pace": "Fast",
+    "has_speech": true,
+    "mood_tags": [
+      "Happy",
+      "Upbeat"
+    ]
+  },
+  {
+    "start": "04:16",
+    "end": "04:34",
+    "visual_summary": "The woman is walking onto the cruise ship. She is greeted by a group of employees who are clapping and cheering.",
+    "ideal_music_description": "Happy and excited music with a sense of adventure.",
+    "energy_level": "High",
+    "cut_pace": "Fast",
+    "has_speech": true,
+    "mood_tags": [
+      "Happy",
+      "Upbeat"
+    ]
+  },
+  {
+    "start": "04:34",
+    "end": "04:47",
+    "visual_summary": "The woman is walking on the cruise ship. She is talking about how she is going to go eat lunch.",
+    "ideal_music_description": "Happy and excited music with a sense of adventure.",
+    "energy_level": "Medium",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Happy",
+      "Upbeat"
+    ]
+  },
+  {
+    "start": "04:47",
+    "end": "05:00",
+    "visual_summary": "The woman is walking into a restaurant on the cruise ship. She is excited to see the Mickey Mouse chairs.",
+    "ideal_music_description": "Happy and excited music with a sense of adventure.",
+    "energy_level": "High",
+    "cut_pace": "Fast",
+    "has_speech": true,
+    "mood_tags": [
+      "Happy",
+      "Upbeat"
+    ]
+  }
+]

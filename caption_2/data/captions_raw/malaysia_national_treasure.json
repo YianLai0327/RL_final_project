@@ -1,0 +1,295 @@
+[
+  {
+    "start": "00:00",
+    "end": "00:17",
+    "visual_summary": "Two monkeys are on a wooden platform. One is sitting, and the other jumps on it and attacks the sitting monkey. The video is pixelated to censor the monkeys.",
+    "ideal_music_description": "A quiet, nature-themed track with gentle instrumentation.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "00:17",
+    "end": "00:22",
+    "visual_summary": "Animated logo for 'Ben's Adventure' appears on a dark background.",
+    "ideal_music_description": "An upbeat, adventurous theme song with a catchy melody.",
+    "energy_level": "Medium",
+    "cut_pace": "Moderate",
+    "has_speech": false,
+    "mood_tags": [
+      "Upbeat",
+      "Happy"
+    ]
+  },
+  {
+    "start": "00:22",
+    "end": "00:28",
+    "visual_summary": "A person walks on a concrete surface, followed by shots of an airplane exterior and interior.",
+    "ideal_music_description": "A light, travel-themed track with a sense of anticipation.",
+    "energy_level": "Medium",
+    "cut_pace": "Moderate",
+    "has_speech": false,
+    "mood_tags": [
+      "Chill",
+      "Happy"
+    ]
+  },
+  {
+    "start": "00:28",
+    "end": "00:35",
+    "visual_summary": "Interior shots of an empty airplane cabin.",
+    "ideal_music_description": "A quiet, ambient track with a sense of calm.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": false,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "00:35",
+    "end": "00:45",
+    "visual_summary": "A man speaks to the camera inside the airplane, showing the nearly empty cabin.",
+    "ideal_music_description": "A light, conversational track with a sense of adventure.",
+    "energy_level": "Medium",
+    "cut_pace": "Moderate",
+    "has_speech": true,
+    "mood_tags": [
+      "Happy",
+      "Funny"
+    ]
+  },
+  {
+    "start": "00:45",
+    "end": "00:52",
+    "visual_summary": "More shots of the airplane interior, showing the few passengers.",
+    "ideal_music_description": "A light, travel-themed track with a sense of calm.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": false,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "00:52",
+    "end": "01:13",
+    "visual_summary": "The man walks outside the airport and speaks to the camera.",
+    "ideal_music_description": "An upbeat, travel-themed track with a sense of excitement.",
+    "energy_level": "High",
+    "cut_pace": "Moderate",
+    "has_speech": true,
+    "mood_tags": [
+      "Happy",
+      "Upbeat"
+    ]
+  },
+  {
+    "start": "01:13",
+    "end": "01:25",
+    "visual_summary": "The man continues speaking to the camera outside the airport.",
+    "ideal_music_description": "An upbeat, travel-themed track with a sense of excitement.",
+    "energy_level": "High",
+    "cut_pace": "Moderate",
+    "has_speech": true,
+    "mood_tags": [
+      "Happy",
+      "Upbeat"
+    ]
+  },
+  {
+    "start": "01:25",
+    "end": "01:30",
+    "visual_summary": "The man continues speaking to the camera outside the airport.",
+    "ideal_music_description": "An upbeat, travel-themed track with a sense of excitement.",
+    "energy_level": "High",
+    "cut_pace": "Moderate",
+    "has_speech": true,
+    "mood_tags": [
+      "Happy",
+      "Upbeat"
+    ]
+  },
+  {
+    "start": "01:30",
+    "end": "01:45",
+    "visual_summary": "Paintings of proboscis monkeys are displayed outside a shop.",
+    "ideal_music_description": "A light, whimsical track with a sense of wonder.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": false,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "01:45",
+    "end": "01:54",
+    "visual_summary": "Statues of orangutans are displayed in a park.",
+    "ideal_music_description": "A nature-themed track with a sense of tranquility.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": false,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "01:54",
+    "end": "02:07",
+    "visual_summary": "The man speaks to the camera in front of the Sepilok Orangutan Rehabilitation Centre.",
+    "ideal_music_description": "An upbeat, travel-themed track with a sense of excitement.",
+    "energy_level": "High",
+    "cut_pace": "Moderate",
+    "has_speech": true,
+    "mood_tags": [
+      "Happy",
+      "Upbeat"
+    ]
+  },
+  {
+    "start": "02:07",
+    "end": "02:24",
+    "visual_summary": "The man speaks to the camera in front of the Sepilok Orangutan Rehabilitation Centre.",
+    "ideal_music_description": "An upbeat, travel-themed track with a sense of excitement.",
+    "energy_level": "High",
+    "cut_pace": "Moderate",
+    "has_speech": true,
+    "mood_tags": [
+      "Happy",
+      "Upbeat"
+    ]
+  },
+  {
+    "start": "02:24",
+    "end": "02:32",
+    "visual_summary": "The man speaks to the camera inside the Sepilok Orangutan Rehabilitation Centre.",
+    "ideal_music_description": "An upbeat, travel-themed track with a sense of excitement.",
+    "energy_level": "Medium",
+    "cut_pace": "Moderate",
+    "has_speech": true,
+    "mood_tags": [
+      "Happy",
+      "Upbeat"
+    ]
+  },
+  {
+    "start": "02:32",
+    "end": "02:42",
+    "visual_summary": "The man walks through a locker room and then onto a wooden walkway in the forest.",
+    "ideal_music_description": "A nature-themed track with a sense of tranquility.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": false,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "02:42",
+    "end": "03:00",
+    "visual_summary": "The man walks on the wooden walkway and speaks to the camera.",
+    "ideal_music_description": "An upbeat, travel-themed track with a sense of excitement.",
+    "energy_level": "Medium",
+    "cut_pace": "Moderate",
+    "has_speech": true,
+    "mood_tags": [
+      "Happy",
+      "Upbeat"
+    ]
+  },
+  {
+    "start": "03:00",
+    "end": "03:14",
+    "visual_summary": "The man walks on the wooden walkway and speaks to the camera.",
+    "ideal_music_description": "An upbeat, travel-themed track with a sense of excitement.",
+    "energy_level": "Medium",
+    "cut_pace": "Moderate",
+    "has_speech": true,
+    "mood_tags": [
+      "Happy",
+      "Upbeat"
+    ]
+  },
+  {
+    "start": "03:14",
+    "end": "03:37",
+    "visual_summary": "The man walks on the wooden walkway and speaks to the camera.",
+    "ideal_music_description": "An upbeat, travel-themed track with a sense of excitement.",
+    "energy_level": "Medium",
+    "cut_pace": "Moderate",
+    "has_speech": true,
+    "mood_tags": [
+      "Happy",
+      "Upbeat"
+    ]
+  },
+  {
+    "start": "03:37",
+    "end": "03:45",
+    "visual_summary": "The man walks on the wooden walkway and speaks to the camera.",
+    "ideal_music_description": "An upbeat, travel-themed track with a sense of excitement.",
+    "energy_level": "Medium",
+    "cut_pace": "Moderate",
+    "has_speech": true,
+    "mood_tags": [
+      "Happy",
+      "Upbeat"
+    ]
+  },
+  {
+    "start": "03:45",
+    "end": "04:13",
+    "visual_summary": "Footage of orangutans eating and swinging in the trees.",
+    "ideal_music_description": "A nature-themed track with a sense of wonder and excitement.",
+    "energy_level": "Medium",
+    "cut_pace": "Moderate",
+    "has_speech": false,
+    "mood_tags": [
+      "Happy",
+      "Chill"
+    ]
+  },
+  {
+    "start": "04:13",
+    "end": "04:26",
+    "visual_summary": "Footage of orangutans eating and swinging in the trees.",
+    "ideal_music_description": "A nature-themed track with a sense of wonder and excitement.",
+    "energy_level": "Medium",
+    "cut_pace": "Moderate",
+    "has_speech": false,
+    "mood_tags": [
+      "Happy",
+      "Chill"
+    ]
+  },
+  {
+    "start": "04:26",
+    "end": "04:48",
+    "visual_summary": "Footage of orangutans eating and swinging in the trees.",
+    "ideal_music_description": "A nature-themed track with a sense of wonder and excitement.",
+    "energy_level": "Medium",
+    "cut_pace": "Moderate",
+    "has_speech": false,
+    "mood_tags": [
+      "Happy",
+      "Chill"
+    ]
+  },
+  {
+    "start": "04:48",
+    "end": "05:00",
+    "visual_summary": "The man speaks to the camera in front of the Sepilok Orangutan Rehabilitation Centre.",
+    "ideal_music_description": "An upbeat, travel-themed track with a sense of excitement.",
+    "energy_level": "High",
+    "cut_pace": "Moderate",
+    "has_speech": true,
+    "mood_tags": [
+      "Happy",
+      "Upbeat"
+    ]
+  }
+]

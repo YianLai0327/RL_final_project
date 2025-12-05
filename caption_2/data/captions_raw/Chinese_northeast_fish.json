@@ -1,0 +1,496 @@
+[
+  {
+    "start": "00:00",
+    "end": "00:15",
+    "visual_summary": "A man in winter clothing walks down a snowy street, passing frozen fish for sale. The camera focuses on the fish and the man's reactions.",
+    "ideal_music_description": "Calm, slightly upbeat background music with a sense of adventure and discovery.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "00:15",
+    "end": "00:25",
+    "visual_summary": "Fast-paced montage of travel scenes, including beaches, airplanes, and various adventures. Title card reads 'Ben's Adventure'.",
+    "ideal_music_description": "Upbeat and energetic music with a sense of adventure and excitement. Fast tempo and driving rhythm.",
+    "energy_level": "High",
+    "cut_pace": "Fast",
+    "has_speech": false,
+    "mood_tags": [
+      "Upbeat",
+      "Happy"
+    ]
+  },
+  {
+    "start": "00:25",
+    "end": "00:29",
+    "visual_summary": "Animated logo for 'Ben's Adventure' appears on a dark background.",
+    "ideal_music_description": "A brief, stylized musical sting or transition sound.",
+    "energy_level": "Low",
+    "cut_pace": "Static",
+    "has_speech": false,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "00:29",
+    "end": "00:35",
+    "visual_summary": "Snowy street scene with cars and buildings. Text overlay introduces the location.",
+    "ideal_music_description": "Calm and slightly upbeat background music, reflecting the everyday life in the snowy town.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "00:35",
+    "end": "00:44",
+    "visual_summary": "Static shot of a street with parked cars and buildings, followed by a sign indicating the direction to the 'Dongji Fish Market'.",
+    "ideal_music_description": "Very quiet, ambient background music.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": false,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "00:44",
+    "end": "01:06",
+    "visual_summary": "The man in winter clothing walks down the snowy street, talking to the camera about his plans to visit the fish market.",
+    "ideal_music_description": "Calm and slightly upbeat background music with a sense of anticipation.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "01:06",
+    "end": "01:24",
+    "visual_summary": "The man describes the unique way the fish are displayed, pointing out the frozen fish standing upright.",
+    "ideal_music_description": "Slightly more upbeat and curious music, reflecting the unique scene.",
+    "energy_level": "Medium",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Happy",
+      "Funny"
+    ]
+  },
+  {
+    "start": "01:24",
+    "end": "01:36",
+    "visual_summary": "Close-up shots of the frozen fish displayed in boxes and standing upright.",
+    "ideal_music_description": "Calm and slightly curious music, reflecting the unique scene.",
+    "energy_level": "Medium",
+    "cut_pace": "Slow",
+    "has_speech": false,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "01:36",
+    "end": "01:52",
+    "visual_summary": "The man and another person discuss the different types of fish and why they are wrapped in plastic.",
+    "ideal_music_description": "Calm and informative background music.",
+    "energy_level": "Medium",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "01:52",
+    "end": "02:08",
+    "visual_summary": "The man asks how the fish is eaten and the other person explains the different ways to prepare it.",
+    "ideal_music_description": "Calm and informative background music.",
+    "energy_level": "Medium",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "02:08",
+    "end": "02:24",
+    "visual_summary": "Wide shots of the fish market, showing the variety of fish on display.",
+    "ideal_music_description": "Calm and slightly upbeat background music, reflecting the bustling market scene.",
+    "energy_level": "Medium",
+    "cut_pace": "Slow",
+    "has_speech": false,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "02:24",
+    "end": "02:34",
+    "visual_summary": "Close-up shots of the frozen fish with spots, identified as 'dog fish'.",
+    "ideal_music_description": "Calm and slightly curious music, reflecting the unique scene.",
+    "energy_level": "Medium",
+    "cut_pace": "Slow",
+    "has_speech": false,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "02:34",
+    "end": "02:51",
+    "visual_summary": "The narrator describes the Dongji Fish Market and its history.",
+    "ideal_music_description": "Calm and informative background music.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "02:51",
+    "end": "03:03",
+    "visual_summary": "The man explains that the fish is too frozen to cut and they need to use a saw.",
+    "ideal_music_description": "Calm and slightly upbeat background music with a sense of humor.",
+    "energy_level": "Medium",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Funny"
+    ]
+  },
+  {
+    "start": "03:03",
+    "end": "03:15",
+    "visual_summary": "The man holds up a large piece of frozen fish that has been sawed off.",
+    "ideal_music_description": "Calm and slightly upbeat background music with a sense of wonder.",
+    "energy_level": "Medium",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "03:15",
+    "end": "03:31",
+    "visual_summary": "The man and another person discuss the 'Huangyu' fish.",
+    "ideal_music_description": "Calm and informative background music.",
+    "energy_level": "Medium",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "03:31",
+    "end": "03:52",
+    "visual_summary": "The narrator describes the 'Huangyu' fish and its history.",
+    "ideal_music_description": "Calm and informative background music.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "03:52",
+    "end": "04:04",
+    "visual_summary": "The man shows how the fish is cut with a saw.",
+    "ideal_music_description": "Calm and slightly upbeat background music.",
+    "energy_level": "Medium",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "04:04",
+    "end": "04:18",
+    "visual_summary": "The man shows the 'cow tail fish'.",
+    "ideal_music_description": "Calm and slightly upbeat background music.",
+    "energy_level": "Medium",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "04:18",
+    "end": "04:30",
+    "visual_summary": "The man shows the different types of fish.",
+    "ideal_music_description": "Calm and slightly upbeat background music.",
+    "energy_level": "Medium",
+    "cut_pace": "Slow",
+    "has_speech": false,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "04:30",
+    "end": "04:40",
+    "visual_summary": "The man shows a large piece of fish.",
+    "ideal_music_description": "Calm and slightly upbeat background music.",
+    "energy_level": "Medium",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "04:40",
+    "end": "04:55",
+    "visual_summary": "The man talks about the fish market.",
+    "ideal_music_description": "Calm and slightly upbeat background music.",
+    "energy_level": "Medium",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "04:55",
+    "end": "05:00",
+    "visual_summary": "The man shows a frozen fish.",
+    "ideal_music_description": "Calm and slightly upbeat background music.",
+    "energy_level": "Medium",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "05:00",
+    "end": "05:15",
+    "visual_summary": "A man walks through a snowy forest.",
+    "ideal_music_description": "Calm and slightly upbeat background music.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "05:15",
+    "end": "05:25",
+    "visual_summary": "A man walks through a snowy forest.",
+    "ideal_music_description": "Calm and slightly upbeat background music.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "05:25",
+    "end": "05:35",
+    "visual_summary": "A man walks through a snowy forest.",
+    "ideal_music_description": "Calm and slightly upbeat background music.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "05:35",
+    "end": "05:45",
+    "visual_summary": "A man walks through a snowy forest.",
+    "ideal_music_description": "Calm and slightly upbeat background music.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "05:45",
+    "end": "05:55",
+    "visual_summary": "A man walks through a snowy forest.",
+    "ideal_music_description": "Calm and slightly upbeat background music.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "05:55",
+    "end": "06:05",
+    "visual_summary": "A man walks through a snowy forest.",
+    "ideal_music_description": "Calm and slightly upbeat background music.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "06:05",
+    "end": "06:15",
+    "visual_summary": "A man walks through a snowy forest.",
+    "ideal_music_description": "Calm and slightly upbeat background music.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "06:15",
+    "end": "06:25",
+    "visual_summary": "A man walks through a snowy forest.",
+    "ideal_music_description": "Calm and slightly upbeat background music.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "06:25",
+    "end": "06:35",
+    "visual_summary": "A man walks through a snowy forest.",
+    "ideal_music_description": "Calm and slightly upbeat background music.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "06:35",
+    "end": "06:45",
+    "visual_summary": "A man walks through a snowy forest.",
+    "ideal_music_description": "Calm and slightly upbeat background music.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "06:45",
+    "end": "06:55",
+    "visual_summary": "A man walks through a snowy forest.",
+    "ideal_music_description": "Calm and slightly upbeat background music.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "06:55",
+    "end": "07:05",
+    "visual_summary": "A man walks through a snowy forest.",
+    "ideal_music_description": "Calm and slightly upbeat background music.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "07:05",
+    "end": "07:15",
+    "visual_summary": "A man walks through a snowy forest.",
+    "ideal_music_description": "Calm and slightly upbeat background music.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "07:15",
+    "end": "07:25",
+    "visual_summary": "A man walks through a snowy forest.",
+    "ideal_music_description": "Calm and slightly upbeat background music.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "07:25",
+    "end": "07:35",
+    "visual_summary": "A man walks through a snowy forest.",
+    "ideal_music_description": "Calm and slightly upbeat background music.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "07:35",
+    "end": "07:45",
+    "visual_summary": "A man walks through a snowy forest.",
+    "ideal_music_description": "Calm and slightly upbeat background music.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "07:45",
+    "end": "07:55",
+    "visual_summary": "A man walks through a snowy forest.",
+    "ideal_music_description": "Calm and slightly upbeat background music.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "07:55",
+    "end": "08:00",
+    "visual_summary": "A man walks through a snowy forest.",
+    "ideal_music_description": "Calm and slightly upbeat background music.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill"
+    ]
+  }
+]
