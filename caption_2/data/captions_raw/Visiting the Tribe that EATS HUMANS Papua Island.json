@@ -1,0 +1,906 @@
+[
+  {
+    "start": "00:00",
+    "end": "00:01",
+    "visual_summary": "A man with tribal paint and a headdress is carrying a large, heavy-looking object on his back.",
+    "ideal_music_description": "A low, mysterious drone with tribal percussion.",
+    "energy_level": "Medium",
+    "cut_pace": "Slow",
+    "has_speech": false,
+    "mood_tags": [
+      "Dark"
+    ]
+  },
+  {
+    "start": "00:01",
+    "end": "00:02",
+    "visual_summary": "Close-up of an older man with a nose piercing and a beaded headband.",
+    "ideal_music_description": "A quiet, reflective piece with simple instrumentation.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": false,
+    "mood_tags": [
+      "Chill",
+      "Sentimental"
+    ]
+  },
+  {
+    "start": "00:02",
+    "end": "00:03",
+    "visual_summary": "A scenic shot of an island and the ocean.",
+    "ideal_music_description": "A peaceful, ambient track with nature sounds.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": false,
+    "mood_tags": [
+      "Chill",
+      "Sentimental"
+    ]
+  },
+  {
+    "start": "00:03",
+    "end": "00:04",
+    "visual_summary": "Close-up of an older man smiling.",
+    "ideal_music_description": "A gentle, warm melody with acoustic instruments.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": false,
+    "mood_tags": [
+      "Happy",
+      "Chill"
+    ]
+  },
+  {
+    "start": "00:04",
+    "end": "00:08",
+    "visual_summary": "A group of people running through the jungle, followed by a shot of dense foliage.",
+    "ideal_music_description": "Tribal drums and chanting, building in intensity.",
+    "energy_level": "High",
+    "cut_pace": "Fast",
+    "has_speech": true,
+    "mood_tags": [
+      "Tense",
+      "Dark"
+    ]
+  },
+  {
+    "start": "00:08",
+    "end": "00:10",
+    "visual_summary": "A woman speaking in the jungle.",
+    "ideal_music_description": "Tribal chanting with a slight echo effect.",
+    "energy_level": "High",
+    "cut_pace": "Moderate",
+    "has_speech": true,
+    "mood_tags": [
+      "Tense"
+    ]
+  },
+  {
+    "start": "00:10",
+    "end": "00:15",
+    "visual_summary": "A man in the jungle eating something.",
+    "ideal_music_description": "A quiet, mysterious soundscape with subtle percussion.",
+    "energy_level": "Medium",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Tense",
+      "Dark"
+    ]
+  },
+  {
+    "start": "00:15",
+    "end": "00:17",
+    "visual_summary": "Looking up at the trees in the jungle.",
+    "ideal_music_description": "Ambient sounds of the jungle with a light, airy melody.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": false,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "00:17",
+    "end": "00:20",
+    "visual_summary": "A man walking through the jungle, followed by three men holding bows and arrows.",
+    "ideal_music_description": "A low, ominous drone with tribal percussion.",
+    "energy_level": "Medium",
+    "cut_pace": "Moderate",
+    "has_speech": false,
+    "mood_tags": [
+      "Tense",
+      "Dark"
+    ]
+  },
+  {
+    "start": "00:20",
+    "end": "00:21",
+    "visual_summary": "A man walking through the jungle.",
+    "ideal_music_description": "A low, ominous drone with tribal percussion.",
+    "energy_level": "Medium",
+    "cut_pace": "Slow",
+    "has_speech": false,
+    "mood_tags": [
+      "Tense",
+      "Dark"
+    ]
+  },
+  {
+    "start": "00:21",
+    "end": "00:24",
+    "visual_summary": "An older man aiming a bow and arrow.",
+    "ideal_music_description": "A tense, suspenseful track with a building crescendo.",
+    "energy_level": "Medium",
+    "cut_pace": "Slow",
+    "has_speech": false,
+    "mood_tags": [
+      "Tense",
+      "Dark"
+    ]
+  },
+  {
+    "start": "00:24",
+    "end": "00:25",
+    "visual_summary": "Women dancing in the jungle.",
+    "ideal_music_description": "Upbeat tribal music with chanting and percussion.",
+    "energy_level": "High",
+    "cut_pace": "Fast",
+    "has_speech": false,
+    "mood_tags": [
+      "Upbeat",
+      "Happy"
+    ]
+  },
+  {
+    "start": "00:25",
+    "end": "00:26",
+    "visual_summary": "A child chopping wood.",
+    "ideal_music_description": "Simple, rhythmic percussion with a playful melody.",
+    "energy_level": "Medium",
+    "cut_pace": "Fast",
+    "has_speech": false,
+    "mood_tags": [
+      "Upbeat",
+      "Happy"
+    ]
+  },
+  {
+    "start": "00:26",
+    "end": "00:27",
+    "visual_summary": "A woman preparing food.",
+    "ideal_music_description": "A gentle, warm melody with acoustic instruments.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": false,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "00:27",
+    "end": "00:29",
+    "visual_summary": "Men walking through a stream with bows and arrows, followed by an older man aiming a bow and arrow.",
+    "ideal_music_description": "A tense, suspenseful track with a building crescendo.",
+    "energy_level": "Medium",
+    "cut_pace": "Moderate",
+    "has_speech": false,
+    "mood_tags": [
+      "Tense",
+      "Dark"
+    ]
+  },
+  {
+    "start": "00:29",
+    "end": "00:30",
+    "visual_summary": "Children chopping a tree.",
+    "ideal_music_description": "Simple, rhythmic percussion with a playful melody.",
+    "energy_level": "Medium",
+    "cut_pace": "Fast",
+    "has_speech": false,
+    "mood_tags": [
+      "Upbeat",
+      "Happy"
+    ]
+  },
+  {
+    "start": "00:30",
+    "end": "00:32",
+    "visual_summary": "Close-up of a man with a beard, followed by a man aiming a bow and arrow.",
+    "ideal_music_description": "A tense, suspenseful track with a building crescendo.",
+    "energy_level": "Medium",
+    "cut_pace": "Moderate",
+    "has_speech": false,
+    "mood_tags": [
+      "Tense",
+      "Dark"
+    ]
+  },
+  {
+    "start": "00:32",
+    "end": "00:33",
+    "visual_summary": "A man shooting an arrow.",
+    "ideal_music_description": "A sharp, percussive hit followed by a tense drone.",
+    "energy_level": "High",
+    "cut_pace": "Fast",
+    "has_speech": false,
+    "mood_tags": [
+      "Tense",
+      "Dark"
+    ]
+  },
+  {
+    "start": "00:33",
+    "end": "00:35",
+    "visual_summary": "Title card: Papua Island, World's Last Cannibal Tribe.",
+    "ideal_music_description": "A low, ominous drone with tribal percussion.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": false,
+    "mood_tags": [
+      "Dark",
+      "Tense"
+    ]
+  },
+  {
+    "start": "00:35",
+    "end": "00:37",
+    "visual_summary": "Darkness, then an aerial shot of a dense jungle.",
+    "ideal_music_description": "A low, ominous drone with tribal percussion.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": false,
+    "mood_tags": [
+      "Dark",
+      "Tense"
+    ]
+  },
+  {
+    "start": "00:37",
+    "end": "00:41",
+    "visual_summary": "Aerial shots of a jungle and a river.",
+    "ideal_music_description": "A quiet, mysterious soundscape with subtle percussion.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": false,
+    "mood_tags": [
+      "Chill",
+      "Dark"
+    ]
+  },
+  {
+    "start": "00:41",
+    "end": "00:43",
+    "visual_summary": "Aerial shot of a red bridge over turquoise water.",
+    "ideal_music_description": "A peaceful, ambient track with nature sounds.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": false,
+    "mood_tags": [
+      "Chill",
+      "Sentimental"
+    ]
+  },
+  {
+    "start": "00:43",
+    "end": "00:44",
+    "visual_summary": "Comparison of the size of Texas and Papua Island.",
+    "ideal_music_description": "A simple, informative melody with a neutral tone.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": false,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "00:44",
+    "end": "00:48",
+    "visual_summary": "Smiling faces of people from Papua Island.",
+    "ideal_music_description": "A gentle, warm melody with acoustic instruments.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": false,
+    "mood_tags": [
+      "Happy",
+      "Chill"
+    ]
+  },
+  {
+    "start": "00:48",
+    "end": "00:53",
+    "visual_summary": "Smiling faces of people from Papua Island.",
+    "ideal_music_description": "A gentle, warm melody with acoustic instruments.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": false,
+    "mood_tags": [
+      "Happy",
+      "Chill"
+    ]
+  },
+  {
+    "start": "00:53",
+    "end": "00:54",
+    "visual_summary": "Aerial shot of a jungle.",
+    "ideal_music_description": "A quiet, mysterious soundscape with subtle percussion.",
+    "energy_level": "Medium",
+    "cut_pace": "Slow",
+    "has_speech": false,
+    "mood_tags": [
+      "Chill",
+      "Dark"
+    ]
+  },
+  {
+    "start": "00:54",
+    "end": "00:57",
+    "visual_summary": "An older man aiming a bow and arrow, followed by three men aiming bows and arrows.",
+    "ideal_music_description": "A tense, suspenseful track with a building crescendo.",
+    "energy_level": "Medium",
+    "cut_pace": "Moderate",
+    "has_speech": false,
+    "mood_tags": [
+      "Tense",
+      "Dark"
+    ]
+  },
+  {
+    "start": "00:57",
+    "end": "00:59",
+    "visual_summary": "Aerial shot of a jungle.",
+    "ideal_music_description": "A quiet, mysterious soundscape with subtle percussion.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": false,
+    "mood_tags": [
+      "Chill",
+      "Dark"
+    ]
+  },
+  {
+    "start": "00:59",
+    "end": "01:01",
+    "visual_summary": "A man in the jungle.",
+    "ideal_music_description": "A quiet, mysterious soundscape with subtle percussion.",
+    "energy_level": "Medium",
+    "cut_pace": "Slow",
+    "has_speech": false,
+    "mood_tags": [
+      "Chill",
+      "Dark"
+    ]
+  },
+  {
+    "start": "01:01",
+    "end": "01:04",
+    "visual_summary": "A man at an airport.",
+    "ideal_music_description": "A simple, informative melody with a neutral tone.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "01:04",
+    "end": "01:06",
+    "visual_summary": "Aerial shot of a town by the water.",
+    "ideal_music_description": "A peaceful, ambient track with nature sounds.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": false,
+    "mood_tags": [
+      "Chill",
+      "Sentimental"
+    ]
+  },
+  {
+    "start": "01:06",
+    "end": "01:07",
+    "visual_summary": "A woman in the jungle.",
+    "ideal_music_description": "A quiet, mysterious soundscape with subtle percussion.",
+    "energy_level": "Medium",
+    "cut_pace": "Slow",
+    "has_speech": false,
+    "mood_tags": [
+      "Chill",
+      "Dark"
+    ]
+  },
+  {
+    "start": "01:07",
+    "end": "01:12",
+    "visual_summary": "A man at an airport.",
+    "ideal_music_description": "A simple, informative melody with a neutral tone.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "01:12",
+    "end": "01:14",
+    "visual_summary": "A departure sign at an airport.",
+    "ideal_music_description": "A simple, informative melody with a neutral tone.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": false,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "01:14",
+    "end": "01:17",
+    "visual_summary": "A man on a plane.",
+    "ideal_music_description": "A simple, informative melody with a neutral tone.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": false,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "01:17",
+    "end": "01:19",
+    "visual_summary": "Aerial shot of a town by the water.",
+    "ideal_music_description": "A peaceful, ambient track with nature sounds.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": false,
+    "mood_tags": [
+      "Chill",
+      "Sentimental"
+    ]
+  },
+  {
+    "start": "01:19",
+    "end": "01:22",
+    "visual_summary": "Aerial shot of a town by the water.",
+    "ideal_music_description": "A peaceful, ambient track with nature sounds.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": false,
+    "mood_tags": [
+      "Chill",
+      "Sentimental"
+    ]
+  },
+  {
+    "start": "01:22",
+    "end": "01:24",
+    "visual_summary": "People walking at an airport.",
+    "ideal_music_description": "A simple, informative melody with a neutral tone.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": false,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "01:24",
+    "end": "01:33",
+    "visual_summary": "People walking at an airport.",
+    "ideal_music_description": "A simple, informative melody with a neutral tone.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "01:33",
+    "end": "01:36",
+    "visual_summary": "A man posing for a photo.",
+    "ideal_music_description": "A simple, informative melody with a neutral tone.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": false,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "01:36",
+    "end": "01:38",
+    "visual_summary": "A man walking down the street.",
+    "ideal_music_description": "A simple, informative melody with a neutral tone.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "01:38",
+    "end": "01:40",
+    "visual_summary": "A man sitting at a table.",
+    "ideal_music_description": "A simple, informative melody with a neutral tone.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "01:40",
+    "end": "01:50",
+    "visual_summary": "A man sitting at a table.",
+    "ideal_music_description": "A simple, informative melody with a neutral tone.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "01:50",
+    "end": "02:02",
+    "visual_summary": "A man sitting at a table.",
+    "ideal_music_description": "A simple, informative melody with a neutral tone.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "02:02",
+    "end": "02:06",
+    "visual_summary": "Driving down the street.",
+    "ideal_music_description": "A simple, informative melody with a neutral tone.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": false,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "02:06",
+    "end": "02:11",
+    "visual_summary": "A man entering a building.",
+    "ideal_music_description": "A simple, informative melody with a neutral tone.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": false,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "02:11",
+    "end": "02:21",
+    "visual_summary": "A man at a ticket agency.",
+    "ideal_music_description": "A simple, informative melody with a neutral tone.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "02:21",
+    "end": "02:31",
+    "visual_summary": "A man at a ticket agency.",
+    "ideal_music_description": "A simple, informative melody with a neutral tone.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "02:31",
+    "end": "02:33",
+    "visual_summary": "A man at a ticket agency.",
+    "ideal_music_description": "A simple, informative melody with a neutral tone.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "02:33",
+    "end": "02:37",
+    "visual_summary": "A man at a ticket agency.",
+    "ideal_music_description": "A simple, informative melody with a neutral tone.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "02:37",
+    "end": "02:46",
+    "visual_summary": "A man at a ticket agency.",
+    "ideal_music_description": "A simple, informative melody with a neutral tone.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "02:46",
+    "end": "02:47",
+    "visual_summary": "A man at a ticket agency.",
+    "ideal_music_description": "A simple, informative melody with a neutral tone.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": false,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "02:47",
+    "end": "02:49",
+    "visual_summary": "Driving down the street.",
+    "ideal_music_description": "A simple, informative melody with a neutral tone.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": false,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "02:49",
+    "end": "02:52",
+    "visual_summary": "A man at an ATM.",
+    "ideal_music_description": "A simple, informative melody with a neutral tone.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": false,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "02:52",
+    "end": "02:58",
+    "visual_summary": "A man at an ATM.",
+    "ideal_music_description": "A simple, informative melody with a neutral tone.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "02:58",
+    "end": "03:01",
+    "visual_summary": "A man at an ATM.",
+    "ideal_music_description": "A simple, informative melody with a neutral tone.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": false,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "03:01",
+    "end": "03:05",
+    "visual_summary": "A man at an ATM.",
+    "ideal_music_description": "A simple, informative melody with a neutral tone.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "03:05",
+    "end": "03:07",
+    "visual_summary": "A man on the phone.",
+    "ideal_music_description": "A simple, informative melody with a neutral tone.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": false,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "03:07",
+    "end": "03:10",
+    "visual_summary": "A man at an ATM.",
+    "ideal_music_description": "A simple, informative melody with a neutral tone.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": false,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "03:10",
+    "end": "03:16",
+    "visual_summary": "Aerial shots of a town.",
+    "ideal_music_description": "A peaceful, ambient track with nature sounds.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": false,
+    "mood_tags": [
+      "Chill",
+      "Sentimental"
+    ]
+  },
+  {
+    "start": "03:16",
+    "end": "03:24",
+    "visual_summary": "A man at a ticket agency.",
+    "ideal_music_description": "A simple, informative melody with a neutral tone.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "03:24",
+    "end": "03:36",
+    "visual_summary": "A man in a car.",
+    "ideal_music_description": "A simple, informative melody with a neutral tone.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "03:36",
+    "end": "03:47",
+    "visual_summary": "A man in a car.",
+    "ideal_music_description": "A simple, informative melody with a neutral tone.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "03:47",
+    "end": "03:59",
+    "visual_summary": "A man at a hotel.",
+    "ideal_music_description": "A simple, informative melody with a neutral tone.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "03:59",
+    "end": "04:06",
+    "visual_summary": "A man at a hotel.",
+    "ideal_music_description": "A simple, informative melody with a neutral tone.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "04:06",
+    "end": "04:15",
+    "visual_summary": "A man at a hotel.",
+    "ideal_music_description": "A simple, informative melody with a neutral tone.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "04:15",
+    "end": "04:26",
+    "visual_summary": "A man at a hotel.",
+    "ideal_music_description": "A simple, informative melody with a neutral tone.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "04:26",
+    "end": "04:33",
+    "visual_summary": "A man at a hotel.",
+    "ideal_music_description": "A simple, informative melody with a neutral tone.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "04:33",
+    "end": "04:39",
+    "visual_summary": "A man at a hotel.",
+    "ideal_music_description": "A simple, informative melody with a neutral tone.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "04:39",
+    "end": "04:40",
+    "visual_summary": "A man at a hotel.",
+    "ideal_music_description": "A simple, informative melody with a neutral tone.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": false,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "04:40",
+    "end": "04:45",
+    "visual_summary": "A man at a hotel.",
+    "ideal_music_description": "A simple, informative melody with a neutral tone.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": false,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "04:45",
+    "end": "04:56",
+    "visual_summary": "A man at a hotel.",
+    "ideal_music_description": "A simple, informative melody with a neutral tone.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": false,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "04:56",
+    "end": "04:59",
+    "visual_summary": "A",
+    "energy_level": "Medium",
+    "cut_pace": "Moderate",
+    "has_speech": false,
+    "mood_tags": [
+      "Chill"
+    ]
+  }
+]

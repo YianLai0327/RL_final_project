@@ -1,0 +1,573 @@
+[
+  {
+    "start": "00:00",
+    "end": "00:02",
+    "visual_summary": "A man walks towards a market area.",
+    "ideal_music_description": "Acoustic, chill background music.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill"
+    ]
+  },
+  {
+    "start": "00:02",
+    "end": "00:05",
+    "visual_summary": "Two men are talking and laughing.",
+    "ideal_music_description": "Upbeat, funny background music.",
+    "energy_level": "High",
+    "cut_pace": "Fast",
+    "has_speech": true,
+    "mood_tags": [
+      "Funny",
+      "Upbeat"
+    ]
+  },
+  {
+    "start": "00:05",
+    "end": "00:07",
+    "visual_summary": "Two men are walking and laughing in a park.",
+    "ideal_music_description": "Happy, upbeat background music.",
+    "energy_level": "Medium",
+    "cut_pace": "Moderate",
+    "has_speech": true,
+    "mood_tags": [
+      "Happy",
+      "Upbeat"
+    ]
+  },
+  {
+    "start": "00:07",
+    "end": "00:09",
+    "visual_summary": "Two men are drinking bubble tea.",
+    "ideal_music_description": "Funny, chill background music.",
+    "energy_level": "Medium",
+    "cut_pace": "Moderate",
+    "has_speech": true,
+    "mood_tags": [
+      "Funny",
+      "Chill"
+    ]
+  },
+  {
+    "start": "00:09",
+    "end": "00:11",
+    "visual_summary": "A man is walking through a market.",
+    "ideal_music_description": "Chill, happy background music.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill",
+      "Happy"
+    ]
+  },
+  {
+    "start": "00:11",
+    "end": "00:14",
+    "visual_summary": "A man is eating.",
+    "ideal_music_description": "Chill, happy background music.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill",
+      "Happy"
+    ]
+  },
+  {
+    "start": "00:14",
+    "end": "00:16",
+    "visual_summary": "A man is laughing.",
+    "ideal_music_description": "Funny, upbeat background music.",
+    "energy_level": "High",
+    "cut_pace": "Fast",
+    "has_speech": true,
+    "mood_tags": [
+      "Funny",
+      "Upbeat"
+    ]
+  },
+  {
+    "start": "00:16",
+    "end": "00:18",
+    "visual_summary": "Two men are eating.",
+    "ideal_music_description": "Chill, happy background music.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill",
+      "Happy"
+    ]
+  },
+  {
+    "start": "00:18",
+    "end": "00:20",
+    "visual_summary": "Two men are standing in front of a banner.",
+    "ideal_music_description": "Upbeat, happy background music.",
+    "energy_level": "Medium",
+    "cut_pace": "Moderate",
+    "has_speech": true,
+    "mood_tags": [
+      "Upbeat",
+      "Happy"
+    ]
+  },
+  {
+    "start": "00:20",
+    "end": "00:31",
+    "visual_summary": "Two men are talking to the camera.",
+    "ideal_music_description": "Upbeat, happy background music.",
+    "energy_level": "Medium",
+    "cut_pace": "Moderate",
+    "has_speech": true,
+    "mood_tags": [
+      "Upbeat",
+      "Happy"
+    ]
+  },
+  {
+    "start": "00:31",
+    "end": "00:38",
+    "visual_summary": "Two men are talking to the camera.",
+    "ideal_music_description": "Chill, happy background music.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill",
+      "Happy"
+    ]
+  },
+  {
+    "start": "00:38",
+    "end": "00:41",
+    "visual_summary": "A banner for Taiwan Good Food Day.",
+    "ideal_music_description": "Chill, happy background music.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": false,
+    "mood_tags": [
+      "Chill",
+      "Happy"
+    ]
+  },
+  {
+    "start": "00:41",
+    "end": "00:50",
+    "visual_summary": "Two men are talking to the camera.",
+    "ideal_music_description": "Chill, happy background music.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill",
+      "Happy"
+    ]
+  },
+  {
+    "start": "00:50",
+    "end": "00:56",
+    "visual_summary": "Two men are talking to the camera.",
+    "ideal_music_description": "Chill, happy background music.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill",
+      "Happy"
+    ]
+  },
+  {
+    "start": "00:56",
+    "end": "01:03",
+    "visual_summary": "Two men are talking to the camera.",
+    "ideal_music_description": "Chill, happy background music.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill",
+      "Happy"
+    ]
+  },
+  {
+    "start": "01:03",
+    "end": "01:04",
+    "visual_summary": "Two men are walking.",
+    "ideal_music_description": "Chill, happy background music.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill",
+      "Happy"
+    ]
+  },
+  {
+    "start": "01:04",
+    "end": "01:08",
+    "visual_summary": "A market area.",
+    "ideal_music_description": "Chill, happy background music.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": false,
+    "mood_tags": [
+      "Chill",
+      "Happy"
+    ]
+  },
+  {
+    "start": "01:08",
+    "end": "01:10",
+    "visual_summary": "A man is looking at a banner.",
+    "ideal_music_description": "Chill, happy background music.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill",
+      "Happy"
+    ]
+  },
+  {
+    "start": "01:10",
+    "end": "01:13",
+    "visual_summary": "A man is talking to the camera.",
+    "ideal_music_description": "Funny, upbeat background music.",
+    "energy_level": "High",
+    "cut_pace": "Fast",
+    "has_speech": true,
+    "mood_tags": [
+      "Funny",
+      "Upbeat"
+    ]
+  },
+  {
+    "start": "01:13",
+    "end": "01:32",
+    "visual_summary": "A man is talking to the camera.",
+    "ideal_music_description": "Chill, happy background music.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill",
+      "Happy"
+    ]
+  },
+  {
+    "start": "01:32",
+    "end": "01:45",
+    "visual_summary": "Two men are talking to the camera.",
+    "ideal_music_description": "Chill, happy background music.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill",
+      "Happy"
+    ]
+  },
+  {
+    "start": "01:45",
+    "end": "01:52",
+    "visual_summary": "Two men are walking through a market.",
+    "ideal_music_description": "Chill, happy background music.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill",
+      "Happy"
+    ]
+  },
+  {
+    "start": "01:52",
+    "end": "01:56",
+    "visual_summary": "A man is walking.",
+    "ideal_music_description": "Chill, happy background music.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill",
+      "Happy"
+    ]
+  },
+  {
+    "start": "01:56",
+    "end": "02:05",
+    "visual_summary": "A man is talking to a couple.",
+    "ideal_music_description": "Chill, happy background music.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill",
+      "Happy"
+    ]
+  },
+  {
+    "start": "02:05",
+    "end": "02:14",
+    "visual_summary": "A man is talking to a couple.",
+    "ideal_music_description": "Chill, happy background music.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill",
+      "Happy"
+    ]
+  },
+  {
+    "start": "02:14",
+    "end": "02:25",
+    "visual_summary": "A man is talking to a couple.",
+    "ideal_music_description": "Chill, happy background music.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill",
+      "Happy"
+    ]
+  },
+  {
+    "start": "02:25",
+    "end": "02:33",
+    "visual_summary": "A man is talking to a couple.",
+    "ideal_music_description": "Chill, happy background music.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill",
+      "Happy"
+    ]
+  },
+  {
+    "start": "02:33",
+    "end": "02:44",
+    "visual_summary": "A man is talking to a couple.",
+    "ideal_music_description": "Chill, happy background music.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill",
+      "Happy"
+    ]
+  },
+  {
+    "start": "02:44",
+    "end": "02:50",
+    "visual_summary": "A man is talking to the camera.",
+    "ideal_music_description": "Sad, sentimental background music.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Sad",
+      "Sentimental"
+    ]
+  },
+  {
+    "start": "02:50",
+    "end": "02:54",
+    "visual_summary": "A man is talking to the camera.",
+    "ideal_music_description": "Sad, sentimental background music.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Sad",
+      "Sentimental"
+    ]
+  },
+  {
+    "start": "02:54",
+    "end": "02:58",
+    "visual_summary": "Two men are walking.",
+    "ideal_music_description": "Chill, happy background music.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill",
+      "Happy"
+    ]
+  },
+  {
+    "start": "02:58",
+    "end": "03:02",
+    "visual_summary": "A man is walking.",
+    "ideal_music_description": "Chill, happy background music.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill",
+      "Happy"
+    ]
+  },
+  {
+    "start": "03:02",
+    "end": "03:08",
+    "visual_summary": "A man is talking to the camera.",
+    "ideal_music_description": "Chill, happy background music.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill",
+      "Happy"
+    ]
+  },
+  {
+    "start": "03:08",
+    "end": "03:17",
+    "visual_summary": "A man is talking to a wax figure of Kobe Bryant.",
+    "ideal_music_description": "Funny, chill background music.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Funny",
+      "Chill"
+    ]
+  },
+  {
+    "start": "03:17",
+    "end": "03:22",
+    "visual_summary": "A man is talking to the camera.",
+    "ideal_music_description": "Chill, happy background music.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill",
+      "Happy"
+    ]
+  },
+  {
+    "start": "03:22",
+    "end": "03:33",
+    "visual_summary": "A man is talking to the camera.",
+    "ideal_music_description": "Chill, happy background music.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill",
+      "Happy"
+    ]
+  },
+  {
+    "start": "03:33",
+    "end": "03:40",
+    "visual_summary": "A man is talking to another man.",
+    "ideal_music_description": "Chill, happy background music.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill",
+      "Happy"
+    ]
+  },
+  {
+    "start": "03:40",
+    "end": "03:52",
+    "visual_summary": "A man is talking to another man.",
+    "ideal_music_description": "Chill, happy background music.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill",
+      "Happy"
+    ]
+  },
+  {
+    "start": "03:52",
+    "end": "03:59",
+    "visual_summary": "A man is talking to another man.",
+    "ideal_music_description": "Funny, upbeat background music.",
+    "energy_level": "High",
+    "cut_pace": "Fast",
+    "has_speech": true,
+    "mood_tags": [
+      "Funny",
+      "Upbeat"
+    ]
+  },
+  {
+    "start": "03:59",
+    "end": "04:11",
+    "visual_summary": "A man is talking to another man.",
+    "ideal_music_description": "Chill, happy background music.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill",
+      "Happy"
+    ]
+  },
+  {
+    "start": "04:11",
+    "end": "04:21",
+    "visual_summary": "A man is talking to another man.",
+    "ideal_music_description": "Chill, happy background music.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill",
+      "Happy"
+    ]
+  },
+  {
+    "start": "04:21",
+    "end": "04:34",
+    "visual_summary": "A man is talking to another man.",
+    "ideal_music_description": "Funny, upbeat background music.",
+    "energy_level": "High",
+    "cut_pace": "Fast",
+    "has_speech": true,
+    "mood_tags": [
+      "Funny",
+      "Upbeat"
+    ]
+  },
+  {
+    "start": "04:34",
+    "end": "04:41",
+    "visual_summary": "A man is talking to another man.",
+    "ideal_music_description": "Chill, happy background music.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill",
+      "Happy"
+    ]
+  },
+  {
+    "start": "04:41",
+    "end": "04:59",
+    "visual_summary": "A man is talking to another man.",
+    "ideal_music_description": "Chill, happy background music.",
+    "energy_level": "Low",
+    "cut_pace": "Slow",
+    "has_speech": true,
+    "mood_tags": [
+      "Chill",
+      "Happy"
+    ]
+  }
+]
