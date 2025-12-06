@@ -3,3 +3,5 @@
 separated/
 __pycache__/
 .vscode/
+*.m4a
+*.zip
