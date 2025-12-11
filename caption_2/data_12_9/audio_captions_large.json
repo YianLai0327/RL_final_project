@@ -1,0 +1,1242 @@
+[
+  {
+    "rich_caption": "A low energy track with a simple melody and a retro feel.",
+    "mood_tags": [
+      "Chill",
+      "Sentimental"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Synth, Drums, Bass",
+    "filename": "3 am West End.mp3",
+    "bpm": 123.0,
+    "rms": 0.081,
+    "energy_level": "Low"
+  },
+  {
+    "rich_caption": "A high-energy, upbeat instrumental track with a driving rhythm and a touch of vintage charm, perfect for action scenes or energetic montages.",
+    "mood_tags": [
+      "Upbeat",
+      "Happy"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Drums, Organ, Synth",
+    "filename": "Abstract Anxiety.mp3",
+    "bpm": 152.0,
+    "rms": 0.2165,
+    "energy_level": "High"
+  },
+  {
+    "rich_caption": "An upbeat and energetic electronic track, perfect for action scenes or intense moments.",
+    "mood_tags": [
+      "Upbeat",
+      "Tense"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Synth, Drums, Bass",
+    "filename": "Advertime.mp3",
+    "bpm": 117.5,
+    "rms": 0.1868,
+    "energy_level": "High"
+  },
+  {
+    "rich_caption": "A tense and driving track, perfect for a chase scene.",
+    "mood_tags": [
+      "Tense",
+      "Dark"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Synth, Percussion, Strings",
+    "filename": "After the End.mp3",
+    "bpm": 117.5,
+    "rms": 0.1892,
+    "energy_level": "High"
+  },
+  {
+    "rich_caption": "A low energy, industrial soundscape with a tense atmosphere.",
+    "mood_tags": [
+      "Tense",
+      "Dark"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Industrial textures, drones, sound effects",
+    "filename": "Alien Spaceship Atmosphere.mp3",
+    "bpm": 123.0,
+    "rms": 0.1076,
+    "energy_level": "Low"
+  },
+  {
+    "rich_caption": "A High energy track featuring a music box melody.",
+    "mood_tags": [
+      "Happy",
+      "Upbeat"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Music Box, Strings",
+    "filename": "Alls Fair In Love.mp3",
+    "bpm": 143.6,
+    "rms": 0.2055,
+    "energy_level": "High"
+  },
+  {
+    "rich_caption": "A Low energy track featuring a solo wind instrument.",
+    "mood_tags": [
+      "Sentimental"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Saxophone",
+    "filename": "Amazing Grace.mp3",
+    "bpm": 129.2,
+    "rms": 0.0567,
+    "energy_level": "Low"
+  },
+  {
+    "rich_caption": "A low energy, tense track with a dark mood.",
+    "mood_tags": [
+      "Tense",
+      "Dark"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Strings, Organ",
+    "filename": "Ancient Rite.mp3",
+    "bpm": 123.0,
+    "rms": 0.1157,
+    "energy_level": "Low"
+  },
+  {
+    "rich_caption": "A low energy, happy track with a simple melody.",
+    "mood_tags": [
+      "Happy",
+      "Chill"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Accordion, Percussion",
+    "filename": "And Just Like That.mp3",
+    "bpm": 123.0,
+    "rms": 0.1216,
+    "energy_level": "Low"
+  },
+  {
+    "rich_caption": "A Medium energy track with a retro synthwave feel, perfect for a nostalgic journey or a futuristic chase scene.",
+    "mood_tags": [
+      "Upbeat",
+      "Chill"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Synthesizers, drums, bass",
+    "filename": "Arpent.mp3",
+    "bpm": 117.5,
+    "rms": 0.1565,
+    "energy_level": "Medium"
+  },
+  {
+    "rich_caption": "A medium energy track featuring a simple piano melody.",
+    "mood_tags": [
+      "Chill"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Piano",
+    "filename": "Asking Questions.mp3",
+    "bpm": 117.5,
+    "rms": 0.1363,
+    "energy_level": "Medium"
+  },
+  {
+    "rich_caption": "A low energy, electronic track with a simple melody and a driving beat.",
+    "mood_tags": [
+      "Chill"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Synth, Drums, Bass",
+    "filename": "Backbeat.mp3",
+    "bpm": 129.2,
+    "rms": 0.0633,
+    "energy_level": "Low"
+  },
+  {
+    "rich_caption": "A High energy track with a Middle Eastern vibe, perfect for a dance scene or exotic adventure.",
+    "mood_tags": [
+      "Upbeat",
+      "Epic"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Oud, Percussion, Strings, Synth",
+    "filename": "Bar Brawl.mp3",
+    "bpm": 95.7,
+    "rms": 0.1944,
+    "energy_level": "High"
+  },
+  {
+    "rich_caption": "A medium energy track with a tense mood, featuring brass and strings.",
+    "mood_tags": [
+      "Tense"
+    ],
+    "has_vocals": false,
+    "instrumentation": [
+      "Brass",
+      "Strings"
+    ],
+    "filename": "Battle Ready.mp3",
+    "bpm": 89.1,
+    "rms": 0.1562,
+    "energy_level": "Medium"
+  },
+  {
+    "rich_caption": "A low energy track featuring a brass band.",
+    "mood_tags": [
+      "Sentimental"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Brass Band",
+    "filename": "Bavarian Seascape.mp3",
+    "bpm": 107.7,
+    "rms": 0.0726,
+    "energy_level": "Low"
+  },
+  {
+    "rich_caption": "A medium energy track with a driving beat and a catchy synth melody.",
+    "mood_tags": [
+      "Upbeat"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Synth, drums, bass",
+    "filename": "Beat One.mp3",
+    "bpm": 117.5,
+    "rms": 0.1379,
+    "energy_level": "Medium"
+  },
+  {
+    "rich_caption": "A medium energy track with a tense, building atmosphere, perfect for suspenseful scenes or moments of anticipation.",
+    "mood_tags": [
+      "Tense"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Strings, Synth, Percussion",
+    "filename": "Beginning of Conflict.mp3",
+    "bpm": 117.5,
+    "rms": 0.1573,
+    "energy_level": "Medium"
+  },
+  {
+    "rich_caption": "A High energy track with a driving beat and dramatic strings, perfect for action sequences or intense scenes.",
+    "mood_tags": [
+      "Epic",
+      "Tense"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Strings, Percussion, Brass, Synths",
+    "filename": "Behind Enemy Lines.mp3",
+    "bpm": 117.5,
+    "rms": 0.1843,
+    "energy_level": "High"
+  },
+  {
+    "rich_caption": "An upbeat chiptune track with a driving rhythm and catchy melodies, perfect for retro gaming or energetic scenes.",
+    "mood_tags": [
+      "Upbeat",
+      "Funny"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Synthesizer, 8-bit sounds, drums",
+    "filename": "Bit Bit Loop.mp3",
+    "bpm": 99.4,
+    "rms": 0.3363,
+    "energy_level": "High"
+  },
+  {
+    "rich_caption": "A High energy track with a driving beat, perfect for action scenes or intense moments.",
+    "mood_tags": [
+      "Tense",
+      "Epic"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Brass, Percussion, Strings",
+    "filename": "Bollywood Groove.mp3",
+    "bpm": 161.5,
+    "rms": 0.1897,
+    "energy_level": "High"
+  },
+  {
+    "rich_caption": "A High energy track with a driving beat and a touch of melancholy.",
+    "mood_tags": [
+      "Upbeat",
+      "Sentimental"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Drums, Bass, Guitar, Organ",
+    "filename": "Burning Trapezoid of Fire.mp3",
+    "bpm": 103.4,
+    "rms": 0.1733,
+    "energy_level": "High"
+  },
+  {
+    "rich_caption": "A high-energy, upbeat track with a driving brass melody, perfect for a lively scene.",
+    "mood_tags": [
+      "Upbeat",
+      "Happy"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Brass, Tuba, Drums, Percussion",
+    "filename": "Busybody.mp3",
+    "bpm": 136.0,
+    "rms": 0.1009,
+    "energy_level": "High"
+  },
+  {
+    "rich_caption": "A medium energy track featuring acoustic guitar, perfect for a sentimental scene.",
+    "mood_tags": [
+      "Sentimental",
+      "Romantic"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Acoustic Guitar",
+    "filename": "Champ de tournesol.mp3",
+    "bpm": 107.7,
+    "rms": 0.1578,
+    "energy_level": "Medium"
+  },
+  {
+    "rich_caption": "A High energy track with a driving beat, perfect for action sequences or intense moments.",
+    "mood_tags": [
+      "Tense",
+      "Epic"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Orchestral Strings, Percussion, Brass",
+    "filename": "City Run.mp3",
+    "bpm": 143.6,
+    "rms": 0.0445,
+    "energy_level": "High"
+  },
+  {
+    "rich_caption": "An upbeat and energetic electronic track, perfect for high-intensity scenes or montages.",
+    "mood_tags": [
+      "Upbeat",
+      "Happy"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Synth leads, electronic drums, bass",
+    "filename": "City Sunshine.mp3",
+    "bpm": 172.3,
+    "rms": 0.1934,
+    "energy_level": "High"
+  },
+  {
+    "rich_caption": "An upbeat and happy track featuring a traditional Asian instrument.",
+    "mood_tags": [
+      "Happy",
+      "Upbeat"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Erhu, Percussion",
+    "filename": "Coy Koi.mp3",
+    "bpm": 161.5,
+    "rms": 0.1059,
+    "energy_level": "High"
+  },
+  {
+    "rich_caption": "A low energy, sentimental track featuring accordion and brass.",
+    "mood_tags": [
+      "Sentimental",
+      "Chill"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Accordion, Brass, Bass",
+    "filename": "Cumbish.mp3",
+    "bpm": 123.0,
+    "rms": 0.1171,
+    "energy_level": "Low"
+  },
+  {
+    "rich_caption": "A medium energy track with a driving beat and a sense of urgency.",
+    "mood_tags": [
+      "Tense",
+      "Dark"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Synth, Drums, Bass",
+    "filename": "Cursed Intro.mp3",
+    "bpm": 129.2,
+    "rms": 0.1349,
+    "energy_level": "Medium"
+  },
+  {
+    "rich_caption": "A low energy, brassy fanfare, perfect for a solemn occasion.",
+    "mood_tags": [
+      "Sentimental"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Brass, Tuba, Trumpet",
+    "filename": "Dance of the Tuba Plum Fairy.mp3",
+    "bpm": 117.5,
+    "rms": 0.1048,
+    "energy_level": "Low"
+  },
+  {
+    "rich_caption": "A high energy track with a tense feel.",
+    "mood_tags": [
+      "Tense",
+      "Epic"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Strings, Brass, Percussion",
+    "filename": "Dawn of the Apocalypse.mp3",
+    "bpm": 136.0,
+    "rms": 0.0752,
+    "energy_level": "High"
+  },
+  {
+    "rich_caption": "A low energy, romantic instrumental piece featuring ukulele.",
+    "mood_tags": [
+      "Romantic",
+      "Chill"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Ukulele, Strings, Percussion",
+    "filename": "Del Rio Bravo.mp3",
+    "bpm": 123.0,
+    "rms": 0.1209,
+    "energy_level": "Low"
+  },
+  {
+    "rich_caption": "A low energy, meditative track featuring a simple percussion rhythm.",
+    "mood_tags": [
+      "Chill"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Percussion, Drums",
+    "filename": "Desert Fox Underscore.mp3",
+    "bpm": 117.5,
+    "rms": 0.1117,
+    "energy_level": "Low"
+  },
+  {
+    "rich_caption": "A low energy track featuring traditional Middle Eastern instruments, perfect for setting a contemplative mood.",
+    "mood_tags": [
+      "Chill",
+      "Sentimental"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Oud, Ney, Percussion",
+    "filename": "Desert Fox.mp3",
+    "bpm": 117.5,
+    "rms": 0.1202,
+    "energy_level": "Low"
+  },
+  {
+    "rich_caption": "A medium energy track with a sentimental mood, featuring a haunting organ melody.",
+    "mood_tags": [
+      "Sentimental"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Organ, Synth Pad, Percussion",
+    "filename": "Dreams of Vain.mp3",
+    "bpm": 99.4,
+    "rms": 0.1305,
+    "energy_level": "Medium"
+  },
+  {
+    "rich_caption": "An upbeat and energetic electronic track, perfect for driving scenes or intense action.",
+    "mood_tags": [
+      "Upbeat",
+      "Tense"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Synth, Drums, Bass",
+    "filename": "Driving Concern.mp3",
+    "bpm": 112.3,
+    "rms": 0.17,
+    "energy_level": "High"
+  },
+  {
+    "rich_caption": "A medium energy track with a driving beat, perfect for a chase scene or a tense standoff.",
+    "mood_tags": [
+      "Tense"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Drums, Bass, Synth",
+    "filename": "Drop Point.mp3",
+    "bpm": 112.3,
+    "rms": 0.1652,
+    "energy_level": "Medium"
+  },
+  {
+    "rich_caption": "A high-energy, tense track, perfect for a dramatic scene.",
+    "mood_tags": [
+      "Tense",
+      "Epic"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Drums, strings, brass",
+    "filename": "Evil Incoming.mp3",
+    "bpm": 129.2,
+    "rms": 0.2449,
+    "energy_level": "High"
+  },
+  {
+    "rich_caption": "A high-energy, upbeat track with a driving rhythm and a sense of urgency.",
+    "mood_tags": [
+      "Upbeat",
+      "Tense"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Drums, synth, bass",
+    "filename": "Experimental Test Subject.mp3",
+    "bpm": 143.6,
+    "rms": 0.1017,
+    "energy_level": "High"
+  },
+  {
+    "rich_caption": "An upbeat track with a classic jazz organ sound.",
+    "mood_tags": [
+      "Upbeat",
+      "Happy"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Organ, Drums, Bass",
+    "filename": "Finally See The Light.mp3",
+    "bpm": 92.3,
+    "rms": 0.2475,
+    "energy_level": "High"
+  },
+  {
+    "rich_caption": "A medium energy track with a driving beat and a catchy synth melody.",
+    "mood_tags": [
+      "Upbeat"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Synth, drums, bass",
+    "filename": "Fresh Focus.mp3",
+    "bpm": 103.4,
+    "rms": 0.135,
+    "energy_level": "Medium"
+  },
+  {
+    "rich_caption": "A high-energy, upbeat instrumental track featuring a catchy synth melody and driving rhythm.",
+    "mood_tags": [
+      "Upbeat",
+      "Happy"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Synth, drums, bass",
+    "filename": "Fright Night Twist.mp3",
+    "bpm": 112.3,
+    "rms": 0.2046,
+    "energy_level": "High"
+  },
+  {
+    "rich_caption": "An upbeat and happy track with a tropical vibe, perfect for a sunny day.",
+    "mood_tags": [
+      "Happy",
+      "Upbeat"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Ukulele, acoustic guitar, percussion",
+    "filename": "Funshine.mp3",
+    "bpm": 95.7,
+    "rms": 0.2233,
+    "energy_level": "High"
+  },
+  {
+    "rich_caption": "A high-energy, upbeat track perfect for a lively party or celebration.",
+    "mood_tags": [
+      "Happy",
+      "Upbeat"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Trumpet, Trombone, Saxophone, Drums, Bass",
+    "filename": "Going Bananas.mp3",
+    "bpm": 129.2,
+    "rms": 0.2079,
+    "energy_level": "High"
+  },
+  {
+    "rich_caption": "A high-energy synthwave track perfect for racing games or intense workout sessions.",
+    "mood_tags": [
+      "Upbeat"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Synthesizers, drums, bass",
+    "filename": "Goodnightmare.mp3",
+    "bpm": 129.2,
+    "rms": 0.1977,
+    "energy_level": "High"
+  },
+  {
+    "rich_caption": "A low energy, sentimental track with a cinematic feel.",
+    "mood_tags": [
+      "Sentimental",
+      "Chill"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Piano, strings, synth pads",
+    "filename": "Gothamlicious.mp3",
+    "bpm": 112.3,
+    "rms": 0.0821,
+    "energy_level": "Low"
+  },
+  {
+    "rich_caption": "A medium energy track with a tense, epic feel. Great for a dramatic scene.",
+    "mood_tags": [
+      "Epic",
+      "Tense"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Strings, Brass, Percussion",
+    "filename": "Guerilla Tactics.mp3",
+    "bpm": 117.5,
+    "rms": 0.1303,
+    "energy_level": "Medium"
+  },
+  {
+    "rich_caption": "A low energy chiptune track with a retro feel.",
+    "mood_tags": [
+      "Chill"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Synthesizer, 8-bit sounds",
+    "filename": "Hear What They Say.mp3",
+    "bpm": 117.5,
+    "rms": 0.0547,
+    "energy_level": "Low"
+  },
+  {
+    "rich_caption": "A Low energy track featuring a church organ, perfect for a reflective scene.",
+    "mood_tags": [
+      "Sentimental"
+    ],
+    "has_vocals": false,
+    "instrumentation": "church organ",
+    "filename": "Hello! Ma Baby.mp3",
+    "bpm": 107.7,
+    "rms": 0.0948,
+    "energy_level": "Low"
+  },
+  {
+    "rich_caption": "A low energy, sentimental track, perfect for quiet reflection or a poignant scene.",
+    "mood_tags": [
+      "Sentimental"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Piano, Strings",
+    "filename": "Hidden Truth.mp3",
+    "bpm": 123.0,
+    "rms": 0.0294,
+    "energy_level": "Low"
+  },
+  {
+    "rich_caption": "An upbeat and happy bluegrass tune, perfect for a lighthearted scene.",
+    "mood_tags": [
+      "Happy",
+      "Upbeat"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Banjo, mandolin, guitar, bass",
+    "filename": "Hillbilly Swing.mp3",
+    "bpm": 143.6,
+    "rms": 0.1446,
+    "energy_level": "High"
+  },
+  {
+    "rich_caption": "A High energy track with a driving beat and powerful brass melodies, perfect for action sequences or intense moments.",
+    "mood_tags": [
+      "Epic",
+      "Tense"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Brass, Percussion, Strings",
+    "filename": "Honor Bound.mp3",
+    "bpm": 123.0,
+    "rms": 0.2139,
+    "energy_level": "High"
+  },
+  {
+    "rich_caption": "A medium energy track featuring a pipe organ, creating a tense and dark atmosphere.",
+    "mood_tags": [
+      "Tense",
+      "Dark"
+    ],
+    "has_vocals": false,
+    "instrumentation": [
+      "pipe organ"
+    ],
+    "filename": "Horror Mytery.mp3",
+    "bpm": 117.5,
+    "rms": 0.1445,
+    "energy_level": "Medium"
+  },
+  {
+    "rich_caption": "A High energy track with a driving beat, perfect for action sequences or intense scenes.",
+    "mood_tags": [
+      "Tense",
+      "Upbeat"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Synth, Drums, Bass",
+    "filename": "Horror Suspense.mp3",
+    "bpm": 136.0,
+    "rms": 0.0347,
+    "energy_level": "High"
+  },
+  {
+    "rich_caption": "A high-energy, driving rock track with a powerful drum beat and distorted guitars, perfect for action scenes or intense moments.",
+    "mood_tags": [
+      "Upbeat",
+      "Tense"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Drums, electric guitar, bass guitar",
+    "filename": "Improv for Evil.mp3",
+    "bpm": 117.5,
+    "rms": 0.2138,
+    "energy_level": "High"
+  },
+  {
+    "rich_caption": "A high-energy chiptune track perfect for retro gaming or a quirky, upbeat scene.",
+    "mood_tags": [
+      "Upbeat",
+      "Funny"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Synthesizer, 8-bit sounds",
+    "filename": "Improved Ice Cream Truck.mp3",
+    "bpm": 129.2,
+    "rms": 0.1815,
+    "energy_level": "High"
+  },
+  {
+    "rich_caption": "An Epic track with a driving rhythm and soaring melodies, perfect for intense scenes or triumphant moments.",
+    "mood_tags": [
+      "Epic",
+      "Upbeat"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Strings, Brass, Percussion, Synth",
+    "filename": "Inventing Flight.mp3",
+    "bpm": 143.6,
+    "rms": 0.2061,
+    "energy_level": "High"
+  },
+  {
+    "rich_caption": "A medium energy, sentimental acoustic piece featuring a solo guitar.",
+    "mood_tags": [
+      "Sentimental"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Acoustic Guitar",
+    "filename": "La Citadelle.mp3",
+    "bpm": 129.2,
+    "rms": 0.1249,
+    "energy_level": "Medium"
+  },
+  {
+    "rich_caption": "A high energy, upbeat instrumental track featuring acoustic guitar.",
+    "mood_tags": [
+      "Upbeat",
+      "Happy"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Acoustic Guitar",
+    "filename": "Landra's Dream.mp3",
+    "bpm": 143.6,
+    "rms": 0.2268,
+    "energy_level": "High"
+  },
+  {
+    "rich_caption": "A low energy, sentimental piano piece.",
+    "mood_tags": [
+      "Sentimental"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Piano",
+    "filename": "Lovely Piano Song.mp3",
+    "bpm": 99.4,
+    "rms": 0.0609,
+    "energy_level": "Low"
+  },
+  {
+    "rich_caption": "A high-energy, upbeat jazz track featuring a prominent saxophone melody, perfect for scenes needing a touch of sophistication and drive.",
+    "mood_tags": [
+      "Upbeat",
+      "Happy"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Saxophone, Piano, Bass, Drums",
+    "filename": "Lucky Break.mp3",
+    "bpm": 129.2,
+    "rms": 0.2096,
+    "energy_level": "High"
+  },
+  {
+    "rich_caption": "A low energy track featuring piano.",
+    "mood_tags": [
+      "Chill",
+      "Sentimental"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Piano",
+    "filename": "Meditating Beat.mp3",
+    "bpm": 92.3,
+    "rms": 0.122,
+    "energy_level": "Low"
+  },
+  {
+    "rich_caption": "A low energy track featuring a pipe organ.",
+    "mood_tags": [
+      "Dark",
+      "Tense"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Pipe Organ",
+    "filename": "Mind Chaos.mp3",
+    "bpm": 123.0,
+    "rms": 0.0573,
+    "energy_level": "Low"
+  },
+  {
+    "rich_caption": "An upbeat and happy track with a driving beat and a catchy melody.",
+    "mood_tags": [
+      "Happy",
+      "Upbeat"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Synth, drums, bass",
+    "filename": "Modern Island Jam.mp3",
+    "bpm": 107.7,
+    "rms": 0.1741,
+    "energy_level": "High"
+  },
+  {
+    "rich_caption": "A low energy, epic track with a classical feel, perfect for a dramatic scene.",
+    "mood_tags": [
+      "Epic",
+      "Tense"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Orchestra, Strings, Brass",
+    "filename": "Mothership.mp3",
+    "bpm": 112.3,
+    "rms": 0.0507,
+    "energy_level": "Low"
+  },
+  {
+    "rich_caption": "A Low energy track with a sentimental feel.",
+    "mood_tags": [
+      "Sentimental"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Piano",
+    "filename": "Motions.mp3",
+    "bpm": 123.0,
+    "rms": 0.0773,
+    "energy_level": "Low"
+  },
+  {
+    "rich_caption": "A High energy track with a middle-eastern vibe, perfect for action scenes or intense moments.",
+    "mood_tags": [
+      "Epic",
+      "Tense"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Oud, Percussion, Strings",
+    "filename": "Murder On The Bayou.mp3",
+    "bpm": 152.0,
+    "rms": 0.2201,
+    "energy_level": "High"
+  },
+  {
+    "rich_caption": "A medium energy track featuring accordion, perfect for a lighthearted scene.",
+    "mood_tags": [
+      "Happy",
+      "Upbeat"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Accordion, Bass, Drums",
+    "filename": "My Giant Bunny Friend.mp3",
+    "bpm": 103.4,
+    "rms": 0.1255,
+    "energy_level": "Medium"
+  },
+  {
+    "rich_caption": "An upbeat and energetic track, perfect for driving scenes or motivational content.",
+    "mood_tags": [
+      "Upbeat",
+      "Happy"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Synth, Drums, Bass",
+    "filename": "Mysterious Lights.mp3",
+    "bpm": 136.0,
+    "rms": 0.223,
+    "energy_level": "High"
+  },
+  {
+    "rich_caption": "A high-energy track with a driving beat and catchy synth melodies, perfect for action scenes or upbeat montages.",
+    "mood_tags": [
+      "Upbeat",
+      "Happy"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Synth, drums, bass",
+    "filename": "Natural Vibes.mp3",
+    "bpm": 136.0,
+    "rms": 0.1208,
+    "energy_level": "High"
+  },
+  {
+    "rich_caption": "A low energy, sentimental track with a simple piano melody.",
+    "mood_tags": [
+      "Sentimental",
+      "Chill"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Piano, Strings",
+    "filename": "New Hero in Town.mp3",
+    "bpm": 129.2,
+    "rms": 0.0469,
+    "energy_level": "Low"
+  },
+  {
+    "rich_caption": "A High energy track with a New Orleans jazz feel, perfect for a lively scene.",
+    "mood_tags": [
+      "Upbeat",
+      "Funny"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Trumpet, Trombone, Piano, Drums, Bass",
+    "filename": "Night in Venice.mp3",
+    "bpm": 112.3,
+    "rms": 0.1692,
+    "energy_level": "High"
+  },
+  {
+    "rich_caption": "An upbeat and happy track with a tropical vibe, perfect for summer scenes or lighthearted moments.",
+    "mood_tags": [
+      "Happy",
+      "Upbeat"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Steel Pan, Bass, Drums, Percussion",
+    "filename": "Palm and Soul.mp3",
+    "bpm": 161.5,
+    "rms": 0.1188,
+    "energy_level": "High"
+  },
+  {
+    "rich_caption": "A chill and sentimental track featuring acoustic guitar.",
+    "mood_tags": [
+      "Chill",
+      "Sentimental"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Acoustic Guitar",
+    "filename": "Patience Party.mp3",
+    "bpm": 136.0,
+    "rms": 0.0624,
+    "energy_level": "High"
+  },
+  {
+    "rich_caption": "A medium energy instrumental track with a bluesy feel, perfect for a scene needing a touch of melancholy and reflection.",
+    "mood_tags": [
+      "Sad",
+      "Sentimental"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Electric Guitar, Organ, Drums, Bass",
+    "filename": "Patron Saint of Heists.mp3",
+    "bpm": 112.3,
+    "rms": 0.1427,
+    "energy_level": "Medium"
+  },
+  {
+    "rich_caption": "A Low energy track featuring solo piano.",
+    "mood_tags": [
+      "Chill"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Piano",
+    "filename": "Piano Magic Motive.mp3",
+    "bpm": 103.4,
+    "rms": 0.0591,
+    "energy_level": "Low"
+  },
+  {
+    "rich_caption": "A medium energy track with a happy, upbeat feel.",
+    "mood_tags": [
+      "Happy",
+      "Upbeat"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Saxophone, bass, drums",
+    "filename": "Pickled Pink.mp3",
+    "bpm": 99.4,
+    "rms": 0.1414,
+    "energy_level": "Medium"
+  },
+  {
+    "rich_caption": "A low energy, sentimental track featuring piano and strings.",
+    "mood_tags": [
+      "Sentimental",
+      "Chill"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Piano, Strings",
+    "filename": "Pond.mp3",
+    "bpm": 117.5,
+    "rms": 0.0776,
+    "energy_level": "Low"
+  },
+  {
+    "rich_caption": "A Low energy track with a driving beat and dark synth melodies, perfect for a tense scene.",
+    "mood_tags": [
+      "Tense",
+      "Dark"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Synth, Drums, Bass",
+    "filename": "Release the Hybrids.mp3",
+    "bpm": 123.0,
+    "rms": 0.0927,
+    "energy_level": "Low"
+  },
+  {
+    "rich_caption": "A medium energy track featuring acoustic guitar, perfect for a sentimental or romantic scene.",
+    "mood_tags": [
+      "Sentimental",
+      "Romantic"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Acoustic Guitar",
+    "filename": "River Meditation.mp3",
+    "bpm": 117.5,
+    "rms": 0.1423,
+    "energy_level": "Medium"
+  },
+  {
+    "rich_caption": "A low energy, sentimental track with a cinematic feel.",
+    "mood_tags": [
+      "Sentimental"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Piano, strings, pads",
+    "filename": "Romantic Inspiration.mp3",
+    "bpm": 129.2,
+    "rms": 0.1119,
+    "energy_level": "Low"
+  },
+  {
+    "rich_caption": "A Low energy track featuring glass harmonica, perfect for a reflective scene.",
+    "mood_tags": [
+      "Chill"
+    ],
+    "has_vocals": false,
+    "instrumentation": "glass harmonica",
+    "filename": "Satin Danger.mp3",
+    "bpm": 129.2,
+    "rms": 0.0542,
+    "energy_level": "Low"
+  },
+  {
+    "rich_caption": "A low energy, retro-inspired chiptune track, perfect for a nostalgic video game scene.",
+    "mood_tags": [
+      "Chill",
+      "Funny"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Synthesizer, 8-bit sounds, Drums",
+    "filename": "Sciencenet Theme.mp3",
+    "bpm": 112.3,
+    "rms": 0.0984,
+    "energy_level": "Low"
+  },
+  {
+    "rich_caption": "A low energy, atmospheric track with a retro synth sound.",
+    "mood_tags": [
+      "Chill",
+      "Sentimental"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Synthesizer, Pads, Arpeggiator",
+    "filename": "Screen Saver.mp3",
+    "bpm": 117.5,
+    "rms": 0.0949,
+    "energy_level": "Low"
+  },
+  {
+    "rich_caption": "A High energy track with a happy and upbeat feel, perfect for a positive and uplifting scene.",
+    "mood_tags": [
+      "Happy",
+      "Upbeat"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Piano, Strings, Percussion",
+    "filename": "Slice of Life.mp3",
+    "bpm": 143.6,
+    "rms": 0.2084,
+    "energy_level": "High"
+  },
+  {
+    "rich_caption": "A High energy track with a fun, quirky feel, perfect for a lighthearted chase scene or comedic moment.",
+    "mood_tags": [
+      "Funny",
+      "Upbeat"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Accordion, Synthesizer, Percussion",
+    "filename": "Spring Chicken.mp3",
+    "bpm": 172.3,
+    "rms": 0.0931,
+    "energy_level": "High"
+  },
+  {
+    "rich_caption": "A medium energy track featuring a lively accordion melody, perfect for adding a touch of folk charm to any scene.",
+    "mood_tags": [
+      "Upbeat",
+      "Happy"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Accordion, Bass, Percussion",
+    "filename": "Still Pickin.mp3",
+    "bpm": 99.4,
+    "rms": 0.1333,
+    "energy_level": "Medium"
+  },
+  {
+    "rich_caption": "A High energy track, perfect for intense action sequences or dramatic moments.",
+    "mood_tags": [
+      "Epic",
+      "Tense"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Orchestral Strings, Brass, Percussion",
+    "filename": "Strength of the Titans.mp3",
+    "bpm": 143.6,
+    "rms": 0.0235,
+    "energy_level": "High"
+  },
+  {
+    "rich_caption": "A high-energy, upbeat track with a fun, carnival-like feel.",
+    "mood_tags": [
+      "Happy",
+      "Upbeat"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Accordion, Synth",
+    "filename": "Stunted Adventure.mp3",
+    "bpm": 136.0,
+    "rms": 0.1794,
+    "energy_level": "High"
+  },
+  {
+    "rich_caption": "A Medium energy track with a sentimental mood, featuring a brass section.",
+    "mood_tags": [
+      "Sentimental"
+    ],
+    "has_vocals": true,
+    "instrumentation": "Brass, Strings, Choir",
+    "filename": "Sun Up Gunned Down.mp3",
+    "bpm": 99.4,
+    "rms": 0.126,
+    "energy_level": "Medium"
+  },
+  {
+    "rich_caption": "A high-energy instrumental track with a driving beat and catchy melodies, perfect for action scenes or upbeat montages.",
+    "mood_tags": [
+      "Upbeat"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Electric Guitar, Drums, Bass, Synth",
+    "filename": "Sunday Dub.mp3",
+    "bpm": 103.4,
+    "rms": 0.2758,
+    "energy_level": "High"
+  },
+  {
+    "rich_caption": "A medium energy instrumental track with a driving beat and a funky bassline.",
+    "mood_tags": [
+      "Upbeat",
+      "Happy"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Drums, bass, synth",
+    "filename": "Take the Ride.mp3",
+    "bpm": 123.0,
+    "rms": 0.1662,
+    "energy_level": "Medium"
+  },
+  {
+    "rich_caption": "A Medium energy track featuring a train whistle.",
+    "mood_tags": [
+      "Tense"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Train Whistle",
+    "filename": "The Land of the Dead.mp3",
+    "bpm": 117.5,
+    "rms": 0.1581,
+    "energy_level": "Medium"
+  },
+  {
+    "rich_caption": "An epic and sentimental track, perfect for setting a dramatic mood.",
+    "mood_tags": [
+      "Epic",
+      "Sentimental"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Strings, Piano, Percussion",
+    "filename": "Think About It.mp3",
+    "bpm": 99.4,
+    "rms": 0.1708,
+    "energy_level": "High"
+  },
+  {
+    "rich_caption": "A High energy track with a driving rhythm and a playful melody, perfect for upbeat scenes and lighthearted moments.",
+    "mood_tags": [
+      "Happy",
+      "Upbeat"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Accordion, Bass, Drums",
+    "filename": "Village Tarantella.mp3",
+    "bpm": 143.6,
+    "rms": 0.1769,
+    "energy_level": "High"
+  },
+  {
+    "rich_caption": "A High energy track with a fun, upbeat feel, perfect for a lively scene.",
+    "mood_tags": [
+      "Happy",
+      "Upbeat"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Trumpet, Saxophone, Drums, Bass",
+    "filename": "Wakka Wakka.mp3",
+    "bpm": 123.0,
+    "rms": 0.1766,
+    "energy_level": "High"
+  },
+  {
+    "rich_caption": "A sentimental track featuring a solo accordion, perfect for a nostalgic scene.",
+    "mood_tags": [
+      "Sentimental"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Accordion",
+    "filename": "Windy Old Weather.mp3",
+    "bpm": 95.7,
+    "rms": 0.0582,
+    "energy_level": "Low"
+  },
+  {
+    "rich_caption": "A Low energy military march, perfect for historical documentaries or period dramas.",
+    "mood_tags": [
+      "Epic",
+      "Sentimental"
+    ],
+    "has_vocals": false,
+    "instrumentation": "Brass, Percussion, Woodwinds",
+    "filename": "Wizard Circus.mp3",
+    "bpm": 129.2,
+    "rms": 0.0772,
+    "energy_level": "Low"
+  }
+]
