@@ -1,0 +1,13 @@
+[project]
+name = "rl-soundtrack"
+version = "0.1.0"
+description = "RL Soundtrack"
+requires-python = ">=3.12"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["rl_soundtrack*"]
+namespaces = false

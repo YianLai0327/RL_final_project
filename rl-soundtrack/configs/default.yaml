@@ -1,0 +1,18 @@
+env:
+  id: MultiDiscrete
+
+agent:
+  algo: PPO
+  algo_kwargs:
+    policy: MultiInputPolicy
+    policy_kwargs: {}
+
+train:
+  n_envs: 8
+  total_timesteps: 10000000
+  n_eval_episodes: 47
+  eval_freq: 100000
+  seed: 42
+  save_path: models/
+  log_path: logs/
+  device: cpu

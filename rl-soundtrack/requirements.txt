@@ -1,0 +1,13 @@
+stable-baselines3
+wandb
+tensorboard
+pyyaml
+sentence-transformers
+decord
+moviepy
+librosa
+torch
+torchaudio
+torchcodec
+laion-clap
+git+https://github.com/facebookresearch/ImageBind
