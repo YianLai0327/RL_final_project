@@ -1,6 +1,6 @@
 # Video & Audio Captioning
 
-## 🛠️ Requirements & Installation
+##  Requirements & Installation
 
 First, ensure you have Python 3.8+ installed. You also need **FFmpeg** installed on your system for audio/video processing.
 
@@ -9,7 +9,7 @@ First, ensure you have Python 3.8+ installed. You also need **FFmpeg** installed
 pip install numpy librosa soundfile pychorus moviepy pytubefix tqdm google-genai deep-translator
 ```
 
-## 🚀 Execution Instructions
+##  Execution Instructions
 Run the scripts in the following order to generate the datasets and train the RL agent.
 
 Phase 1: Music Data Pipeline
