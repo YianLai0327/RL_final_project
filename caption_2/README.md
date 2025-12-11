@@ -9,14 +9,14 @@ First, ensure you have Python 3.8+ installed. You also need **FFmpeg** installed
 pip install numpy librosa soundfile pychorus moviepy pytubefix tqdm google-genai deep-translator
 ```
 
-Note: You will need a Google Gemini API Key to run the captioning scripts (audio_captioning_dynamic.py and video_captioning_dynamic_final.py).
+*Note: You will need a Google Gemini API Key to run the captioning scripts (audio_captioning_dynamic.py and video_captioning_dynamic_final.py).*
 
 ##  Execution Instructions
 Run the scripts in the following order to generate the datasets. 
 
-Note: The scripts below will output their final JSON/Audio files into the data/ directory.
+*Note: The scripts below will output their final JSON/Audio files into the data/ directory.*
 
-Phase 1: Music Data Pipeline
+### Phase 1: Music Data Pipeline
 1. Download & Analyze Music Crawls royalty-free BGM and calculates BPM/Energy features.
 ```bash
 python download_raw_BGM.py
@@ -36,7 +36,7 @@ python extract_chorus_start_only.py
 python audio_captioning_dynamic.py
 ```
 
-Phase 2: Video Data Pipeline
+### Phase 2: Video Data Pipeline
 1. Download Videos Downloads clips from crawl_v3.json, renames them by Video ID, and translates titles to English.
 ```bash
 python download_from_json_clip_2.py
