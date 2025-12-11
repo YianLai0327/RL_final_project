@@ -1,6 +1,6 @@
 # Video & Audio Captioning
 
-##  Requirements & Installation
+## Requirements & Installation
 
 First, ensure you have Python 3.8+ installed. You also need **FFmpeg** installed on your system for audio/video processing.
 
@@ -9,8 +9,12 @@ First, ensure you have Python 3.8+ installed. You also need **FFmpeg** installed
 pip install numpy librosa soundfile pychorus moviepy pytubefix tqdm google-genai deep-translator
 ```
 
+Note: You will need a Google Gemini API Key to run the captioning scripts (audio_captioning_dynamic.py and video_captioning_dynamic_final.py).
+
 ##  Execution Instructions
-Run the scripts in the following order to generate the datasets and train the RL agent.
+Run the scripts in the following order to generate the datasets. 
+
+Note: The scripts below will output their final JSON/Audio files into the data/ directory.
 
 Phase 1: Music Data Pipeline
 1. Download & Analyze Music Crawls royalty-free BGM and calculates BPM/Energy features.
