@@ -38,7 +38,7 @@ rl-soundtrack/
 
 ## Preprocess
 
-1. Download raw videos and music from [Google Drive](https://drive.google.com/drive/folders/1DCtcJoANZGf51l2wRnLBhO8PnZbknS-p?usp=drive_link), and place them in `data/raw_videos` and `data/raw_music`.
+1. Download raw videos and music from [Google Drive](https://drive.google.com/drive/folders/1DCtcJoANZGf51l2wRnLBhO8PnZbknS-p?usp=drive_link), and place them in `data/<dataset_name>/raw_videos` and `data/<dataset_name>/raw_music`.
 
 2. Format the dataset:
 
