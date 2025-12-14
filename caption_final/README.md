@@ -14,7 +14,7 @@ pip install numpy librosa soundfile pychorus moviepy pytubefix tqdm google-genai
 ##  Execution Instructions
 Run the scripts in the following order to generate the datasets. 
 
-*Note: The scripts below will output their final JSON/Audio files into the data/ directory.*
+*Note: The scripts below will output their final JSON/Audio files.*
 
 ### Phase 1: Music Data Pipeline
 1. Download & Analyze Music Crawls royalty-free BGM and calculates BPM/Energy features.
@@ -39,3 +39,10 @@ python download_video.py
 ```bash
 python video_captioning.py
 ```
+
+## Final Datasets
+### 1. Audio Caption Dataset (audio_caption_dataset.json)
+A library of BGM tracks with semantic tags and audio features.
+
+### 2. Video Caption Dataset (video_caption_dataset.json)
+The ground truth data for video clips, segmented by timestamps.
