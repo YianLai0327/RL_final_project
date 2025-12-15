@@ -2,11 +2,12 @@ import json
 import os
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, List, Optional, Tuple
 
 import numpy as np
 import torch
 from rl_soundtrack.utils.audio_features import compute_audio_features
+from rl_soundtrack.utils.common import cosine_similarity
 from sentence_transformers import SentenceTransformer
 from tqdm import tqdm
 
@@ -27,6 +28,7 @@ class MusicTrack:
     metadata: Dict[str, Any]
     imagebind_embedding: Optional[np.ndarray] = None
     caption_embedding: Optional[np.ndarray] = None
+    mood_embedding: Optional[np.ndarray] = None
     features: Optional[MusicFeatures] = None
 
 
@@ -44,6 +46,7 @@ class Video:
     filename: str
     metadata: Dict[str, Any]
     segments: List[VideoSegment] = field(default_factory=list)
+    sigma: Optional[float] = None
 
 
 class DiscreteDataset:
@@ -59,6 +62,10 @@ class DiscreteDataset:
         audio_filename: str = "music_captions.json",
         video_filename: str = "video_captions.json",
         text_encoder: Optional[SentenceTransformer] = None,
+        tracks: Optional[List[MusicTrack]] = None,
+        videos: Optional[List[Video]] = None,
+        switch_budget_model: Optional[List[Tuple[float, float, float, float]]] = None,
+        **kwargs,
     ):
         # Path Handling
         if data_dir is None:
@@ -74,18 +81,69 @@ class DiscreteDataset:
 
         if text_encoder is None:
             self.text_encoder = SentenceTransformer(
-                "all-MiniLM-L6-v2", cache_folder=".checkpoints"
+                "all-MiniLM-L6-v2",
+                # "all-mpnet-base-v2",
+                cache_folder=".checkpoints",
             )
         else:
             self.text_encoder = text_encoder
 
         # Data Storage
-        self.tracks: List[MusicTrack] = []
-        self.videos: List[Video] = []
+        if tracks is not None and videos is not None:
+            self.tracks = tracks
+            self.videos = videos
+            self.n_audio = len(self.tracks)
+        else:
+            self.tracks: List[MusicTrack] = []
+            self.videos: List[Video] = []
 
-        # Initial Load of JSONs
-        self._load_initial_data()
-        self.n_audio = len(self.tracks)
+            # Initial Load of JSONs
+            self._load_initial_data()
+            self.n_audio = len(self.tracks)
+            self._load_embeddings()
+
+        for video in self.videos:
+            if video.sigma is None:
+                video.sigma = self._compute_video_sigma(video.segments)
+
+        # Model Switch Budget
+        if switch_budget_model is None:
+            self.switch_budget_model = self._model_switch_budget()
+        else:
+            self.switch_budget_model = switch_budget_model
+
+    def split(
+        self, split_ratio: float = 0.8, seed: int = 42
+    ) -> Tuple["DiscreteDataset", "DiscreteDataset"]:
+        """
+        Splits the dataset into two instances (e.g., train/test) based on videos.
+        Music tracks are shared.
+        """
+        # Shuffle videos
+        rng = np.random.default_rng(seed)
+        shuffled_videos = list(self.videos)
+        rng.shuffle(shuffled_videos)
+
+        split_idx = int(len(shuffled_videos) * split_ratio)
+        train_videos = shuffled_videos[:split_idx]
+        test_videos = shuffled_videos[split_idx:]
+
+        train_ds = DiscreteDataset(
+            data_dir=self.data_dir,
+            text_encoder=self.text_encoder,
+            tracks=self.tracks,
+            videos=train_videos,
+            switch_budget_model=self.switch_budget_model,
+        )
+        test_ds = DiscreteDataset(
+            data_dir=self.data_dir,
+            text_encoder=self.text_encoder,
+            tracks=self.tracks,
+            videos=test_videos,
+            switch_budget_model=self.switch_budget_model,
+        )
+
+        return train_ds, test_ds
 
     def _load_initial_data(self):
         # Load audio data
@@ -127,7 +185,7 @@ class DiscreteDataset:
         return os.path.join(self.data_dir, subdir, name_no_ext)
 
     def _get_text_embedding(self, text: str) -> np.ndarray:
-        emb = self.text_encoder.encode(text, convert_to_numpy=True)[0]
+        emb = self.text_encoder.encode(text, convert_to_numpy=True)
         return emb
 
     def _read_embedding_from_disk(
@@ -152,9 +210,131 @@ class DiscreteDataset:
             except Exception as e:
                 print(f"Error loading embedding {path}: {e}")
 
+        print(f"  [Warning] Embedding not found for {path}")
         return np.zeros(1024, dtype=np.float32)
 
-    def load_embeddings(self):
+    def _create_video_narrative(self, segment):
+        """
+        Strategy:
+        1. Anchor: Define overall atmosphere (Mood, Energy, Pace), this is the strongest filter.
+        2. Context: Insert Visual Summary (suggested to be abstracted), provide context.
+        3. Target: Insert Ideal Music Description, this is usually the strongest semantic alignment point.
+        """
+
+        # 1. Extract attributes
+        moods = ", ".join(segment.get("mood_tags", []))
+        energy = segment.get("energy_level", "Medium")
+        pace = segment.get("cut_pace", "Moderate")
+
+        speech_status = (
+            "contains dialogue" if segment.get("has_speech") else "has no speech"
+        )
+
+        # 2. Combine Narrative
+        # Structure: [Mood/Energy/Pace] -> [Speech/Context] -> [Explicit Requirement]
+        narrative = (
+            f"The emotional tone is {moods}. "
+            f"It needs {segment.get('ideal_music_description', '')}. "
+            # f"A {moods} scene with {energy} energy and {pace} pace. "
+            # f"The video {speech_status}. "
+            # f"{segment.get('visual_summary', '')} "
+        )
+
+        return narrative
+
+    def _create_music_narrative(self, track):
+        """
+        Strategy:
+        1. Anchor: Define music's own atmosphere, corresponding to Video's anchor.
+        2. Details: Instruments and vocals, provide specific auditory details.
+        3. Description: Rich Caption provides the most natural description, placed at the end to reinforce.
+        """
+
+        # 1. Extract attributes and convert
+        moods = ", ".join(track.get("mood_tags", []))
+        energy = track.get("energy_level", "Medium")
+
+        # Convert BPM to text to align with Video's "Pace"
+        bpm = track.get("bpm", 120)
+        if bpm < 95:
+            tempo = "Slow"
+        elif bpm < 130:
+            tempo = "Moderate"
+        else:
+            tempo = "Fast"
+
+        vocab_status = (
+            "features vocals" if track.get("has_vocals") else "is instrumental"
+        )
+        instruments = track.get("instrumentation", "")
+
+        # 2. Combine Narrative
+        # Structure: [Mood/Energy/Tempo] -> [Vocals/Instruments] -> [Rich Caption]
+        narrative = (
+            f"The emotional tone is {moods}. "
+            f"{track.get('rich_caption', '')}"
+            # f"A {moods} music track with {energy} energy and {tempo} tempo. "
+            # f"It features {instruments}. "
+        )
+
+        return narrative
+
+    def _compute_video_sigma(self, segments: List[VideoSegment]) -> float:
+        diffs: List[float] = []
+        for t in range(1, len(segments)):
+            v_prev = segments[t - 1].imagebind_embedding
+            v_curr = segments[t].imagebind_embedding
+            diffs.append(1.0 - cosine_similarity(v_curr, v_prev))
+        return np.mean(diffs).item()
+
+    def _model_switch_budget(self) -> List[Tuple[float, float, float, float]]:
+        records = []
+        for video in self.videos:
+            T = len(video.segments)
+            if T < 2:
+                continue
+            C = len(
+                [s for s in video.segments if s.metadata.get("music_change") == True]
+            )
+            sigma = video.sigma
+            assert sigma is not None, "Video sigma not computed"
+            records.append((C, T, sigma, C / T))
+
+        sigmas = np.array([r[2] for r in records])
+        bin_edges = np.quantile(sigmas, [0, 0.2, 0.4, 0.6, 0.8, 1.0])
+
+        # Fit a Gaussian to each bin
+        bin_stats = []
+        for i in range(len(bin_edges) - 1):
+            rhos_in_bin = [
+                float(C)
+                for (C, T, sigma, rho) in records
+                if bin_edges[i] <= sigma < bin_edges[i + 1]
+            ]
+            mu = np.mean(rhos_in_bin)
+            std = np.std(rhos_in_bin) + 1e-6
+            lower_sigma = bin_edges[i]
+            upper_sigma = bin_edges[i + 1]
+            bin_stats.append(
+                (mu.item(), std.item(), lower_sigma.item(), upper_sigma.item())
+            )
+        # print(bin_stats)
+        return bin_stats
+
+    def sample_switch_budget(
+        self, rng: np.random.Generator, video: Video, kappa: float = 1.0
+    ) -> float:
+        sigma = video.sigma
+        assert sigma is not None, "Video sigma not computed"
+        target_mu, target_std, lower_sigma, upper_sigma = self.switch_budget_model[-1]
+        for mu, std, lower_sigma, upper_sigma in self.switch_budget_model:
+            if lower_sigma <= sigma < upper_sigma:
+                target_mu, target_std = mu, std
+                break
+        # We reduce the variance of the sampled switching budget to stabilize reinforcement learning while preserving dataset-level uncertainty.
+        return round(target_mu + kappa * rng.normal(0, target_std))
+
+    def _load_embeddings(self):
         """Preloads all music and video embeddings/features into memory."""
         print("Preloading music embeddings and features...")
         pbar = tqdm(self.tracks, desc="Music Data")
@@ -165,25 +345,20 @@ class DiscreteDataset:
             )
 
             # text embedding
-            caption = ""
-            if "rich_caption" in track.metadata:
-                caption += track.metadata["rich_caption"]
-            if "instrumentation" in track.metadata:
-                caption += f" Instruments: {track.metadata['instrumentation']}"
-            if "mood_tags" in track.metadata:
-                caption += f" Mood: {', '.join(track.metadata['mood_tags'])}"
+            caption = self._create_music_narrative(track.metadata)
             track.caption_embedding = self._get_text_embedding(caption)
 
             # 2. Features
-            if "mfcc_mean" in track.metadata:
+            if "mfcc" in track.metadata:
                 features = MusicFeatures(
-                    mfcc=track.metadata.get("mfcc_mean", [0.0] * 13),
-                    spectral_centroid=track.metadata.get("sc_mean", 0.0),
+                    mfcc=track.metadata.get("mfcc", [0.0] * 13),
+                    spectral_centroid=track.metadata.get("spectral_centroid", 0.0),
                     bpm=track.metadata.get("bpm", 120.0),
-                    energy=track.metadata.get("rms", 0.0),
+                    energy=track.metadata.get("energy", 0.0),
                     duration=track.metadata.get("duration", 0.0),
                 )
             else:
+                print(f"Computing features for {track.filename}")
                 audio_path = os.path.join(self.data_dir, "raw_music", track.filename)
                 if os.path.exists(audio_path):
                     features_dict = compute_audio_features(audio_path)
@@ -215,11 +390,7 @@ class DiscreteDataset:
                 )
 
                 # caption embedding
-                caption = ""
-                if "visual_summary" in seg.metadata:
-                    caption += seg.metadata["visual_summary"]
-                if "mood_tags" in seg.metadata:
-                    caption += f" Mood: {', '.join(seg.metadata['mood_tags'])}"
+                caption = self._create_video_narrative(seg.metadata)
                 seg.caption_embedding = self._get_text_embedding(caption)
 
     # --- Accessor Methods ---
@@ -233,18 +404,21 @@ class DiscreteDataset:
         track = self.get_music_track(action_index)
         if track and track.imagebind_embedding is not None:
             return track.imagebind_embedding
+        print(f"  [Warning] Music embedding not found for track {action_index}")
         return np.zeros(1024, dtype=np.float32)
 
     def get_music_text_embedding(self, action_index: int) -> np.ndarray:
         track = self.get_music_track(action_index)
         if track and track.caption_embedding is not None:
             return track.caption_embedding
+        print(f"  [Warning] Music text embedding not found for track {action_index}")
         return np.zeros(1024, dtype=np.float32)
 
     def get_music_features(self, index: int) -> MusicFeatures:
         track = self.get_music_track(index)
         if track and track.features:
             return track.features
+        print(f"  [Warning] Music features not found for track {index}")
         return MusicFeatures(
             mfcc=[0.0] * 13,
             spectral_centroid=0.0,
@@ -271,6 +445,7 @@ class DiscreteDataset:
             emb = video.segments[segment_index].imagebind_embedding
             if emb is not None:
                 return emb
+        print(f"  [Warning] Video {video_idx} segment {segment_index} not found")
         return np.zeros(1024, dtype=np.float32)
 
     def get_video_text_embedding(
@@ -281,4 +456,5 @@ class DiscreteDataset:
             emb = video.segments[segment_index].caption_embedding
             if emb is not None:
                 return emb
+        print(f"  [Warning] Video {video_idx} segment {segment_index} not found")
         return np.zeros(1024, dtype=np.float32)

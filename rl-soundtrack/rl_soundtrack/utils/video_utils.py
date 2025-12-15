@@ -16,7 +16,7 @@ def mix_soundtrack(video_clip, audio_clip) -> CompositeAudioClip:
     return CompositeAudioClip(
         [
             video_clip.audio,
-            audio_clip.with_effects([afx.AudioNormalize()]).with_volume_scaled(0.6),
+            audio_clip.with_volume_scaled(0.5),
         ]
     )
 
@@ -75,19 +75,19 @@ def render_video_soundtrack(
 
         # 2. Add Audio
         if audio_path and os.path.exists(audio_path):
-            audio_clip = AudioFileClip(audio_path)
+            audio_clip = AudioFileClip(audio_path).with_effects([afx.AudioNormalize()])
 
             # Handle audio duration
             audio_duration = audio_clip.duration
             assert audio_duration is not None
-            if audio_duration < offset + duration:
-                sub_audio_clip = audio_clip
-            else:
-                sub_audio_clip = audio_clip.subclipped(offset, offset + duration)
-                assert isinstance(audio_clip, AudioFileClip)
+            sub_clip_duration = min(audio_duration - offset, duration)
+            sub_audio_clip = audio_clip.subclipped(offset, offset + sub_clip_duration)
+            assert isinstance(audio_clip, AudioFileClip)
 
             composite_audio = mix_soundtrack(video_segment, sub_audio_clip)
-            video_segment = video_segment.with_audio(composite_audio)
+            video_segment = video_segment.with_audio(  # pyrefly: ignore[not-callable]
+                composite_audio
+            )
 
         else:
             print(f"Warning: Audio path invalid or missing: {audio_path}")
@@ -104,14 +104,14 @@ def render_video_soundtrack(
     final_video = concatenate_videoclips(clips)
 
     # 4. Write output
-    final_video.write_videofile(
+    final_video.write_videofile(  # pyrefly: ignore[not-callable]
         output_path,
-        temp_audiofile_path=tempfile.gettempdir(),
-        logger=None,
+        temp_audiofile_path=tempfile.gettempdir(),  # pyrefly: ignore[unexpected-keyword]
+        logger=None,  # pyrefly: ignore[unexpected-keyword]
     )
 
     # Cleanup
     full_video.close()
     for clip in clips:
-        clip.close()
+        clip.close()  # pyrefly: ignore[missing-attribute]
     gc.collect()

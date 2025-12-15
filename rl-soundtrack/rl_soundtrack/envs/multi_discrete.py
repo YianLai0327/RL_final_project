@@ -26,7 +26,7 @@ class MultiDiscreteEnv(gym.Env):
         render_mode: Optional[str] = "human",
         # Params for reward weights
         w_alignment: float = 1.0,
-        w_smoothness: float = 0.5,
+        w_smoothness: float = 0.1,
         random: Optional[bool] = True,
         dataset: Optional[DiscreteDataset] = None,
         **kwargs,
@@ -44,14 +44,6 @@ class MultiDiscreteEnv(gym.Env):
             # Fallback for standalone instantiation
             print("Initializing local DiscreteDataset (no shared dataset found)...")
             self.dataset = DiscreteDataset(**kwargs)
-            # For fallback, we must load embeddings explicitly if they aren't loaded
-            # However, DiscreteDataset loads JSONs in init, but embeddings in load_embeddings()
-            if (
-                not self.dataset.tracks
-                or not self.dataset.tracks[0].imagebind_embedding
-            ):
-                # Check if the first track has embedding loaded as a proxy
-                self.dataset.load_embeddings()
 
         self.w_alignment = w_alignment
         self.w_smoothness = w_smoothness
@@ -134,7 +126,7 @@ class MultiDiscreteEnv(gym.Env):
 
         # Sample a video for this episode
         if self.random:
-            self.video_idx = self.np_random.integers(0, len(self.videos))
+            self.video_idx = int(self.np_random.integers(0, len(self.videos)))
         else:
             self.video_idx = (self.video_idx + 1) % len(self.videos)
 
@@ -161,26 +153,32 @@ class MultiDiscreteEnv(gym.Env):
 
         terminated = False
         truncated = False
-        penalty = 0.0
+
+        # Rewards
+        illegal_penalty = 0
+        same_track_penalty = 0
+        va_imagebind_reward = 1
+        va_captions_reward = 1
+        aa_imagebind_reward = 1
+        aa_captions_reward = 1
+        aa_bpm_diff_penalty = 0
+        aa_energy_diff_penalty = 0
+        aa_spectral_diff_penalty = 0
+        aa_mfcc_diff_penalty = 0
+        aa_continue_penalty = 0
 
         # Logic for determining actual audio used this step
         current_audio_idx = None
         current_offset = 0.0
-        is_continue = False
 
         if continue_flag == 1:
             # === CONTINUE ACTION ===
             if self.last_audio_index is None:
-                # Invalid continue (start of episode) -> Terminate or Penalty
-                # Forcing a 'new track' selection instead of terminating immediately might be better,
-                # but let's stick to penalty logic or force pick music_idx.
-                # Let's say: Invalid continue -> Treat as New Selection of music_idx but with penalty?
-                # Or just Fail?
-                # Current logic: Terminate with penalty.
+                # Invalid continue (start of episode) -> Penalty
+                illegal_penalty += -0.5
                 current_audio_idx = music_idx  # Fallback to the proposed music
                 current_offset = 0.0
-                terminated = True
-                penalty += -10.0  # Terminate penalty for invalid continue
+                continue_flag = 0
             else:
                 # Continue previous
                 prev_idx = self.last_audio_index
@@ -190,41 +188,48 @@ class MultiDiscreteEnv(gym.Env):
                 # Check remaining time
                 needed_end = self.current_audio_offset + seg_duration
                 if needed_end > total_duration:
-                    # Terminate! Cannot continue anymore
-                    terminated = True
-                    penalty += -10.0  # Terminate penalty
-                    current_audio_idx = prev_idx
-                    current_offset = self.current_audio_offset
+                    illegal_penalty += -0.5
+                    current_audio_idx = music_idx  # Fallback to the proposed music
+                    current_offset = 0.0
+                    continue_flag = 0
                 else:
                     # Success continue
                     current_audio_idx = prev_idx
                     current_offset = self.current_audio_offset
                     # Update offset for NEXT step
                     self.current_audio_offset += seg_duration
-                    is_continue = True
 
         else:
             # === NEW TRACK ACTION === (continue_flag == 0)
-            # Use music_idx
+            curr_features = self._get_music_features_data(music_idx)
+            total_duration = curr_features.duration
+            if total_duration < seg_duration:
+                terminated = True
+                illegal_penalty += -1.0
+                current_audio_idx = music_idx
+                current_offset = 0.0
+            else:
+                # specific case: Picking the SAME track as new consecutively
+                if (
+                    self.last_audio_index is not None
+                    and music_idx == self.last_audio_index
+                ):
+                    same_track_penalty += -0.5  # Penalty for restarting same track
 
-            # specific case: Picking the SAME track as new consecutively
-            # If we explicitly say "New Track" but pick the same index, it's a restart.
-            if self.last_audio_index is not None and music_idx == self.last_audio_index:
-                penalty += -1.0  # Penalty for restarting same track
+                # specific case: Picking the SAME track as new repeatedly
+                n_repetitions = len(
+                    [a for a in self.episode_actions if a[0] == music_idx and a[1] == 0]
+                )
+                same_track_penalty += -0.5 * n_repetitions
 
-            # specific case: Picking the SAME track as new repeatedly
-            n_repetitions = self.episode_audios.count(music_idx)
-            penalty += -0.5 * n_repetitions
-
-            current_audio_idx = music_idx
-            current_offset = 0.0
-            # Update offset for next step
-            self.current_audio_offset = seg_duration
+                current_audio_idx = music_idx
+                current_offset = 0.0
+                self.current_audio_offset = seg_duration
 
         # 1. Get Embeddings
         dataset = cast(DiscreteDataset, self.dataset)
         obs = self._get_observation()
-        video_emb = obs["video_embedding"]
+        # video_emb = obs["video_embedding"]
         video_text_emb = dataset.get_video_text_embedding(
             self.video_idx, self.current_step
         )
@@ -233,58 +238,64 @@ class MultiDiscreteEnv(gym.Env):
 
         # 2. Calculate Reward
         # 2a. Alignment
-        imagebind_va_sim = cosine_similarity(video_emb, music_emb)
-        caption_va_sim = cosine_similarity(video_text_emb, music_text_emb)
-        alignment_score = (imagebind_va_sim + caption_va_sim) / 2.0
+        # va_imagebind_reward = cosine_similarity(video_emb, music_emb)
+        va_captions_reward = cosine_similarity(video_text_emb, music_text_emb)
 
         # 2b. Smoothness
-        smoothness_score = 0.0
         if self.last_audio_index is not None:
             # Alignment with last
-            last_music_emb = dataset.get_music_embedding(self.last_audio_index)
+            # last_music_emb = dataset.get_music_embedding(self.last_audio_index)
             last_music_text_emb = dataset.get_music_text_embedding(
                 self.last_audio_index
             )
-            imagebind_aa_sim = cosine_similarity(music_emb, last_music_emb)
-            caption_aa_sim = cosine_similarity(music_text_emb, last_music_text_emb)
+            # aa_imagebind_reward = cosine_similarity(music_emb, last_music_emb)
+            aa_captions_reward = cosine_similarity(music_text_emb, last_music_text_emb)
 
             # Get features
             curr_feats = self._get_music_features_data(current_audio_idx)
             last_feats = self._get_music_features_data(self.last_audio_index)
 
             # BPM difference
-            bpm_diff = abs(curr_feats.bpm - last_feats.bpm) / 200.0
+            aa_bpm_diff_penalty = -abs(curr_feats.bpm - last_feats.bpm) / 100.0
             # Energy difference
-            energy_diff = abs(curr_feats.energy - last_feats.energy)
+            aa_energy_diff_penalty = -abs(curr_feats.energy - last_feats.energy)
             # Spectral Centroid difference
-            sc_diff = (
-                abs(curr_feats.spectral_centroid - last_feats.spectral_centroid)
-                / 5000.0
+            aa_spectral_diff_penalty = (
+                -abs(curr_feats.spectral_centroid - last_feats.spectral_centroid)
+                / 2000.0
             )
             # MFCC
             curr_mfcc = np.array(curr_feats.mfcc)
             last_mfcc = np.array(last_feats.mfcc)
-            mfcc_dist = np.linalg.norm(curr_mfcc - last_mfcc) / 100.0
+            aa_mfcc_diff_penalty = -np.linalg.norm(curr_mfcc - last_mfcc) / 300.0
 
-            smoothness_score = (
-                imagebind_aa_sim
-                + caption_aa_sim
-                - bpm_diff
-                - energy_diff
-                - sc_diff
-                - mfcc_dist
-            ) / 6.0
+        if continue_flag == 1:
+            aa_continue_penalty = -0.5
 
+        alignment_reward = va_captions_reward
+        smoothness_reward = aa_captions_reward
+        smoothness_penalty = (
+            aa_bpm_diff_penalty + aa_spectral_diff_penalty + aa_mfcc_diff_penalty
+        ) / 3.0
         reward = (
-            (self.w_alignment * alignment_score)
-            + (self.w_smoothness * smoothness_score)
-            + penalty
+            (self.w_alignment * alignment_reward)
+            # + (self.w_smoothness * (smoothness_reward + smoothness_penalty) / 2.0)
+            + same_track_penalty
+            + illegal_penalty
         )
         info = {
             "video_filename": self.current_video_filename,
-            "alignment_score": alignment_score,
-            "smoothness_score": smoothness_score,
-            "penalty": penalty,
+            "va_imagebind_reward": va_imagebind_reward,
+            "va_captions_reward": va_captions_reward,
+            "aa_imagebind_reward": aa_imagebind_reward,
+            "aa_captions_reward": aa_captions_reward,
+            "aa_bpm_diff_penalty": aa_bpm_diff_penalty,
+            "aa_energy_diff_penalty": aa_energy_diff_penalty,
+            "aa_spectral_diff_penalty": aa_spectral_diff_penalty,
+            "aa_mfcc_diff_penalty": aa_mfcc_diff_penalty,
+            "aa_continue_penalty": aa_continue_penalty,
+            "illegal_penalty": illegal_penalty,
+            "same_track_penalty": same_track_penalty,
             "reward": reward,
         }
 

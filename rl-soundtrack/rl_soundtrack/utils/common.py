@@ -12,7 +12,9 @@ def parse_time_str(time_str: str) -> float:
     return 0.0
 
 
-def cosine_similarity(a: np.ndarray, b: np.ndarray) -> float:
+def cosine_similarity(a: np.ndarray | None, b: np.ndarray | None) -> float:
+    if a is None or b is None:
+        raise ValueError("Both arrays must be non-None")
     a_norm = np.linalg.norm(a)
     b_norm = np.linalg.norm(b)
     if a_norm > 1e-6 and b_norm > 1e-6:

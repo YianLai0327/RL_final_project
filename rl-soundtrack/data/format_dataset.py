@@ -76,7 +76,7 @@ def process_video_captions(data_dir, dry_run=False):
     """
     Process video captions:
     - Reads video_captions_old.json
-    - Fuzzy matches filenames in raw_videos/
+    - Fuzzy matches filenames in video_library/
     - Writes to video_captions.json
     """
     # Handle naming inconsistency
@@ -98,41 +98,48 @@ def process_video_captions(data_dir, dry_run=False):
         )
         return
 
-    raw_videos_dir = os.path.join(data_dir, "raw_videos")
-    if not os.path.exists(raw_videos_dir):
-        print(f"Warning: raw_videos directory not found in {data_dir}. Skipping.")
+    video_library_dir = os.path.join(data_dir, "video_library")
+    if not os.path.exists(video_library_dir):
+        print(f"Warning: video_library directory not found in {data_dir}. Skipping.")
         return
 
-    existing_files = os.listdir(raw_videos_dir)
+    existing_files = os.listdir(video_library_dir)
     # Filter for likely video files if needed, but fuzzy matching might handle it.
 
     new_data = []
+    filename_map = {}
 
     for filename, segments in data.items():
         match = find_file_fuzzy(filename, existing_files)
 
         if match:
             safe_filename = slugify_filename(filename)
+            filename_map[filename] = safe_filename
             if match != filename:
                 print(
                     f"  [Fuzzy Match] {filename[:20]:<20} -> {match[:20]:<20} -> {safe_filename[:20]:<20}"
                 )
 
-            new_data.append({"filename": safe_filename, "segments": segments})
-            os.rename(
-                os.path.join(raw_videos_dir, match),
-                os.path.join(raw_videos_dir, safe_filename),
-            )
+            # new_data.append({"filename": safe_filename, "segments": segments})
+            new_data.append({"filename": match, "segments": segments})
+            # os.rename(
+            #     os.path.join(video_library_dir, match),
+            #     os.path.join(video_library_dir, safe_filename),
+            # )
         else:
+            filename_map[filename] = filename
             print(
-                f"  [Warning] File not found: '{filename}' in {raw_videos_dir}. Skipping."
+                f"  [Warning] File not found: '{filename}' in {video_library_dir}. Skipping."
             )
 
     new_data.sort(key=lambda x: x["filename"])
     output_path = os.path.join(data_dir, "video_captions.json")
+    filename_map_path = os.path.join(data_dir, "video_filename_map.json")
     if not dry_run:
         with open(output_path, "w") as f:
             json.dump(new_data, f, indent=2)
+        with open(filename_map_path, "w") as f:
+            json.dump(filename_map, f, indent=2)
         print(f"Wrote {len(new_data)} items to {output_path}")
     else:
         print(f"[Dry Run] Would write {len(new_data)} items to {output_path}")
@@ -142,7 +149,7 @@ def process_music_captions(data_dir, dry_run=False):
     """
     Process music captions:
     - Reads music_captions_old.json
-    - Fuzzy matches filenames in raw_music/
+    - Fuzzy matches filenames in music_library/
     - Writes to music_captions.json
     """
     old_file_path = os.path.join(data_dir, "music_captions_old.json")
@@ -162,14 +169,15 @@ def process_music_captions(data_dir, dry_run=False):
         )
         return
 
-    raw_music_dir = os.path.join(data_dir, "raw_music")
-    if not os.path.exists(raw_music_dir):
-        print(f"Warning: raw_music directory not found in {data_dir}. Skipping.")
+    music_library_dir = os.path.join(data_dir, "music_library")
+    if not os.path.exists(music_library_dir):
+        print(f"Warning: music_library directory not found in {data_dir}. Skipping.")
         return
 
-    existing_files = os.listdir(raw_music_dir)
+    existing_files = os.listdir(music_library_dir)
 
     new_data = []
+    filename_map = {}
 
     for item in data:
         filename = item.get("filename")
@@ -181,30 +189,39 @@ def process_music_captions(data_dir, dry_run=False):
 
         if match:
             safe_filename = slugify_filename(filename)
+            filename_map[filename] = safe_filename
             if match != filename:
                 print(
                     f"  [Fuzzy Match] {filename[:20]:<20} -> {match[:20]:<20} -> {safe_filename[:20]:<20}"
                 )
 
-            item["filename"] = safe_filename
+            # item["filename"] = safe_filename
+            item["filename"] = match
             new_data.append(item)
-            os.rename(
-                os.path.join(raw_music_dir, match),
-                os.path.join(raw_music_dir, safe_filename),
-            )
+            # os.rename(
+            #     os.path.join(music_library_dir, match),
+            #     os.path.join(music_library_dir, safe_filename),
+            # )
         else:
+            filename_map[filename] = filename
             print(
-                f"  [Warning] File not found: '{filename}' in {raw_music_dir}. Skipping."
+                f"  [Warning] File not found: '{filename}' in {music_library_dir}. Skipping."
             )
 
     new_data.sort(key=lambda x: x["filename"])
-    output_path = os.path.join(data_dir, "music_captions.json")
+    caption_path = os.path.join(data_dir, "music_captions.json")
+    filename_map_path = os.path.join(data_dir, "music_filename_map.json")
     if not dry_run:
-        with open(output_path, "w") as f:
+        with open(caption_path, "w") as f:
             json.dump(new_data, f, indent=2)
-        print(f"Wrote {len(new_data)} items to {output_path}")
+        with open(filename_map_path, "w") as f:
+            json.dump(filename_map, f, indent=2)
+        print(f"Wrote {len(new_data)} items to {caption_path}")
     else:
-        print(f"[Dry Run] Would write {len(new_data)} items to {output_path}")
+        print(f"[Dry Run] Would write {len(new_data)} items to {caption_path}")
+
+
+# def process_video_split()
 
 
 def main():
@@ -225,7 +242,7 @@ def main():
     dirs_to_process = args.dirs
     if not dirs_to_process:
         # Default to checking subdirectories 'small' and 'medium' if they exist in current dir
-        current_dir = Path(".")
+        current_dir = Path.cwd()
         candidates = ["small", "medium"]
         dirs_to_process = [d for d in candidates if (current_dir / d).is_dir()]
 

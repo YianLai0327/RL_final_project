@@ -1,8 +1,13 @@
 env:
-  id: MultiDiscrete
+  id: Discrete
+  kwargs:
+    w_alignment: 1.0
+    w_smoothness: 0.5
+    w_switch: 0.3
+    w_theme: 0.3
 
 agent:
-  algo: PPO
+  algo: MaskablePPO
   algo_kwargs:
     policy: MultiInputPolicy
     policy_kwargs: {}
@@ -10,9 +15,11 @@ agent:
 train:
   n_envs: 8
   total_timesteps: 10000000
-  n_eval_episodes: 47
+  n_eval_episodes: 5
   eval_freq: 100000
+  save_freq: 1000000
   seed: 42
-  save_path: models/
+  save_path: logs/
   log_path: logs/
   device: cpu
+  split_ratio: 0.9
