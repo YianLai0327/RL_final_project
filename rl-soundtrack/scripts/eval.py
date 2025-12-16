@@ -20,10 +20,10 @@ from tqdm import tqdm
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
 
-def load_model(model_path, algo):
+def load_model(model_path, algo, device="cpu"):
     """Loads the trained PPO model."""
     algo_class = {"PPO": PPO, "A2C": A2C, "DQN": DQN, "MaskablePPO": MaskablePPO}[algo]
-    return algo_class.load(model_path)
+    return algo_class.load(model_path, device=device)
 
 
 import time

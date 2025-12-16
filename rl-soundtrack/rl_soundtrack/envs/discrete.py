@@ -92,40 +92,8 @@ class DiscreteEnv(gym.Env):
         self.last_audio_index = None
         self.episode_audios = []
 
-        self.video_imagebind_ref_emb = self._calc_video_ref_emb("imagebind_embedding")
-        self.video_caption_ref_emb = self._calc_video_ref_emb("caption_embedding")
-
-    def _calc_video_ref_emb(self, attr: str = "imagebind_embedding"):
-        per_video_avg_embeddings = []
-        for video in self.videos:
-            if not video.segments:
-                continue
-
-            video_segment_embeddings = []
-            for segment in video.segments:
-                if getattr(segment, attr) is None:
-                    continue
-                video_segment_embeddings.append(getattr(segment, attr))
-
-            # Per-video average
-            per_video_avg_embeddings.append(np.mean(video_segment_embeddings, axis=0))
-
-        if not per_video_avg_embeddings:
-            print("  [Warning] No valid video embeddings found")
-            return np.zeros(1024, dtype=np.float32)
-
-        # Across-video average
-        v_ref_raw = np.mean(per_video_avg_embeddings, axis=0)
-
-        # L2 normalization
-        norm = np.linalg.norm(v_ref_raw)
-        if norm > 1e-6:
-            return v_ref_raw / norm
-        else:
-            print(
-                "  [Warning] L2 norm of average video embedding is too small, setting to zero"
-            )
-            return np.zeros(1024, dtype=np.float32)
+        self.video_imagebind_ref_emb = self.dataset.video_imagebind_ref
+        self.video_caption_ref_emb = self.dataset.video_caption_ref
 
     def _get_music_features_data(self, index: int) -> MusicFeatures:
         """

@@ -64,6 +64,8 @@ class DiscreteDataset:
         text_encoder: Optional[SentenceTransformer] = None,
         tracks: Optional[List[MusicTrack]] = None,
         videos: Optional[List[Video]] = None,
+        video_imagebind_ref: Optional[np.ndarray] = None,
+        video_caption_ref: Optional[np.ndarray] = None,
         switch_budget_model: Optional[List[Tuple[float, float, float, float]]] = None,
         **kwargs,
     ):
@@ -106,6 +108,18 @@ class DiscreteDataset:
             if video.sigma is None:
                 video.sigma = self._compute_video_sigma(video.segments)
 
+        self.video_imagebind_ref = video_imagebind_ref
+        if self.video_imagebind_ref is None:
+            print("Calculating video imagebind reference embedding...")
+            self.video_imagebind_ref = self._calc_video_ref_emb(
+                attr="imagebind_embedding"
+            )
+
+        self.video_caption_ref = video_caption_ref
+        if self.video_caption_ref is None:
+            print("Calculating video caption reference embedding...")
+            self.video_caption_ref = self._calc_video_ref_emb(attr="caption_embedding")
+
         # Model Switch Budget
         if switch_budget_model is None:
             self.switch_budget_model = self._model_switch_budget()
@@ -133,6 +147,8 @@ class DiscreteDataset:
             text_encoder=self.text_encoder,
             tracks=self.tracks,
             videos=train_videos,
+            video_imagebind_ref=self.video_imagebind_ref,
+            video_caption_ref=self.video_caption_ref,
             switch_budget_model=self.switch_budget_model,
         )
         test_ds = DiscreteDataset(
@@ -140,6 +156,8 @@ class DiscreteDataset:
             text_encoder=self.text_encoder,
             tracks=self.tracks,
             videos=test_videos,
+            video_imagebind_ref=self.video_imagebind_ref,
+            video_caption_ref=self.video_caption_ref,
             switch_budget_model=self.switch_budget_model,
         )
 
@@ -395,6 +413,38 @@ class DiscreteDataset:
                 # caption embedding
                 caption = self._create_video_narrative(seg.metadata)
                 seg.caption_embedding = self._get_text_embedding(caption)
+
+    def _calc_video_ref_emb(self, attr: str = "imagebind_embedding"):
+        per_video_avg_embeddings = []
+        for video in self.videos:
+            if not video.segments:
+                continue
+
+            video_segment_embeddings = []
+            for segment in video.segments:
+                if getattr(segment, attr) is None:
+                    continue
+                video_segment_embeddings.append(getattr(segment, attr))
+
+            # Per-video average
+            per_video_avg_embeddings.append(np.mean(video_segment_embeddings, axis=0))
+
+        if not per_video_avg_embeddings:
+            print("  [Warning] No valid video embeddings found")
+            return np.zeros(1024, dtype=np.float32)
+
+        # Across-video average
+        v_ref_raw = np.mean(per_video_avg_embeddings, axis=0)
+
+        # L2 normalization
+        norm = np.linalg.norm(v_ref_raw)
+        if norm > 1e-6:
+            return v_ref_raw / norm
+        else:
+            print(
+                "  [Warning] L2 norm of average video embedding is too small, setting to zero"
+            )
+            return np.zeros(1024, dtype=np.float32)
 
     # --- Accessor Methods ---
 
