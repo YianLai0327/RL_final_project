@@ -143,6 +143,9 @@ class DiscreteDataset:
             switch_budget_model=self.switch_budget_model,
         )
 
+        print(f"Train size: {len(train_ds.videos)}")
+        print(f"Test size: {len(test_ds.videos)}")
+
         return train_ds, test_ds
 
     def _load_initial_data(self):

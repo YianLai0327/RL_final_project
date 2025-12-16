@@ -153,7 +153,7 @@ def find_file_fuzzy(target_name, file_list, cutoff=0.5):
 
 def label_music_changes(data_dir, dry_run=False):
     captions_path = os.path.join(data_dir, "video_captions.json")
-    gt_path = os.path.join(data_dir, "video_audio_gt.json")
+    gt_path = os.path.join(data_dir, "video_switch_gt.json")
 
     if not os.path.exists(captions_path):
         print(f"Warning: {captions_path} not found. Skipping labeling.")
@@ -378,13 +378,13 @@ def main():
         "dirs", nargs="*", help="Directories to process (e.g. small, medium)."
     )
     parser.add_argument(
-        "--process_video", action="store_true", help="Process video segments."
+        "--process-video", action="store_true", help="Process video segments."
     )
     parser.add_argument(
-        "--process_music", action="store_true", help="Process full music tracks."
+        "--process-music", action="store_true", help="Process full music tracks."
     )
     parser.add_argument(
-        "--label_music",
+        "--label-music",
         action="store_true",
         help="Label video segments with music changes from GT.",
     )

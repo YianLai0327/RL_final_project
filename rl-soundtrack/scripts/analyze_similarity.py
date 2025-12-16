@@ -25,7 +25,7 @@ def truncate(filename, max_length=20):
     return filename
 
 
-def calc_video_ref_embedding(dataset):
+def calc_video_ref_embedding(dataset, embedding_type: str):
     per_video_avg_embeddings = []
     for video in dataset.videos:
         if not video.segments:
@@ -33,7 +33,13 @@ def calc_video_ref_embedding(dataset):
 
         video_segment_embeddings = []
         for segment in video.segments:
-            video_segment_embeddings.append(segment.caption_embedding)
+            if embedding_type == "caption" and segment.caption_embedding is not None:
+                video_segment_embeddings.append(segment.caption_embedding)
+            elif (
+                embedding_type == "imagebind"
+                and segment.imagebind_embedding is not None
+            ):
+                video_segment_embeddings.append(segment.imagebind_embedding)
 
         # Per-video average
         per_video_avg_embeddings.append(np.mean(video_segment_embeddings, axis=0))
@@ -56,7 +62,7 @@ def compute_similarity(video_emb, music_embs):
     return np.dot(m, v)
 
 
-def analyze_video_similarity(video, v_ref_emb, music_embs_matrix):
+def analyze_video_similarity(video, v_ref_emb, music_embs_matrix, embedding_type):
     """
     Computes similarities for all segments of a video against all music.
     Returns:
@@ -71,8 +77,18 @@ def analyze_video_similarity(video, v_ref_emb, music_embs_matrix):
     for seg in video.segments:
         # Get video embedding
         # seg.caption_embedding is already preloaded by load_embeddings()
-        if seg.caption_embedding is not None and seg.caption_embedding.shape[0] > 0:
+        if (
+            embedding_type == "caption"
+            and seg.caption_embedding is not None
+            and seg.caption_embedding.shape[0] > 0
+        ):
             v_emb = seg.caption_embedding
+        elif (
+            embedding_type == "imagebind"
+            and seg.imagebind_embedding is not None
+            and seg.imagebind_embedding.shape[0] > 0
+        ):
+            v_emb = seg.imagebind_embedding
         else:
             v_emb = np.zeros(1024, dtype=np.float32)
 
@@ -95,8 +111,10 @@ def analyze_video_similarity(video, v_ref_emb, music_embs_matrix):
     }
 
 
-def plot_similarities(all_video_results, dataset, save_dir):
-    save_path = pathlib.Path(save_dir).joinpath("dcaption_similarity_analysis.png")
+def plot_similarities(all_video_results, dataset, save_dir, embedding_type: str):
+    save_path = pathlib.Path(save_dir).joinpath(
+        f"d_{embedding_type}_similarity_analysis.png"
+    )
 
     num_videos = len(all_video_results)
     if num_videos == 0:
@@ -132,7 +150,7 @@ def plot_similarities(all_video_results, dataset, save_dir):
         truncated_filename = filename if len(filename) <= 30 else filename[:27] + "..."
         ax.set_title(f"{truncated_filename}")
         ax.set_xlabel("Segment Index")
-        ax.set_ylabel("Caption Cosine Similarity")
+        ax.set_ylabel(f"{embedding_type.title()} Cosine Similarity")
 
         stats = result["stats"]
         x = range(len(stats["max"]))
@@ -215,10 +233,17 @@ def main():
     )
     parser.add_argument(
         "-d",
-        "--dataset_dir",
+        "--dataset-dir",
         type=str,
         default="data/medium",
         help="Path to dataset dir",
+    )
+    parser.add_argument(
+        "-e",
+        "--embedding-type",
+        type=str,
+        default="caption",
+        help="Type of embedding to use (caption, imagebind)",
     )
     args = parser.parse_args()
 
@@ -238,8 +263,19 @@ def main():
 
     valid_tracks = 0
     for track in dataset.tracks:
-        if track.caption_embedding is not None and track.caption_embedding.shape[0] > 0:
+        if (
+            args.embedding_type == "caption"
+            and track.caption_embedding is not None
+            and track.caption_embedding.shape[0] > 0
+        ):
             music_matrix.append(normalize(track.caption_embedding))
+            valid_tracks += 1
+        elif (
+            args.embedding_type == "imagebind"
+            and track.imagebind_embedding is not None
+            and track.imagebind_embedding.shape[0] > 0
+        ):
+            music_matrix.append(normalize(track.imagebind_embedding))
             valid_tracks += 1
         else:
             # Handle missing embeddings
@@ -251,16 +287,20 @@ def main():
     all_video_results = []
 
     print("Analyzing videos...")
-    video_ref_emb = calc_video_ref_embedding(dataset)
+    video_ref_emb = calc_video_ref_embedding(dataset, args.embedding_type)
     for video in tqdm(dataset.videos):
-        stats = analyze_video_similarity(video, video_ref_emb, music_matrix)
+        stats = analyze_video_similarity(
+            video, video_ref_emb, music_matrix, args.embedding_type
+        )
         all_video_results.append({"filename": video.filename, "stats": stats})
 
     # Sort by filename for consistent plotting
     all_video_results.sort(key=lambda x: x["filename"])
 
     print("Plotting...")
-    plot_similarities(all_video_results, dataset, str(dataset_path))
+    plot_similarities(
+        all_video_results, dataset, str(dataset_path), args.embedding_type
+    )
 
     print_top_matches(all_video_results, dataset)
 

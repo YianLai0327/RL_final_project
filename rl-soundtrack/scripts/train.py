@@ -162,7 +162,7 @@ def main():
             device=train_config["device"],
             **agent_config["algo_kwargs"],
         )
-    print(model.policy)
+    # print(model.policy)
 
     # Train agent
     wandb_callback = WandbCallback(verbose=2)

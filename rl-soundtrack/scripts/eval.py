@@ -3,6 +3,7 @@ import math
 import os
 import pathlib
 from pathlib import Path
+from typing import List
 
 import gymnasium as gym
 import matplotlib.pyplot as plt
@@ -29,18 +30,20 @@ import time
 
 
 class GreedyAgent:
-    def __init__(self, env, objective: str | None = None):
+    def __init__(self, env, objective: List[str] | str | None = None):
         self.env = env
         self.objective = objective
 
     def predict(self, obs, deterministic=True):
-        rewards = self.env.unwrapped.get_action_rewards(self.objective)
-        action = int(np.argmax(rewards))
+        rewards: np.ndarray = self.env.unwrapped.get_action_rewards(self.objective)
+        reversed_rewards = rewards[::-1]
+        action = int(np.argmax(reversed_rewards))
+        action = self.env.unwrapped.n_audio - action
         return np.array([action]), None
 
 
 class OracleConstrainedGreedyAgent:
-    def __init__(self, env, C_target, objective=None):
+    def __init__(self, env, C_target, objective: List[str] | str | None = None):
         self.env = env
         self.C_target = C_target
         self.objective = objective
@@ -255,7 +258,7 @@ def evaluation(
             objective = None
             agent_name = "Greedy"
         else:
-            objective = parts[1]
+            objective = parts[1].split(",")
             print(f"Using Greedy Agent with objective: {objective}")
             agent_name = f"Greedy_{objective}"
         model = GreedyAgent(env, objective=objective)
@@ -267,7 +270,7 @@ def evaluation(
             agent_name = f"OracleConstrainedGreedy_{C_target}Switch"
             print(f"Using Oracle Constrained Greedy Agent with C_target: {C_target}")
         else:
-            objective = parts[2]
+            objective = parts[2].split(",")
             agent_name = f"OracleConstrainedGreedy_{C_target}Switch_{objective}"
             print(
                 f"Using Oracle Constrained Greedy Agent with C_target: {C_target} and objective: {objective}"
@@ -567,29 +570,27 @@ def plot_combined_metric_distribution(
     for j in range(i + 1, len(axes)):
         axes[j].axis("off")
 
-    plt.tight_layout()
-    plt.savefig(save_path, dpi=300)
-    plt.close()
+    fig.tight_layout()
+    fig.savefig(save_path, dpi=300)
     print(f"Combined {metric_name} distribution plot saved to {save_path}")
 
     # --- CDF Plot ---
     title_cdf = f"combined_cdf_{metric_name.replace(' ', '_').lower()}.png"
     save_path_cdf = save_dir.joinpath(title_cdf)
 
-    plt.figure(figsize=(10, 8))
+    fig_cdf, ax_cdf = plt.subplots(1, 1, figsize=(5, 4))
     for agent_name, values in agent_metrics.items():
         sorted_vals = np.sort(values)
         y_vals = np.arange(1, len(sorted_vals) + 1) / len(sorted_vals)
-        plt.plot(sorted_vals, y_vals, marker=".", linestyle="-", label=agent_name)
+        ax_cdf.plot(y_vals, sorted_vals, marker=".", linestyle="-", label=agent_name)
 
-    plt.title(f"CDF of {metric_name}")
-    plt.xlabel(metric_name)
-    plt.ylabel("Cumulative Probability")
-    plt.grid(True, alpha=0.3)
-    plt.legend()
-    plt.tight_layout()
-    plt.savefig(save_path_cdf, dpi=300)
-    plt.close()
+    ax_cdf.set_title(f"CDF of {metric_name}")
+    ax_cdf.set_xlabel("Cumulative Probability")
+    ax_cdf.set_ylabel(metric_name)
+    ax_cdf.grid(True, alpha=0.3)
+    # ax_cdf.legend()
+    fig_cdf.tight_layout()
+    fig_cdf.savefig(save_path_cdf, dpi=300)
     print(f"Combined {metric_name} CDF plot saved to {save_path_cdf}")
 
 
@@ -622,8 +623,11 @@ def main():
         "-n", "--episode", type=int, default=5, help="Number of episodes to evaluate"
     )
     parser.add_argument(
+        "-s", "--set", type=str, default="test", help="Dataset set to evaluate"
+    )
+    parser.add_argument(
         "-d",
-        "--dataset_dir",
+        "--dataset-dir",
         type=str,
         default="data/medium",
         help="Path to dataset dir",
@@ -653,19 +657,17 @@ def main():
     print(
         "Preloading shared DiscreteDataset to avoid redundant loading in subprocesses..."
     )
-    shared_dataset = DiscreteDataset(
-        data_dir=str(Path.cwd().joinpath(args.dataset_dir))
+    dataset = DiscreteDataset(data_dir=str(Path.cwd().joinpath(args.dataset_dir)))
+    train_ds, test_ds = dataset.split(
+        split_ratio=config["train"]["split_ratio"], seed=config["train"]["seed"]
     )
-
-    # Inject into class for SubprocVecEnv (which forks)
-    DiscreteEnv.shared_dataset = shared_dataset
 
     # Create environment
     env = gym.make(
         config["env"]["id"],
         render_mode="human",
         random=False,
-        dataset=shared_dataset,
+        dataset=train_ds if args.set == "train" else test_ds,
         **config["env"]["kwargs"],
     )
     env.reset(seed=config["train"]["seed"])

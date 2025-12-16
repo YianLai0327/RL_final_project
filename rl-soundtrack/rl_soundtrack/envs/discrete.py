@@ -1,5 +1,5 @@
 import os
-from typing import Dict, Optional, cast
+from typing import Dict, List, Optional, cast
 
 import gymnasium as gym
 import numpy as np
@@ -247,8 +247,8 @@ class DiscreteEnv(gym.Env):
         smoothness_gating_factor = 1
         smoothness_reward = 1
         ## global rewards
-        theme_reward = 1
-        switch_reward = 1
+        theme_reward = 0
+        switch_reward = 0
 
         # Logic for determining actual audio used this step
         current_audio_idx = None
@@ -334,7 +334,8 @@ class DiscreteEnv(gym.Env):
             -0.01 * max(0.0, self.current_audio_offset - seg_duration)
         )
         alignment_reward = (
-            alignment_gating_factor
+            # alignment_gating_factor
+            1
             * (
                 (va_imagebind_similarity - va_imagebind_ref_similarity + 0.2) * 2.5
                 + (va_captions_similarity - va_captions_ref_similarity + 0.3) * 2.5
@@ -462,7 +463,9 @@ class DiscreteEnv(gym.Env):
 
         return next_obs, float(reward), terminated, truncated, info
 
-    def get_action_rewards(self, key_from_info: str | None = None) -> np.ndarray:
+    def get_action_rewards(
+        self, key_from_info: str | List[str] | None = None
+    ) -> np.ndarray:
         """
         Calculates the reward for all possible actions without modifying the state.
         Returns:
@@ -498,7 +501,11 @@ class DiscreteEnv(gym.Env):
             _, reward, _, _, info = self.step(action)
             rewards[action] = reward
             if key_from_info is not None:
-                rewards[action] = info[key_from_info]
+                if isinstance(key_from_info, list):
+                    for key in key_from_info:
+                        rewards[action] += info[key]
+                else:
+                    rewards[action] = info[key_from_info]
 
             # Restore state
             self.current_step = saved_state["current_step"]

@@ -15,7 +15,7 @@ agent:
 train:
   n_envs: 8
   total_timesteps: 10000000
-  n_eval_episodes: 5
+  n_eval_episodes: 20
   eval_freq: 100000
   save_freq: 1000000
   seed: 42

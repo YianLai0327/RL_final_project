@@ -34,6 +34,8 @@ def load_config(config_path):
         data["env"] = {}
     if "id" not in data["env"]:
         data["env"]["id"] = "Discrete-v0"
+    if "kwargs" not in data["env"]:
+        data["env"]["kwargs"] = {}
 
     # agent
     if "agent" not in data:
@@ -62,5 +64,7 @@ def load_config(config_path):
         data["train"]["log_path"] = "logs/"
     if "device" not in data["train"]:
         data["train"]["device"] = "auto"
+    if "split_ratio" not in data["train"]:
+        data["train"]["split_ratio"] = 0.9
 
     return data
