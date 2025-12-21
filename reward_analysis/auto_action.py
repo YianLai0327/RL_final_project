@@ -330,29 +330,42 @@ def visualize_matrix(mat):
     mat = np.asarray(mat)
     n = mat.shape[0]
 
-    # softmax along entire matrix (for color intensity)
-    # exp_mat = np.exp(mat - mat.max())
-    # mat_soft = exp_mat / exp_mat.sum()
+    ranks = np.argsort(np.argsort(-mat, axis=1), axis=1) + 1
 
-    # y 軸 (audio axis) softmax
-    # exp_mat = np.exp(mat - mat.max(axis=1, keepdims=True))
-    # mat_soft = exp_mat / exp_mat.sum(axis=1, keepdims=True)
+    # ---------- Rank-based background ----------
+    # Normalize ranks to [0, 1] for colormap
+
+    cmap = LinearSegmentedColormap.from_list(
+        "rank_green",
+        ["darkgreen", "white"]  # best → worst
+    )
 
 
-    cmap = LinearSegmentedColormap.from_list("white_green", ["white", "green"])
+    # cmap = LinearSegmentedColormap.from_list("white_green", ["white", "green"])
 
     plt.figure()
 
-    im = plt.imshow(mat, cmap=cmap)
+    im = plt.imshow(ranks, cmap=cmap, vmin=1, vmax=n)
     cbar = plt.colorbar(im)
-    cbar.set_label("reward (Normalization)")
+    cbar.set_label("Rank (row-wise)")
+
+    def ordinal(k):
+        if 10 <= k % 100 <= 20:
+            return f"{k}th"
+        return f"{k}{ {1:'st',2:'nd',3:'rd'}.get(k%10,'th') }"
 
     for i in range(n):
         for j in range(n):
-            plt.text(j, i, f"{mat[i, j]:.2f}",
-                     ha="center", va="center", color="black")
+            plt.text(
+                j, i,
+                f"{mat[i, j]:.2f}\n{ordinal(ranks[i, j])}",
+                ha="center",
+                va="center",
+                color="black",
+                fontsize=9
+            )
 
-    plt.title("Confusion Matrix (Normalization along video axis)")
+    plt.title("Reward Confusion Matrix (Rank-based coloring, row-wise)")
     plt.xlabel("Audio index")
     plt.ylabel("Video index")
 
@@ -427,7 +440,7 @@ def main():
     for idx in range(7):
         for jdx in range(7):
             confusion_matrix[idx][jdx] = explorer.run_episode(video_idx=idx, audio_idx=jdx)
-    confusion_matrix = confusion_matrix / confusion_matrix.sum(axis=1, keepdims=True)
+    # confusion_matrix = confusion_matrix / confusion_matrix.sum(axis=1, keepdims=True)
     print(f"\nConfusion Matrix:\n{confusion_matrix}")
     visualize_matrix(confusion_matrix)
 

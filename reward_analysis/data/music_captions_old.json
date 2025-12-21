@@ -1,0 +1,966 @@
+[
+  {
+    "rich_caption": "This is a dark and intense cinematic track, perfect for scenes requiring suspense and drama. The heavy percussion and distorted sound design create a sense of impending doom.",
+    "mood_tags": [
+      "Dark",
+      "Cinematic"
+    ],
+    "has_vocals": false,
+    "instrumentation": [
+      "Percussion",
+      "Synth",
+      "Sound Effects",
+      "Distorted Sounds"
+    ],
+    "filename": "24hrs in the Highest City on Earth with No Laws (my scariest travel experience)_0.mp3",
+    "bpm": 117.5,
+    "rms": 0.128
+  },
+  {
+    "rich_caption": "This is a dark and suspenseful cinematic track, perfect for scenes requiring tension and drama. The heavy percussion and ominous sound design create a sense of foreboding and anticipation.",
+    "mood_tags": [
+      "Dark",
+      "Cinematic"
+    ],
+    "has_vocals": false,
+    "instrumentation": [
+      "Percussion",
+      "Sound Effects",
+      "Synth"
+    ],
+    "filename": "24hrs in the Highest City on Earth with No Laws (my scariest travel experience)_1.mp3",
+    "bpm": 99.4,
+    "rms": 0.0192
+  },
+  {
+    "rich_caption": "A driving, cinematic track with a pulsing synth bass, dramatic strings, and a sense of urgency. Perfect for action sequences or suspenseful scenes.",
+    "mood_tags": [
+      "Epic",
+      "Cinematic"
+    ],
+    "has_vocals": false,
+    "instrumentation": [
+      "Synth bass",
+      "Strings",
+      "Drums",
+      "Percussion"
+    ],
+    "filename": "24hrs in the Highest City on Earth with No Laws (my scariest travel experience)_2.mp3",
+    "bpm": 95.7,
+    "rms": 0.1093
+  },
+  {
+    "rich_caption": "A dark and mysterious cinematic piece, featuring deep drones and unsettling sound design, perfect for suspenseful scenes.",
+    "mood_tags": [
+      "Dark",
+      "Cinematic"
+    ],
+    "has_vocals": false,
+    "instrumentation": [
+      "Drone",
+      "Sound Effects",
+      "Synth"
+    ],
+    "filename": "24hrs in the Highest City on Earth with No Laws (my scariest travel experience)_3.mp3",
+    "bpm": 99.4,
+    "rms": 0.0496
+  },
+  {
+    "rich_caption": "A suspenseful and mysterious track featuring a ticking clock sound, creating a sense of urgency and anticipation. Ideal for scenes requiring tension or a countdown.",
+    "mood_tags": [
+      "Dark",
+      "Cinematic"
+    ],
+    "has_vocals": false,
+    "instrumentation": [
+      "Clock Ticking",
+      "Strings",
+      "Synth"
+    ],
+    "filename": "24hrs in the Highest City on Earth with No Laws (my scariest travel experience)_4.mp3",
+    "bpm": 117.5,
+    "rms": 0.0715
+  },
+  {
+    "rich_caption": "This is a dark and mysterious cinematic track, perfect for suspenseful scenes or dramatic moments. The driving rhythm and haunting melodies create a sense of unease and tension.",
+    "mood_tags": [
+      "Dark",
+      "Cinematic"
+    ],
+    "has_vocals": false,
+    "instrumentation": [
+      "Strings",
+      "Percussion",
+      "Synth"
+    ],
+    "filename": "24hrs in the Highest City on Earth with No Laws (my scariest travel experience)_5.mp3",
+    "bpm": 99.4,
+    "rms": 0.0541
+  },
+  {
+    "rich_caption": "A powerful and dramatic orchestral piece, perfect for epic scenes and grand moments. Features soaring strings, impactful percussion, and a sense of adventure.",
+    "mood_tags": [
+      "Epic",
+      "Cinematic"
+    ],
+    "has_vocals": false,
+    "instrumentation": [
+      "Orchestra",
+      "Strings",
+      "Percussion",
+      "Brass"
+    ],
+    "filename": "24hrs in the Highest City on Earth with No Laws (my scariest travel experience)_6.mp3",
+    "bpm": 129.2,
+    "rms": 0.0843
+  },
+  {
+    "rich_caption": "A dramatic and suspenseful orchestral piece, perfect for building tension in cinematic scenes. Features driving strings, powerful brass, and a sense of impending doom.",
+    "mood_tags": [
+      "Dark",
+      "Cinematic"
+    ],
+    "has_vocals": false,
+    "instrumentation": [
+      "Strings",
+      "Brass",
+      "Percussion"
+    ],
+    "filename": "ABANDONED 5-STAR Prison Pablo Escobar Built For Himself (Revealed by Ex-Drug Dealer)_0.mp3",
+    "bpm": 143.6,
+    "rms": 0.0392
+  },
+  {
+    "rich_caption": "A nostalgic and romantic waltz, perfect for scenes of love, reflection, or historical settings. The accordion and piano create a tender and heartfelt atmosphere.",
+    "mood_tags": [
+      "Romantic",
+      "Classy"
+    ],
+    "has_vocals": false,
+    "instrumentation": [
+      "Accordion",
+      "Piano",
+      "Strings"
+    ],
+    "filename": "ABANDONED 5-STAR Prison Pablo Escobar Built For Himself (Revealed by Ex-Drug Dealer)_1.mp3",
+    "bpm": 112.3,
+    "rms": 0.0225
+  },
+  {
+    "rich_caption": "This is a meditative and relaxing instrumental piece featuring the gentle sounds of a handpan. Its calming rhythm and ethereal tones create a peaceful and introspective atmosphere, perfect for moments of reflection or relaxation.",
+    "mood_tags": [
+      "Neutral"
+    ],
+    "has_vocals": false,
+    "instrumentation": [
+      "handpan"
+    ],
+    "filename": "ABANDONED 5-STAR Prison Pablo Escobar Built For Himself (Revealed by Ex-Drug Dealer)_2.mp3",
+    "bpm": 99.4,
+    "rms": 0.0442
+  },
+  {
+    "rich_caption": "A melancholic and reflective piano piece, perfect for introspective moments and emotional storytelling. The gentle melody evokes a sense of longing and nostalgia.",
+    "mood_tags": [
+      "Cinematic",
+      "Neutral"
+    ],
+    "has_vocals": false,
+    "instrumentation": [
+      "Piano"
+    ],
+    "filename": "ABANDONED 5-STAR Prison Pablo Escobar Built For Himself (Revealed by Ex-Drug Dealer)_3.mp3",
+    "bpm": 99.4,
+    "rms": 0.0148
+  },
+  {
+    "rich_caption": "A driving, energetic bluegrass track featuring banjo, acoustic guitar, and upright bass, perfect for scenes of rural landscapes, fast-paced action, or comedic moments.",
+    "mood_tags": [
+      "Happy",
+      "Playful"
+    ],
+    "has_vocals": false,
+    "instrumentation": [
+      "banjo",
+      "acoustic guitar",
+      "upright bass"
+    ],
+    "filename": "ABANDONED 5-STAR Prison Pablo Escobar Built For Himself (Revealed by Ex-Drug Dealer)_4.mp3",
+    "bpm": 136.0,
+    "rms": 0.0484
+  },
+  {
+    "rich_caption": "A driving and energetic electronic track with a retro synthwave feel, perfect for action sequences or high-speed chases.",
+    "mood_tags": [
+      "Electronic",
+      "Epic"
+    ],
+    "has_vocals": false,
+    "instrumentation": [
+      "Synthesizers",
+      "Drums",
+      "Bass"
+    ],
+    "filename": "ABANDONED 5-STAR Prison Pablo Escobar Built For Himself (Revealed by Ex-Drug Dealer)_5.mp3",
+    "bpm": 112.3,
+    "rms": 0.138
+  },
+  {
+    "rich_caption": "A driving and rhythmic percussion track, perfect for scenes needing a sense of urgency or momentum. The tribal feel adds an exotic and adventurous touch.",
+    "mood_tags": [
+      "Epic",
+      "World"
+    ],
+    "has_vocals": false,
+    "instrumentation": [
+      "Percussion",
+      "Drums",
+      "Tribal Instruments"
+    ],
+    "filename": "ABANDONED 5-STAR Prison Pablo Escobar Built For Himself (Revealed by Ex-Drug Dealer)_6.mp3",
+    "bpm": 103.4,
+    "rms": 0.1237
+  },
+  {
+    "rich_caption": "A driving and intense electronic track with a futuristic feel, perfect for action sequences or high-energy scenes.",
+    "mood_tags": [
+      "Electronic",
+      "Epic"
+    ],
+    "has_vocals": false,
+    "instrumentation": [
+      "Synthesizers",
+      "Drums",
+      "Bass"
+    ],
+    "filename": "ABANDONED 5-STAR Prison Pablo Escobar Built For Himself (Revealed by Ex-Drug Dealer)_7.mp3",
+    "bpm": 136.0,
+    "rms": 0.0652
+  },
+  {
+    "rich_caption": "This is a dramatic and suspenseful orchestral piece, perfect for scenes needing a touch of tension and grandeur. The use of brass and strings creates a cinematic atmosphere.",
+    "mood_tags": [
+      "Cinematic",
+      "Epic"
+    ],
+    "has_vocals": false,
+    "instrumentation": [
+      "Orchestra",
+      "Brass",
+      "Strings"
+    ],
+    "filename": "ABANDONED 5-STAR Prison Pablo Escobar Built For Himself (Revealed by Ex-Drug Dealer)_8.mp3",
+    "bpm": 112.3,
+    "rms": 0.045
+  },
+  {
+    "rich_caption": "A dramatic and suspenseful cinematic track, featuring a driving rhythm and building intensity, perfect for action sequences or tense scenes.",
+    "mood_tags": [
+      "Dark",
+      "Cinematic"
+    ],
+    "has_vocals": false,
+    "instrumentation": [
+      "Strings",
+      "Percussion",
+      "Brass",
+      "Synth"
+    ],
+    "filename": "ABANDONED 5-STAR Prison Pablo Escobar Built For Himself (Revealed by Ex-Drug Dealer)_9.mp3",
+    "bpm": 136.0,
+    "rms": 0.0874
+  },
+  {
+    "rich_caption": "A high-energy, driving bluegrass track featuring fast-paced banjo, mandolin, and fiddle. Perfect for scenes needing a lively and adventurous feel.",
+    "mood_tags": [
+      "Happy",
+      "Playful"
+    ],
+    "has_vocals": false,
+    "instrumentation": [
+      "banjo",
+      "mandolin",
+      "fiddle",
+      "bass",
+      "guitar"
+    ],
+    "filename": "ABANDONED 5-STAR Prison Pablo Escobar Built For Himself (Revealed by Ex-Drug Dealer)_10.mp3",
+    "bpm": 152.0,
+    "rms": 0.0864
+  },
+  {
+    "rich_caption": "This is a meditative and calming drone piece, featuring the resonant tones of singing bowls. Its slow tempo and sustained notes create a peaceful and introspective atmosphere, ideal for relaxation or contemplation.",
+    "mood_tags": [
+      "Neutral"
+    ],
+    "has_vocals": false,
+    "instrumentation": [
+      "singing bowls"
+    ],
+    "filename": "ABANDONED 5-STAR Prison Pablo Escobar Built For Himself (Revealed by Ex-Drug Dealer)_11.mp3",
+    "bpm": 92.3,
+    "rms": 0.0212
+  },
+  {
+    "rich_caption": "A deep and resonant cinematic drone, perfect for creating a sense of mystery or tension.",
+    "mood_tags": [
+      "Dark",
+      "Cinematic"
+    ],
+    "has_vocals": false,
+    "instrumentation": [
+      "Bass",
+      "Drone"
+    ],
+    "filename": "ABANDONED 5-STAR Prison Pablo Escobar Built For Himself (Revealed by Ex-Drug Dealer)_12.mp3",
+    "bpm": 60.1,
+    "rms": 0.0188
+  },
+  {
+    "rich_caption": "This is a driving and energetic electronic track with a strong beat and futuristic synth sounds. Perfect for action scenes, sports montages, or any project needing a boost of energy.",
+    "mood_tags": [
+      "Electronic",
+      "Epic"
+    ],
+    "has_vocals": false,
+    "instrumentation": [
+      "Synth",
+      "Drums",
+      "Bass"
+    ],
+    "filename": "Finding the Lost Largest Pyramid in the World_0.mp3",
+    "bpm": 99.4,
+    "rms": 0.1091
+  },
+  {
+    "rich_caption": "This is a cinematic and emotional piece, featuring a blend of orchestral elements and a delicate piano melody. It evokes a sense of wonder and reflection, perfect for scenes that require a touch of sentimentality and grandeur.",
+    "mood_tags": [
+      "Cinematic",
+      "Epic"
+    ],
+    "has_vocals": false,
+    "instrumentation": [
+      "Piano",
+      "Strings",
+      "Orchestra"
+    ],
+    "filename": "Finding the Lost Largest Pyramid in the World_1.mp3",
+    "bpm": 123.0,
+    "rms": 0.005
+  },
+  {
+    "rich_caption": "A delicate and melancholic piano piece, perfect for reflective moments and emotional storytelling.",
+    "mood_tags": [
+      "Neutral"
+    ],
+    "has_vocals": false,
+    "instrumentation": [
+      "Piano"
+    ],
+    "filename": "Finding the Lost Largest Pyramid in the World_2.mp3",
+    "bpm": 136.0,
+    "rms": 0.0145
+  },
+  {
+    "rich_caption": "Emotional and reflective piano piece, perfect for introspective moments and heartfelt scenes.",
+    "mood_tags": [
+      "Neutral"
+    ],
+    "has_vocals": false,
+    "instrumentation": [
+      "Piano"
+    ],
+    "filename": "Finding the Lost Largest Pyramid in the World_3.mp3",
+    "bpm": 117.5,
+    "rms": 0.0204
+  },
+  {
+    "rich_caption": "A melancholic and reflective piano piece, perfect for introspective moments or scenes requiring a touch of sadness and beauty.",
+    "mood_tags": [
+      "Cinematic",
+      "Neutral"
+    ],
+    "has_vocals": false,
+    "instrumentation": [
+      "Piano"
+    ],
+    "filename": "Finding the Lost Largest Pyramid in the World_4.mp3",
+    "bpm": 112.3,
+    "rms": 0.0161
+  },
+  {
+    "rich_caption": "This is a high-energy, driving rock track with a strong, distorted guitar riff and a powerful, pounding drum beat. It's perfect for action scenes, chase sequences, or any situation that needs a shot of adrenaline.",
+    "mood_tags": [
+      "Epic",
+      "Dark"
+    ],
+    "has_vocals": false,
+    "instrumentation": [
+      "electric guitar",
+      "drums",
+      "bass"
+    ],
+    "filename": "I Hitchhiked the World's Deadliest Train (20hrs across the Sahara)_0.mp3",
+    "bpm": 143.6,
+    "rms": 0.0399
+  },
+  {
+    "rich_caption": "This is a dark and intense cinematic track, perfect for action scenes or suspenseful moments. The driving percussion and dramatic sound design create a sense of urgency and danger.",
+    "mood_tags": [
+      "Dark",
+      "Cinematic"
+    ],
+    "has_vocals": false,
+    "instrumentation": [
+      "Percussion",
+      "Synth",
+      "Sound Effects"
+    ],
+    "filename": "I Hitchhiked the World's Deadliest Train (20hrs across the Sahara)_1.mp3",
+    "bpm": 117.5,
+    "rms": 0.0212
+  },
+  {
+    "rich_caption": "Energetic and driving Afrobeat track with a strong percussive foundation, perfect for scenes needing a vibrant and rhythmic backdrop.",
+    "mood_tags": [
+      "World",
+      "Happy"
+    ],
+    "has_vocals": false,
+    "instrumentation": [
+      "Drums",
+      "Percussion",
+      "Bass",
+      "Synth"
+    ],
+    "filename": "I Hitchhiked the World's Deadliest Train (20hrs across the Sahara)_2.mp3",
+    "bpm": 143.6,
+    "rms": 0.0449
+  },
+  {
+    "rich_caption": "A dramatic and intense orchestral piece, perfect for scenes requiring a sense of urgency and impending doom. Features powerful brass and strings.",
+    "mood_tags": [
+      "Dark",
+      "Epic"
+    ],
+    "has_vocals": false,
+    "instrumentation": [
+      "Orchestra",
+      "Brass",
+      "Strings",
+      "Percussion"
+    ],
+    "filename": "I Hitchhiked the World's Deadliest Train (20hrs across the Sahara)_3.mp3",
+    "bpm": 172.3,
+    "rms": 0.0066
+  },
+  {
+    "rich_caption": "Acoustic folk music with a driving rhythm, perfect for travel or adventure scenes.",
+    "mood_tags": [
+      "Happy",
+      "World"
+    ],
+    "has_vocals": false,
+    "instrumentation": [
+      "Acoustic guitar",
+      "Percussion",
+      "Mandolin"
+    ],
+    "filename": "I Hitchhiked the World's Deadliest Train (20hrs across the Sahara)_4.mp3",
+    "bpm": 152.0,
+    "rms": 0.0785
+  },
+  {
+    "rich_caption": "A dark and intense industrial track with heavy percussion and distorted synth elements, creating a sense of urgency and impending doom.",
+    "mood_tags": [
+      "Dark",
+      "Epic"
+    ],
+    "has_vocals": false,
+    "instrumentation": [
+      "Synth",
+      "Percussion",
+      "Industrial sounds"
+    ],
+    "filename": "I Hitchhiked the World's Deadliest Train (20hrs across the Sahara)_5.mp3",
+    "bpm": 117.5,
+    "rms": 0.1585
+  },
+  {
+    "rich_caption": "A driving and intense electronic track with a heavy, distorted bassline and a relentless, pounding beat, creating a dark and aggressive atmosphere.",
+    "mood_tags": [
+      "Dark",
+      "Electronic"
+    ],
+    "has_vocals": false,
+    "instrumentation": [
+      "Synthesizer",
+      "Bass",
+      "Drums",
+      "Electronic Percussion"
+    ],
+    "filename": "I Hitchhiked the World's Deadliest Train (20hrs across the Sahara)_6.mp3",
+    "bpm": 117.5,
+    "rms": 0.0381
+  },
+  {
+    "rich_caption": "A tense and dramatic orchestral piece, perfect for building suspense or highlighting a pivotal moment. Features driving strings, powerful brass, and subtle percussion.",
+    "mood_tags": [
+      "Dark",
+      "Cinematic"
+    ],
+    "has_vocals": false,
+    "instrumentation": [
+      "Strings",
+      "Brass",
+      "Percussion"
+    ],
+    "filename": "Spinning The Globe And Flying Wherever It Lands_0.mp3",
+    "bpm": 117.5,
+    "rms": 0.0872
+  },
+  {
+    "rich_caption": "A gentle and reflective piano piece, perfect for moments of introspection and calm. Its simple melody and soft dynamics create a peaceful and serene atmosphere.",
+    "mood_tags": [
+      "Neutral"
+    ],
+    "has_vocals": false,
+    "instrumentation": [
+      "piano"
+    ],
+    "filename": "Spinning The Globe And Flying Wherever It Lands_1.mp3",
+    "bpm": 92.3,
+    "rms": 0.0184
+  },
+  {
+    "rich_caption": "Energetic and driving electronic track with a tribal feel, featuring a strong beat and rhythmic percussion.",
+    "mood_tags": [
+      "Electronic",
+      "Epic"
+    ],
+    "has_vocals": false,
+    "instrumentation": [
+      "Synthesizer",
+      "Percussion",
+      "Drums"
+    ],
+    "filename": "Spinning The Globe And Flying Wherever It Lands_2.mp3",
+    "bpm": 136.0,
+    "rms": 0.0084
+  },
+  {
+    "rich_caption": "A lively and upbeat polka track, perfect for adding a touch of whimsy and fun to any scene. Features a prominent accordion melody and a driving rhythm.",
+    "mood_tags": [
+      "Happy",
+      "Playful"
+    ],
+    "has_vocals": false,
+    "instrumentation": [
+      "Accordion",
+      "Tuba",
+      "Drums",
+      "Clarinet"
+    ],
+    "filename": "Spinning The Globe And Flying Wherever It Lands_3.mp3",
+    "bpm": 136.0,
+    "rms": 0.0129
+  },
+  {
+    "rich_caption": "A tense and dramatic orchestral piece, perfect for building suspense in a thriller or action scene.",
+    "mood_tags": [
+      "Dark",
+      "Cinematic"
+    ],
+    "has_vocals": false,
+    "instrumentation": [
+      "Strings",
+      "Brass",
+      "Percussion"
+    ],
+    "filename": "Spinning The Globe And Flying Wherever It Lands_4.mp3",
+    "bpm": 117.5,
+    "rms": 0.0643
+  },
+  {
+    "rich_caption": "This is a driving, funky instrumental track with a strong bassline and a retro vibe. Perfect for action scenes or chase sequences.",
+    "mood_tags": [
+      "Playful"
+    ],
+    "has_vocals": false,
+    "instrumentation": [
+      "Bass",
+      "Drums",
+      "Guitar",
+      "Synth"
+    ],
+    "filename": "Spinning The Globe And Flying Wherever It Lands_5.mp3",
+    "bpm": 99.4,
+    "rms": 0.0298
+  },
+  {
+    "rich_caption": "Acoustic jazz with a walking bass line, brushed drums, and a vibraphone melody, creating a sophisticated and relaxed atmosphere.",
+    "mood_tags": [
+      "Classy",
+      "Neutral"
+    ],
+    "has_vocals": false,
+    "instrumentation": [
+      "Vibraphone",
+      "Double Bass",
+      "Drums"
+    ],
+    "filename": "Spinning The Globe And Flying Wherever It Lands_6.mp3",
+    "bpm": 129.2,
+    "rms": 0.0238
+  },
+  {
+    "rich_caption": "Acoustic blues track featuring slide guitar, harmonica, and a driving rhythm section, perfect for scenes needing a touch of Americana or a road trip vibe.",
+    "mood_tags": [
+      "Neutral"
+    ],
+    "has_vocals": false,
+    "instrumentation": [
+      "Acoustic guitar",
+      "Slide guitar",
+      "Harmonica",
+      "Drums",
+      "Bass"
+    ],
+    "filename": "Spinning The Globe And Flying Wherever It Lands_7.mp3",
+    "bpm": 107.7,
+    "rms": 0.036
+  },
+  {
+    "rich_caption": "This is a driving, energetic funk track with a strong bassline and a classic drum machine beat. Perfect for scenes needing a retro or urban feel.",
+    "mood_tags": [
+      "Playful"
+    ],
+    "has_vocals": false,
+    "instrumentation": [
+      "Bass",
+      "Drums",
+      "Synth"
+    ],
+    "filename": "Spinning The Globe And Flying Wherever It Lands_8.mp3",
+    "bpm": 103.4,
+    "rms": 0.0159
+  },
+  {
+    "rich_caption": "Energetic and driving Celtic punk, perfect for high-energy scenes and fast-paced action.",
+    "mood_tags": [
+      "Epic",
+      "Happy"
+    ],
+    "has_vocals": false,
+    "instrumentation": [
+      "Accordion",
+      "Drums",
+      "Bass",
+      "Guitar"
+    ],
+    "filename": "Spinning The Globe And Flying Wherever It Lands_9.mp3",
+    "bpm": 152.0,
+    "rms": 0.0568
+  },
+  {
+    "rich_caption": "A dramatic and suspenseful orchestral piece, perfect for scenes requiring tension and anticipation.",
+    "mood_tags": [
+      "Cinematic",
+      "Dark"
+    ],
+    "has_vocals": false,
+    "instrumentation": [
+      "Strings",
+      "Brass",
+      "Percussion"
+    ],
+    "filename": "Spinning The Globe And Flying Wherever It Lands_10.mp3",
+    "bpm": 136.0,
+    "rms": 0.0287
+  },
+  {
+    "rich_caption": "A driving and energetic bluegrass track featuring banjo, mandolin, and acoustic guitar, perfect for scenes of rural landscapes, fast-paced action, or a touch of Americana.",
+    "mood_tags": [
+      "Happy",
+      "Playful"
+    ],
+    "has_vocals": false,
+    "instrumentation": [
+      "banjo",
+      "mandolin",
+      "acoustic guitar",
+      "bass"
+    ],
+    "filename": "Spinning The Globe And Flying Wherever It Lands_11.mp3",
+    "bpm": 129.2,
+    "rms": 0.0769
+  },
+  {
+    "rich_caption": "Energetic trap beat with a driving rhythm and futuristic synth melodies, perfect for action scenes or high-energy montages.",
+    "mood_tags": [
+      "Electronic",
+      "Epic"
+    ],
+    "has_vocals": false,
+    "instrumentation": [
+      "808",
+      "Synth",
+      "Drums",
+      "Percussion"
+    ],
+    "filename": "Traveling to the Least Visited Country in the World_0.mp3",
+    "bpm": 136.0,
+    "rms": 0.1646
+  },
+  {
+    "rich_caption": "This is a melancholic and reflective piano piece, perfect for introspective moments or scenes requiring a touch of sadness and longing.",
+    "mood_tags": [
+      "Dark",
+      "Cinematic"
+    ],
+    "has_vocals": false,
+    "instrumentation": [
+      "Piano"
+    ],
+    "filename": "Traveling to the Least Visited Country in the World_1.mp3",
+    "bpm": 117.5,
+    "rms": 0.0124
+  },
+  {
+    "rich_caption": "Upbeat and cheerful folk tune with a lively acoustic guitar melody, perfect for scenes of nature, travel, or heartwarming moments.",
+    "mood_tags": [
+      "Happy",
+      "World"
+    ],
+    "has_vocals": false,
+    "instrumentation": [
+      "Acoustic Guitar",
+      "Mandolin",
+      "Bass",
+      "Drums"
+    ],
+    "filename": "Traveling to the Least Visited Country in the World_2.mp3",
+    "bpm": 112.3,
+    "rms": 0.0746
+  },
+  {
+    "rich_caption": "Acoustic folk music with a gentle, heartwarming feel, featuring ukulele and acoustic guitar.",
+    "mood_tags": [
+      "Happy",
+      "Playful"
+    ],
+    "has_vocals": false,
+    "instrumentation": [
+      "Ukulele",
+      "Acoustic Guitar",
+      "Percussion"
+    ],
+    "filename": "Traveling to the Least Visited Country in the World_3.mp3",
+    "bpm": 117.5,
+    "rms": 0.0208
+  },
+  {
+    "rich_caption": "This is a dramatic and suspenseful orchestral piece, perfect for scenes needing a touch of tension and grandeur. The driving strings and powerful brass create a sense of urgency and importance.",
+    "mood_tags": [
+      "Cinematic",
+      "Epic"
+    ],
+    "has_vocals": false,
+    "instrumentation": [
+      "Strings",
+      "Brass",
+      "Percussion"
+    ],
+    "filename": "Traveling to the Least Visited Country in the World_4.mp3",
+    "bpm": 123.0,
+    "rms": 0.0156
+  },
+  {
+    "rich_caption": "This is a playful and quirky instrumental piece featuring a prominent clarinet melody. The overall mood is lighthearted and whimsical, perfect for adding a touch of fun to your project.",
+    "mood_tags": [
+      "Playful"
+    ],
+    "has_vocals": false,
+    "instrumentation": [
+      "Clarinet",
+      "Accordion",
+      "Bass",
+      "Drums"
+    ],
+    "filename": "Traveling to the Least Visited Country in the World_5.mp3",
+    "bpm": 143.6,
+    "rms": 0.0201
+  },
+  {
+    "rich_caption": "Aggressive, distorted electronic track with a driving beat, perfect for intense action scenes or high-energy montages.",
+    "mood_tags": [
+      "Dark",
+      "Electronic"
+    ],
+    "has_vocals": false,
+    "instrumentation": [
+      "Synthesizer",
+      "Drums",
+      "Bass"
+    ],
+    "filename": "Traveling to the Least Visited Country in the World_6.mp3",
+    "bpm": 161.5,
+    "rms": 0.1107
+  },
+  {
+    "rich_caption": "A melancholic and reflective piano piece with a slightly haunting quality, perfect for scenes needing a touch of sadness or introspection.",
+    "mood_tags": [
+      "Dark",
+      "Cinematic"
+    ],
+    "has_vocals": false,
+    "instrumentation": [
+      "Piano"
+    ],
+    "filename": "Traveling to the Least Visited Country in the World_7.mp3",
+    "bpm": 112.3,
+    "rms": 0.0308
+  },
+  {
+    "rich_caption": "This is a dramatic and suspenseful orchestral piece, perfect for scenes needing a touch of tension and grandeur. The driving strings and powerful brass create a sense of urgency and importance.",
+    "mood_tags": [
+      "Epic",
+      "Cinematic"
+    ],
+    "has_vocals": false,
+    "instrumentation": [
+      "Strings",
+      "Brass",
+      "Percussion"
+    ],
+    "filename": "Traveling to the Least Visited Country in the World_8.mp3",
+    "bpm": 161.5,
+    "rms": 0.0184
+  },
+  {
+    "rich_caption": "Energetic and driving hip-hop beat with a hard-hitting, bouncy rhythm. Perfect for urban scenes, sports montages, or high-energy action sequences.",
+    "mood_tags": [
+      "Epic",
+      "Electronic"
+    ],
+    "has_vocals": false,
+    "instrumentation": [
+      "808",
+      "Synth",
+      "Drums",
+      "Percussion"
+    ],
+    "filename": "Traveling to the Least Visited Country in the World_9.mp3",
+    "bpm": 152.0,
+    "rms": 0.0572
+  },
+  {
+    "rich_caption": "This is a high-energy, modern rock track with a driving beat, distorted guitars, and a catchy melody. Perfect for action scenes, sports montages, or anything that needs a boost of adrenaline.",
+    "mood_tags": [
+      "Epic",
+      "Happy"
+    ],
+    "has_vocals": false,
+    "instrumentation": [
+      "Electric Guitar",
+      "Drums",
+      "Bass"
+    ],
+    "filename": "Traveling to the Least Visited Country in the World_10.mp3",
+    "bpm": 123.0,
+    "rms": 0.103
+  },
+  {
+    "rich_caption": "A dark and intense cinematic track featuring a powerful brass section and driving percussion, creating a sense of impending doom and epic scale.",
+    "mood_tags": [
+      "Dark",
+      "Epic"
+    ],
+    "has_vocals": false,
+    "instrumentation": [
+      "Brass",
+      "Percussion",
+      "Orchestral elements"
+    ],
+    "filename": "Hunting Nepal's Mad Honey That Makes You Hallucinate - HONEY HUNTERS_0.mp3",
+    "bpm": 129.2,
+    "rms": 0.0648
+  },
+  {
+    "rich_caption": "A meditative and atmospheric piece featuring the gentle sounds of a handpan, creating a calming and introspective mood.",
+    "mood_tags": [
+      "World",
+      "Neutral"
+    ],
+    "has_vocals": false,
+    "instrumentation": [
+      "handpan"
+    ],
+    "filename": "Hunting Nepal's Mad Honey That Makes You Hallucinate - HONEY HUNTERS_1.mp3",
+    "bpm": 107.7,
+    "rms": 0.0384
+  },
+  {
+    "rich_caption": "Acoustic guitar melody with a nostalgic and slightly melancholic feel, perfect for reflective scenes or heartfelt moments.",
+    "mood_tags": [
+      "Romantic",
+      "Neutral"
+    ],
+    "has_vocals": false,
+    "instrumentation": [
+      "Acoustic Guitar"
+    ],
+    "filename": "Hunting Nepal's Mad Honey That Makes You Hallucinate - HONEY HUNTERS_2.mp3",
+    "bpm": 103.4,
+    "rms": 0.0207
+  },
+  {
+    "rich_caption": "This is a suspenseful and mysterious track featuring a blend of traditional and modern elements. The use of ethnic wind instruments and percussion creates a sense of intrigue and tension, perfect for scenes needing a touch of the exotic and unknown.",
+    "mood_tags": [
+      "Dark",
+      "Cinematic"
+    ],
+    "has_vocals": false,
+    "instrumentation": [
+      "Ethnic Wind Instruments",
+      "Percussion",
+      "Strings"
+    ],
+    "filename": "Hunting Nepal's Mad Honey That Makes You Hallucinate - HONEY HUNTERS_3.mp3",
+    "bpm": 117.5,
+    "rms": 0.0534
+  },
+  {
+    "rich_caption": "This is a dramatic and suspenseful cinematic track, perfect for scenes needing a sense of tension and anticipation. The driving percussion and sweeping strings create a powerful and epic atmosphere.",
+    "mood_tags": [
+      "Epic",
+      "Cinematic"
+    ],
+    "has_vocals": false,
+    "instrumentation": [
+      "Strings",
+      "Percussion",
+      "Brass",
+      "Synth"
+    ],
+    "filename": "Hunting Nepal's Mad Honey That Makes You Hallucinate - HONEY HUNTERS_4.mp3",
+    "bpm": 129.2,
+    "rms": 0.0427
+  },
+  {
+    "rich_caption": "This is a driving, percussive track with a tribal feel, perfect for scenes needing a sense of adventure or exotic travel.",
+    "mood_tags": [
+      "World",
+      "Epic"
+    ],
+    "has_vocals": false,
+    "instrumentation": [
+      "Percussion",
+      "Drums",
+      "Ethnic instruments"
+    ],
+    "filename": "Hunting Nepal's Mad Honey That Makes You Hallucinate - HONEY HUNTERS_5.mp3",
+    "bpm": 129.2,
+    "rms": 0.0397
+  }
+]
