@@ -1,6 +1,6 @@
 # Team 12 Final project
 
-## Abstract
+## RL-Soundtrack: Reinforcement Learning for Video-Aware Sequential BGM Recommendation
 This repository implements **RL-Soundtrack: Reinforcement Learning for Video-Aware Sequential BGM Recommendation**. The rest of this README provides step-by-step instructions for environment setup, data collection and preprocessing, model training, and evaluation/inference.
 
 ---
