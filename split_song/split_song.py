@@ -62,7 +62,7 @@ def analyze_bgm_with_confidence(audio_path):
         
     return results
 
-directory_path = 'eval_cut_song'
+directory_path = '100_cut_song'
 # 執行
 data = {}
 for filename in os.listdir(directory_path):
@@ -71,6 +71,6 @@ for filename in os.listdir(directory_path):
     full_path = os.path.join(directory_path, filename)
     file_name, _ = os.path.splitext(filename)
     data[file_name] = analyze_bgm_with_confidence(full_path)
-with open('split_eval.json', 'w', encoding='utf-8') as file:
+with open('split_100.json', 'w', encoding='utf-8') as file:
     # 3. 使用 json.dump() 將資料寫入檔案
     json.dump(data, file, ensure_ascii=False, indent=4)
