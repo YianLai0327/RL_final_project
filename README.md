@@ -25,6 +25,7 @@ Below is a concise description of the main folders in this repository. Some fold
 - `caption_final/` 📝
 
   - Pipelines and scripts for generating audio/video captions (Gemini / Google GenAI based). Most captioning scripts and helper utilities live here.
+  - Note that you have to use **API KEY** in these section.
   - `caption_final/README.md` documents the caption generation steps and requirements.
 
 - `crawl_vlog/` 🌐
