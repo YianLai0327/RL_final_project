@@ -31,6 +31,7 @@ class DiscreteEnv(gym.Env):
         w_theme: float = 0.3,
         random: Optional[bool] = True,
         dataset: Optional[DiscreteDataset] = None,
+        mode: Optional[str] = "train",
         **kwargs,
     ):
         self.render_mode = render_mode
@@ -54,6 +55,7 @@ class DiscreteEnv(gym.Env):
 
         self.random = random
         self.video_idx = 0
+        self.mode = mode
 
         # Copy references for convenience
         self.tracks = self.dataset.tracks
@@ -298,14 +300,15 @@ class DiscreteEnv(gym.Env):
             self.video_caption_ref_emb, music_text_emb
         )
         # Calculate reward
-        alignment_gating_factor = np.exp(
-            -0.01 * max(0.0, self.current_audio_offset - seg_duration)
+        alignment_gating_factor = (
+            np.exp(-0.01 * max(0.0, self.current_audio_offset - seg_duration))
+            if self.mode == "train"
+            else 1
         )
         alignment_reward = (
-            # alignment_gating_factor
-            1
+            alignment_gating_factor
             * (
-                (va_imagebind_similarity - va_imagebind_ref_similarity + 0.2) * 2.5
+                (va_imagebind_similarity - va_imagebind_ref_similarity + 0.2) * 3.0
                 + (va_captions_similarity - va_captions_ref_similarity + 0.3) * 2.5
             )
             / 2.0

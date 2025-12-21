@@ -14,12 +14,12 @@ agent:
 
 train:
   n_envs: 8
-  total_timesteps: 10000000
-  n_eval_episodes: 20
+  total_timesteps: 30000000
+  n_eval_episodes: 40
   eval_freq: 100000
   save_freq: 1000000
-  seed: 42
+  seed: 28
   save_path: logs/
   log_path: logs/
   device: cpu
-  split_ratio: 0.9
+  split_ratio: 0.8

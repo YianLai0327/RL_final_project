@@ -4,6 +4,10 @@ Reinforcement Learning for Video-Aware Sequential BGM Recommendation.
 
 ## Setup
 
+```bash
+cd rl-soundtrack
+```
+
 All the commands are run in the `rl-soundtrack` directory.
 
 1. Create Conda environment:
@@ -28,7 +32,7 @@ All the commands are run in the `rl-soundtrack` directory.
 ```
 rl-soundtrack/
 ├── rl_soundtrack   # Source code.
-│   ├── agents      # RL agents.
+│   ├── dataset     # Dataset for environment.
 │   ├── envs        # Custom Gym environments.
 │   └── utils       # Helper functions.
 ├── configs         # Configuration files.
@@ -36,62 +40,87 @@ rl-soundtrack/
 └── scripts         # Scripts for training and evaluation.
 ```
 
-## Preprocess
+## Dataset
 
-1. Download dataset zip files from [Google Drive](https://drive.google.com/drive/folders/1DCtcJoANZGf51l2wRnLBhO8PnZbknS-p?usp=drive_link), and unzip them in `data/<dataset_name>`.
+### Quick Download
 
-> (If you download the zips to `data/`, you can skip the following step.)
+Manually download dataset zip files from [Google Drive](https://drive.google.com/file/d/1G-fr_DOem0F7SC6OQVWhU7c_1-p310-m/view?usp=sharing), and unzip them. It should create a folder named `data/dataset_198`, and files are put under the folder.
 
-2. Format the dataset:
+Or run the following script to download and unzip:
 
-   ```bash
-   python data/format_dataset.py <dataset_dir>
-   usage: format_dataset.py [-h] [--dry-run] [dirs ...]
+```bash
+bash download.sh
+```
 
-   # example
-   python data/format_dataset.py data/small data/medium
-   ```
+### Preprocess
 
-3. Preprocess embeddings:
+**[Note]** If you build you own dataset rather than download zip dataset from above, you need to preprocess the embeddings and features.
 
-   ```bash
-   python data/calculate_embs.py --process_video --process_music <dataset_dirs>
-   usage: calculate_embs.py [-h] [--process_video] [--process_music] [--dry-run] [--force] [dirs ...]
-
-   # example
-   python data/calculate_embs.py --process_video --process_music data/small data/medium
-   ```
+```bash
+python data/preprocess.py --process_video --process_music --label_music data/dataset_198
+```
 
 ## Train
 
 1. Train the agent:
 
    ```bash
-   python scripts/train.py -d <dataset_dir>
-   usage: train.py [-h] [--id ID] [-c CONFIG] [-d DATASET_DIR]
-
-   # example
-   python scripts/train.py -d data/medium
+   python scripts/train.py -d data/dataset_198
    ```
 
 2. Continue training:
 
    ```bash
-   python scripts/train.py --id <run_id> -d <dataset_dir>
-   usage: train.py [-h] [--id ID] [-c CONFIG] [-d DATASET_DIR]
-
-   # example (find run_id in models/)
-   python scripts/train.py --id 20251208-220756 -d data/medium
+   python scripts/train.py -m logs/<model_id>/last_model -d data/dataset_198
    ```
 
 ## Evaluate
 
-1. Evaluate the agent:
+1. Evaluate the RL agent:
 
    ```bash
-   python scripts/eval.py -m <model_path> -d <dataset_dir>
-   usage: eval.py [-h] [-c CONFIG] -m MODEL [-n EPISODE] [-d DATASET_DIR] [-r]
+   # Training set
+   python scripts/eval.py \
+      -m logs/<model_id>/ \
+      -d data/dataset_198 \
+      -n 632 \
+      -s train \
+      -a rl/best_model
 
-   # example (with total 47 episodes and rendering)
-   python scripts/eval.py -m models/20251208-220756/best_model -n 47 -r -d data/medium
+   # Testing set
+   python scripts/eval.py \
+      -m logs/<model_id>/ \
+      -d data/dataset_198 \
+      -n 200 \
+      -s test \
+      -a rl/best_model
    ```
+
+2. Evaluate with baseline agents (same as in paper):
+
+   ```bash
+   # Training set
+   python scripts/eval.py \
+      -m logs/<model_id>/ \
+      -d data/dataset_198 \
+      -n 632 \
+      -s train \
+      -a rl/best_model \
+      -a greedy \
+      -a greedy/alignment_reward,same_track_penalty \
+      -a random
+
+   # Testing set
+   python scripts/eval.py \
+      -m logs/<model_id>/ \
+      -d data/dataset_198 \
+      -n 200 \
+      -s test \
+      -a rl/best_model \
+      -a greedy \
+      -a greedy/alignment_reward,same_track_penalty \
+      -a random
+   ```
+
+> - The output figures/videos are saved in `logs/<model_id>/`.
+> - You can use `-r` to render the videos. It takes a lot of time, so try to decrease the number of inferenced videos by `-n <number>` (`158` for full training set, `40` for full testing set).

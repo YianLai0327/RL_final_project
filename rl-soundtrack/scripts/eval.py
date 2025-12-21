@@ -236,6 +236,7 @@ def evaluation(
     model_dir: Path,
     model_config,
     num_episodes: int = 5,
+    min_steps: int = 1,
     render=False,
     agent_type: str = "rl",
     verbosity: int = 0,
@@ -292,6 +293,9 @@ def evaluation(
     total_steps_all_episodes = 0
 
     for i in tqdm(range(num_episodes)):
+        env.reset(options={"video_idx": i})
+        if len(env.unwrapped.video_segments) < min_steps:
+            continue
         (
             total_reward,
             steps,
@@ -578,7 +582,7 @@ def plot_combined_metric_distribution(
     title_cdf = f"combined_cdf_{metric_name.replace(' ', '_').lower()}.png"
     save_path_cdf = save_dir.joinpath(title_cdf)
 
-    fig_cdf, ax_cdf = plt.subplots(1, 1, figsize=(5, 4))
+    fig_cdf, ax_cdf = plt.subplots(1, 1, figsize=(6, 4))
     for agent_name, values in agent_metrics.items():
         sorted_vals = np.sort(values)
         y_vals = np.arange(1, len(sorted_vals) + 1) / len(sorted_vals)
@@ -587,6 +591,7 @@ def plot_combined_metric_distribution(
     ax_cdf.set_title(f"CDF of {metric_name}")
     ax_cdf.set_xlabel("Cumulative Probability")
     ax_cdf.set_ylabel(metric_name)
+    ax_cdf.set_ylim(-5)
     ax_cdf.grid(True, alpha=0.3)
     # ax_cdf.legend()
     fig_cdf.tight_layout()
@@ -649,6 +654,13 @@ def main():
         default=0,
         help="Verbosity level: 0=Metrics, 1=Table",
     )
+    parser.add_argument(
+        "-t",
+        "--min_steps",
+        type=int,
+        default=1,
+        help="Minimum number of steps to evaluate",
+    )
     args = parser.parse_args()
 
     config = load_config(args.config)
@@ -661,13 +673,15 @@ def main():
     train_ds, test_ds = dataset.split(
         split_ratio=config["train"]["split_ratio"], seed=config["train"]["seed"]
     )
+    eval_dataset = train_ds if args.set == "train" else test_ds
 
     # Create environment
     env = gym.make(
         config["env"]["id"],
         render_mode="human",
         random=False,
-        dataset=train_ds if args.set == "train" else test_ds,
+        dataset=eval_dataset,
+        mode="test",
         **config["env"]["kwargs"],
     )
     env.reset(seed=config["train"]["seed"])
@@ -716,6 +730,7 @@ def main():
             model_dir,
             config["agent"],
             num_episodes=args.episode,
+            min_steps=args.min_steps,
             render=args.render,
             agent_type=agent_type,
             verbosity=args.verbosity,
