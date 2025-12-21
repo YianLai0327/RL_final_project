@@ -104,16 +104,3 @@ python scripts/train.py --id <run_id> -d data/<dataset_name>
 ```
 
 - Hyperparameters and configs are typically stored under `rl-soundtrack/configs/`.
-
----
-
-## Notes & Tips
-- Start with a small dataset (3–7 videos) to validate the full pipeline before scaling up. ✅
-- Use `format_dataset.py --dry-run` to preview filename mapping and detect mismatches.
-- Many subfolders contain their own `README.md` with specific instructions — check those for details.
-
----
-
-If you want, I can:
-- Add a short abstract paragraph now, or wait for your text to paste into the Abstract section, or
-- Generate example `split.json` files or run a quick check of `separated/`, `splited/`, and `rl-soundtrack/data/` to confirm pipeline readiness.
