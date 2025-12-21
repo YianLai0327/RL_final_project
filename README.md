@@ -54,7 +54,7 @@ There are two ways to prepare data for experiments:
 
 2. Build your own dataset from scratch:
    - Use `crawl_vlog/` to download raw vlog media and generate JSON crawls.
-   - Use `caption_final/` (or `caption/`) to create Gemini captions for audio and video (`audio_captioning.py`, `video_captioning.py`).
+   - Use `caption_final/` to create Gemini captions for audio and video (`audio_captioning.py`, `video_captioning.py`).
    - Use `BGM/` scripts to collect and preprocess background music and extract features.
    - Use `split_song/` to detect and/or manually author `split.json` with song-change timestamps, and `split_mp3.py` to produce segmented mp3 files.
    - Finally, format and compute embeddings with `rl-soundtrack` in [Preprocess](rl-soundtrack/README.md#preprocess).
