@@ -32,9 +32,6 @@ Below is a concise description of the main folders in this repository. Some fold
 
   - Scripts for crawling/downloading vlog videos and audio, plus utilities to make JSON datasets used by captioning and downstream steps.
 
-- `BGM/` 🎵
-  - Background music collection scripts, chorus extraction, and audio feature extraction code.
-
 ## Reproduce
 
 Go to `rl-soundtrack` directory and follow the full instructions in [rl-soundtrack/README.md](rl-soundtrack/README.md).
@@ -56,7 +53,6 @@ There are two ways to prepare data for experiments:
 2. Build your own dataset from scratch:
    - Use `crawl_vlog/` to download raw vlog media and generate JSON crawls.
    - Use `caption_final/` to create Gemini captions for audio and video (`audio_captioning.py`, `video_captioning.py`).
-   - Use `BGM/` scripts to collect and preprocess background music and extract features.
    - Use `split_song/` to detect and/or manually author `split.json` with song-change timestamps, and `split_mp3.py` to produce segmented mp3 files.
    - Finally, format and compute embeddings with `rl-soundtrack` in [Preprocess](rl-soundtrack/README.md#preprocess).
 
