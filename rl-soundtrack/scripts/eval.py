@@ -281,7 +281,6 @@ def evaluation(
         raise ValueError(f"Unknown agent type: {agent_type}")
 
     output_dir = model_dir.joinpath(f"eval_{agent_name.lower()}")
-    os.makedirs(output_dir, exist_ok=True)
 
     continue_action = env.unwrapped.n_audio
     selected_actions = set()
@@ -324,6 +323,7 @@ def evaluation(
             }
         )
         if render:
+            os.makedirs(output_dir, exist_ok=True)
             save_render(env, filename, output_dir)
 
     if continue_action in selected_actions:
@@ -341,6 +341,7 @@ def evaluation(
 
     # Plotting
     if plot_results:
+        os.makedirs(output_dir, exist_ok=True)
         plot_rewards(all_episode_results, output_dir, agent_name=agent_name)
         plot_metric_distribution(
             rewards,
@@ -517,12 +518,12 @@ def plot_metric_distribution(
 
 
 def plot_combined_metric_distribution(
-    agent_metrics: dict, output_dir, metric_name="Metric"
+    agent_metrics: dict, output_dir, metric_name="Metric", suffix=""
 ):
     save_dir = output_dir
     os.makedirs(save_dir, exist_ok=True)
 
-    title = f"combined_dist_{metric_name.replace(' ', '_').lower()}.png"
+    title = f"combined_dist_{metric_name.replace(' ', '_').lower()}{suffix}.png"
     save_path = save_dir.joinpath(title)
 
     num_agents = len(agent_metrics)
@@ -743,7 +744,10 @@ def main():
         # Save to model_dir/eval_comparison
         output_dir = model_dir.joinpath("eval_comparison")
         plot_combined_metric_distribution(
-            all_agents_rewards, output_dir, metric_name="Reward"
+            all_agents_rewards,
+            output_dir,
+            metric_name="Reward",
+            suffix=f"_{args.set}_{args.episode}",
         )
 
 

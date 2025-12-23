@@ -74,29 +74,11 @@ python data/preprocess.py --process_video --process_music --label_music data/dat
    python scripts/train.py -m logs/<model_id>/last_model -d data/dataset_198
    ```
 
+See [scripts/train.py](scripts/train.py) and [configs/default.yaml](configs/default.yaml) for more details. The model will be saved in `logs/<model_id>/` by default.
+
 ## Evaluate
 
-1. Evaluate the RL agent:
-
-   ```bash
-   # Training set
-   python scripts/eval.py \
-      -m logs/<model_id>/ \
-      -d data/dataset_198 \
-      -n 632 \
-      -s train \
-      -a rl/best_model
-
-   # Testing set
-   python scripts/eval.py \
-      -m logs/<model_id>/ \
-      -d data/dataset_198 \
-      -n 200 \
-      -s test \
-      -a rl/best_model
-   ```
-
-2. Evaluate with baseline agents (same as in paper):
+1. Evaluate the RL agent with baselines (same as in paper):
 
    ```bash
    # Training set
@@ -122,5 +104,10 @@ python data/preprocess.py --process_video --process_music --label_music data/dat
       -a random
    ```
 
-> - The output figures/videos are saved in `logs/<model_id>/`.
-> - You can use `-r` to render the videos. It takes a lot of time, so try to decrease the number of inferenced videos by `-n <number>` (`158` for full training set, `40` for full testing set).
+The output comparison figures are saved in `logs/<model_id>/eval_comparison` by default.
+See [scripts/eval.py](scripts/eval.py) for more details.
+
+More:
+
+- You can use `-r` to render the videos. It takes a lot of time, so try to decrease the number of inferenced videos by `-n <number>` (`158` for full training set, `40` for full testing set).
+- You can find output figures/videos in `logs/<model_id>/`.

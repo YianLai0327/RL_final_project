@@ -1,5 +1,7 @@
 # Group 12 Final project
 
+[[`PDF`](./Report.pdf)] [[`Github`](https://github.com/YianLai0327/RL_final_project)]
+
 ## RL-Soundtrack: Reinforcement Learning for Video-Aware Sequential BGM Recommendation
 
 This repository implements **RL-Soundtrack: Reinforcement Learning for Video-Aware Sequential BGM Recommendation**. The rest of this README provides step-by-step instructions for environment setup, data collection and preprocessing, model training, and evaluation/inference.
@@ -32,34 +34,37 @@ Below is a concise description of the main folders in this repository. Some fold
 
   - Scripts for crawling/downloading vlog videos and audio, plus utilities to make JSON datasets used by captioning and downstream steps.
 
-## Reproduce
+## Quick Reproduce
 
-Go to `rl-soundtrack` directory and follow the full instructions in [rl-soundtrack/README.md](rl-soundtrack/README.md).
-
-The following sections provide a concise summary or link to the instructions.
+Just go to `rl-soundtrack` directory and follow the full instructions in [rl-soundtrack/README.md](rl-soundtrack/README.md).
 
 ## Environments
 
-Follow the [Setup](rl-soundtrack/README.md#setup) instructions for an environment setup.
+See [Setup](rl-soundtrack/README.md#setup).
 
 _GPU notes:_ if you need GPU acceleration (TensorFlow / PyTorch), make sure CUDA and cuDNN are installed and compatible with your selected packages. In RL, however, GPU is utilized solely for preliminary embedding extraction.
 
-## Preprocess / Data Collection
+## Execution
+
+### 1. Preprocess / Data Collection
 
 There are two ways to prepare data for experiments:
 
-1. Quick / lazy approach (recommended for rapid testing): See [Quick Download](rl-soundtrack/README.md#quick-download).
+#### A. Quick / lazy approach (recommended for rapid testing)
 
-2. Build your own dataset from scratch:
-   - Use `crawl_vlog/` to download raw vlog media and generate JSON crawls.
-   - Use `caption_final/` to create Gemini captions for audio and video (`audio_captioning.py`, `video_captioning.py`).
-   - Use `split_song/` to detect and/or manually author `split.json` with song-change timestamps, and `split_mp3.py` to produce segmented mp3 files.
-   - Finally, format and compute embeddings with `rl-soundtrack` in [Preprocess](rl-soundtrack/README.md#preprocess).
+See [Quick Download](rl-soundtrack/README.md#quick-download).
 
-## Train
+#### B. Build your own dataset from scratch
+
+- Use `crawl_vlog/` to download raw vlog media and generate JSON crawls.
+- Use `caption_final/` to create Gemini captions for audio and video (`audio_captioning.py`, `video_captioning.py`).
+- Use `split_song/` to detect and/or manually author `split.json` with song-change timestamps, and `split_mp3.py` to produce segmented mp3 files.
+- Finally, format and compute embeddings with `rl-soundtrack` in [Preprocess](rl-soundtrack/README.md#preprocess).
+
+### 2. Train
 
 See [Train](rl-soundtrack/README.md#train).
 
-## Evaluate
+### 3. Evaluate
 
 See [Evaluate](rl-soundtrack/README.md#evaluate).
